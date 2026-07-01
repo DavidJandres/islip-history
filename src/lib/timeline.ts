@@ -249,6 +249,30 @@ export const timeline: TimelineEntry[] = [
     sources: ['George J. Munkenbeck, "What was life like in Islip and the surrounding areas during the occupation?"'],
   },
   {
+    id: "1776-1783-occupation",
+    date: "1776\u20131783",
+    title: "British occupation affects Islip",
+    era: "revolution",
+    body: [
+      "During the Revolution, Islip lived under British occupation. The St. John's booklet says the little shingled church was used as a military outpost and was left in bad shape after the British evacuated New York in 1783.",
+    ],
+    whyToday:
+      "This makes the Revolution local: occupation affected buildings, families, worship, and daily life.",
+    sources: ["St. John's Episcopal Church booklet (parish history)."],
+  },
+  {
+    id: "1776-mary-thompson",
+    date: "September\u2013October 1776",
+    title: "Mary Gardiner Thompson and family under occupation",
+    era: "revolution",
+    body: [
+      "At the beginning of occupation, Mary Gardiner Thompson was late in pregnancy and caring for a young child. Town Historian material uses this to explain why Isaac Thompson may have remained at Sagtikos, choosing his family's health and safety during danger.",
+    ],
+    whyToday:
+      "This shows the Revolution through family life, not only military or political events.",
+    sources: ['George J. Munkenbeck, "Isaac Thompson \u2014 A Man on a Tightrope."'],
+  },
+  {
     id: "1778-suspected",
     date: "June 30, 1778",
     title: "New York targets “suspected characters”",
@@ -295,30 +319,6 @@ export const timeline: TimelineEntry[] = [
     whyToday:
       "Independence, declared in 1776, only became reality in Islip at the end of 1783.",
     sources: ['Office of the Town Historian, Town of Islip, "Abbreviated Time Line for Islip Precinct in the Revolution."'],
-  },
-  {
-    id: "1776-1783-occupation",
-    date: "1776\u20131783",
-    title: "British occupation affects Islip",
-    era: "revolution",
-    body: [
-      "During the Revolution, Islip lived under British occupation. The St. John's booklet says the little shingled church was used as a military outpost and was left in bad shape after the British evacuated New York in 1783.",
-    ],
-    whyToday:
-      "This makes the Revolution local: occupation affected buildings, families, worship, and daily life.",
-    sources: ["St. John's Episcopal Church booklet (parish history)."],
-  },
-  {
-    id: "1776-mary-thompson",
-    date: "September\u2013October 1776",
-    title: "Mary Gardiner Thompson and family under occupation",
-    era: "revolution",
-    body: [
-      "At the beginning of occupation, Mary Gardiner Thompson was late in pregnancy and caring for a young child. Town Historian material uses this to explain why Isaac Thompson may have remained at Sagtikos, choosing his family's health and safety during danger.",
-    ],
-    whyToday:
-      "This shows the Revolution through family life, not only military or political events.",
-    sources: ['George J. Munkenbeck, "Isaac Thompson \u2014 A Man on a Tightrope."'],
   },
   {
     id: "1783-st-johns-mixed",

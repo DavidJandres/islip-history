@@ -97,3 +97,48 @@ export const panelImages: Partial<Record<PanelSlug, PanelImage>> = {
       "George Washington (Lansdowne portrait) by Gilbert Stuart, 1796. National Portrait Gallery. Public domain.",
   },
 };
+
+// "Explore further" links that bridge each panel to the deeper research pages,
+// primary sources, essays, and people. Hrefs are locale-agnostic (prefixed at
+// render); labels are English, matching the exhibit's source content.
+export interface RelatedLink {
+  label: string;
+  href: string;
+}
+
+export const panelRelated: Partial<Record<PanelSlug, RelatedLink[]>> = {
+  "the-promise": [
+    { label: "About the research", href: "/about/research" },
+    { label: "The timeline", href: "/timeline" },
+  ],
+  "before-the-town": [
+    { label: "The 1710 Precinct act", href: "/explore/primary-sources#source-islip-precinct-1710" },
+    { label: "William Nicoll", href: "/people/william-nicoll" },
+    { label: "Winnaquaheagh", href: "/people/winnaquaheagh" },
+  ],
+  "revolution-comes-to-islip": [
+    { label: "The Islip Militia", href: "/research/militia" },
+    { label: "The Articles of Association", href: "/explore/primary-sources#source-articles-of-association-1775" },
+    { label: "Benajah Strong", href: "/people/benajah-strong" },
+    { label: "Flags & symbols", href: "/research/flags" },
+  ],
+  "washingtons-visit": [
+    { label: "George Washington", href: "/people/george-washington" },
+    { label: "Research questions", href: "/research/questions" },
+    { label: "Henry Clinton", href: "/people/henry-clinton" },
+  ],
+  "an-unfinished-promise": [
+    { label: "Life Under Occupation", href: "/research/occupation" },
+    { label: "Enslaved labor at Sagtikos", href: "/research/essays#essay-sagtikos-enslaved-labor" },
+    { label: "Isaac Thompson", href: "/people/isaac-thompson" },
+  ],
+  "many-roots-one-town": [
+    { label: "Samuel Sitko", href: "/people/samuel-sitko" },
+    { label: "The timeline", href: "/timeline" },
+  ],
+  "the-promise-continues": [
+    { label: "Research questions", href: "/research/questions" },
+    { label: "Bibliography & sources", href: "/research/sources" },
+    { label: "The fellowship", href: "/about/fellowship" },
+  ],
+};

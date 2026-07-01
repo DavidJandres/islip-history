@@ -11,6 +11,7 @@ import {
   panelNeighbors,
   panelCount,
   panelImages,
+  panelRelated,
   isPanelSlug,
   type PanelSlug,
 } from "@/lib/exhibit";
@@ -160,6 +161,26 @@ export default async function PanelPage({ params }: PanelParams) {
                 <li key={src}>{src}</li>
               ))}
             </ol>
+          </div>
+        )}
+
+        {panelRelated[panel] && panelRelated[panel]!.length > 0 && (
+          <div className="mt-10">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-gold-dark">
+              {ex.exploreFurther}
+            </h2>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {panelRelated[panel]!.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={localizedPath(locale, link.href)}
+                    className="inline-flex items-center rounded-sm border border-line px-3 py-1.5 text-sm font-semibold text-blue transition-colors hover:border-blue hover:bg-gray"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         )}
       </div>
