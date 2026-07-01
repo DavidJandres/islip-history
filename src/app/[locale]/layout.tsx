@@ -57,7 +57,15 @@ export default async function LocaleLayout({
   const dict = getDictionary(locale);
 
   return (
-    <html lang={locale} className={`${merriweather.variable} ${sourceSans.variable}`}>
+    <html
+      lang={locale}
+      // Inline on <html> so the light scheme and paper background apply the
+      // instant the first tag is parsed — before the external stylesheet loads.
+      // This is what actually stops the dark-mode "black flash" on reload; the
+      // external CSS and <meta color-scheme> arrive a frame too late on their own.
+      style={{ colorScheme: "light", backgroundColor: "#faf8f5" }}
+      className={`${merriweather.variable} ${sourceSans.variable}`}
+    >
       <body>
         <script
           type="application/ld+json"
