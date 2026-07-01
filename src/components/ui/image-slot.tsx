@@ -41,7 +41,7 @@ export function ImageSlot({
   className?: string;
 }) {
   return (
-    <figure className={cn("my-8", className)}>
+    <figure className={className}>
       <div
         className={cn(
           "relative overflow-hidden rounded-sm",

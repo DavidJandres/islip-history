@@ -128,6 +128,7 @@ export default async function PanelPage({ params }: PanelParams) {
           aspect="photo"
           contain
           priority
+          className="my-8"
         />
 
         {/* Larger body type than a standard article: this exhibit is written to

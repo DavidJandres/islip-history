@@ -1,0 +1,67 @@
+{
+  "sourcesHeading": "Fuentes primarias",
+  "essaysHeading": "Ensayos y artículos",
+  "occupation": {
+    "breadcrumb": "La vida bajo la ocupación",
+    "eyebrow": "Investigación",
+    "title": "La vida bajo la ocupación",
+    "intro": "Durante seis años después de 1776, el Precinto de Islip vivió bajo ocupación británica. No fue solo una condición militar. Se alojaron soldados en las casas; se tomaron forraje, ganado, cercas y leña; y las familias vivieron bajo la autoridad de la Corona mientras enfrentaban también asaltos desde el otro lado del estrecho. Las fuentes y los ensayos siguientes muestran la ocupación tal como la vivió la gente común, con lealtades divididas, miedo y supervivencia."
+  },
+  "flags": {
+    "breadcrumb": "Banderas y símbolos",
+    "eyebrow": "Investigación",
+    "title": "Banderas y símbolos",
+    "intro": "Las banderas marcaron las lealtades cambiantes del Precinto de Islip, desde el Red Ensign británico hasta la bandera de la Libertad izada en la vecina Huntington, y de nuevo bajo la ocupación. Esta página reserva espacio para esas banderas. El Historiador del Pueblo es prudente: como la milicia de Islip estaba muy ligada a Huntington, es probable que los milicianos de Islip marcharan bajo la bandera de la Libertad de Huntington, pero el proyecto no afirma que Islip tuviera la suya propia.",
+    "galleryHeading": "Las banderas",
+    "gallery": [
+      { "name": "El Red Ensign (el “Red Duster”)", "note": "La bandera civil usada en las colonias, izada sobre Islip en la época colonial y durante la ocupación británica." },
+      { "name": "La bandera de la Unión", "note": "La bandera de la Corona de Gran Bretaña, en el cantón del Red Ensign." },
+      { "name": "La bandera de la Libertad de Huntington", "note": "Una bandera roja con la palabra “Liberty”, probablemente llevada por los milicianos de Islip por su estrecho vínculo con Huntington." }
+    ]
+  },
+  "militia": {
+    "breadcrumb": "La milicia de Islip",
+    "eyebrow": "Investigación",
+    "title": "La milicia de Islip",
+    "intro": "Antes de la ocupación británica, la gente del Precinto de Islip organizó su propia compañía de milicia en lugar de seguir dividida entre las compañías de Smithtown y Huntington. El juez Isaac Thompson y el capitán Benajah Strong dirigieron el esfuerzo. El censo de 1775 contó a los hombres aptos para el servicio, y en febrero de 1776 Islip pidió al Congreso Provincial que comisionara a sus propios oficiales.",
+    "factsHeading": "En cifras",
+    "facts": [
+      { "label": "Población en 1775", "value": "375 residentes del Precinto de Islip" },
+      { "label": "Aptos para el servicio", "value": "64 hombres de 16 a 50 años (censo del 26 de junio de 1775)" },
+      { "label": "La compañía", "value": "Unos 36 a 38 hombres, Primer Regimiento de la Milicia del Condado de Suffolk" },
+      { "label": "Organizada por", "value": "El juez Isaac Thompson y el capitán Benajah Strong" }
+    ]
+  },
+  "questions": {
+    "breadcrumb": "Preguntas de investigación",
+    "eyebrow": "Investigación",
+    "title": "Preguntas de investigación y evidencia en revisión",
+    "intro": "La buena historia pública es honesta sobre lo que aún no sabe. Estas son preguntas abiertas que el proyecto investiga activamente. Algunas se apoyan en evidencia sugerente que todavía no puede probarse; cuando es así, esta página lo dice con claridad en lugar de convertir la posibilidad en certeza.",
+    "items": [
+      {
+        "q": "¿Estuvo Isaac Thompson conectado con las redes de inteligencia de la Revolución?",
+        "note": "Isaac Thompson era primo hermano de Abraham Woodhull y estaba emparentado con otras personas vinculadas al Culper Spy Ring. El Historiador del Pueblo señala estos lazos familiares y pregunta si Thompson tuvo conocimiento de la red o la ayudó, y afirma con claridad que esto no puede probarse. El proyecto no afirma que Isaac Thompson formara parte del Culper Spy Ring."
+      },
+      {
+        "q": "¿Tuvo un significado más profundo la parada de Washington en Sagtikos en 1790?",
+        "note": "Algunos relatos modernos sugieren que el recorrido de Washington por Long Island fue en parte para agradecer a quienes lo habían apoyado con inteligencia. La evidencia no es concluyente, así que el proyecto no presenta la visita como un acto de agradecimiento probado."
+      },
+      {
+        "q": "¿Qué bandera llevaron realmente los milicianos de Islip?",
+        "note": "Como la milicia de Islip estaba ligada a Huntington, probablemente marcharon bajo la bandera de la Libertad de Huntington. Ninguna fuente confirma una bandera propia de Islip."
+      },
+      {
+        "q": "¿Dónde está la lista completa de firmantes de los Artículos de Asociación?",
+        "note": "Se cree que unos 35 residentes de Islip firmaron, y algunos lo hicieron en Huntington o Brookhaven. Distintos investigadores dan listas de nombres algo diferentes, y la lista completa y conciliada aún se está reuniendo."
+      },
+      {
+        "q": "¿Qué registros quedan por digitalizar?",
+        "note": "Los registros coloniales de Smithtown, Brookhaven y la administración colonial pueden contener más sobre Islip. La entrada del diario de Washington de 1790 y registros más completos de Huntington están identificados, pero aún no se transcriben por completo aquí."
+      },
+      {
+        "q": "¿Cómo debemos leer el silencio en las actas de Islip durante la ocupación?",
+        "note": "Las actas de Islip dicen poco sobre la ocupación, mientras que las de Huntington registran más. Ese silencio en sí mismo puede reflejar el control y el peligro de vivir bajo ocupación."
+      }
+    ]
+  }
+}

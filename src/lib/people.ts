@@ -182,6 +182,26 @@ export const people: Person[] = [
     sources: ['George J. Munkenbeck, "Isaac Thompson \u2014 A Man on a Tightrope."'],
   },
   {
+    slug: "benajah-strong",
+    name: "Benajah Strong",
+    role: "Militia captain and last Supervisor of Islip Precinct",
+    dates: null,
+    section: "revolution",
+    portrait: null,
+    bio: [
+      "Benajah Strong was a farmer, patriot, and public official whose life connected Islip's militia, its town government, and the Thompson family of Sagtikos Manor. Born about 1748, in May 1772 he married Hannah Thompson, a sister of Isaac Thompson, which also tied him to the Woodhull family.",
+      "In February 1776, when Islip Precinct sought commissions for its own militia company, the residents chose Benajah Strong as their captain. A well-known supporter of the patriot cause, he was among those who fled to Connecticut when the British occupied Suffolk County, and he took part in several raids and missions. The British considered him a “notorious rebel.”",
+      "After the war, Strong returned to public life. In April 1787 he was the last person elected Supervisor of the Precinct of Islip, and when the State of New York recognized Islip as a Town in 1788 he continued in town office, serving several terms as Town Clerk and once more as Supervisor in 1790.",
+    ],
+    whyMatters:
+      "Benajah Strong shows that Islip's Revolution was carried by more than one family. As militia captain, refugee, raider, and the last precinct supervisor, he links the town's military organization, its wartime exile, and its transition from precinct to town.",
+    connectionToday:
+      "His career bridges the Revolution and the founding of Islip's town government. Marking and remembering figures like Strong is part of the Town's ongoing 250th research.",
+    cardText:
+      "Militia captain, wartime refugee, and the last Supervisor of Islip Precinct. Brother-in-law of Isaac Thompson, he links Islip's patriot militia to the founding of its town government.",
+    sources: ['George J. Munkenbeck, "Islip Town Supervisor Captain Benajah Strong."'],
+  },
+  {
     slug: "george-washington",
     name: "George Washington",
     role: "First U.S. President",

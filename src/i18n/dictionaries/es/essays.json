@@ -1,0 +1,17 @@
+{
+  "breadcrumb": "Ensayos",
+  "eyebrow": "Investigación",
+  "title": "Ensayos y artículos interpretativos",
+  "intro": "Esta sección reúne ensayos interpretativos y notas de investigación utilizados en el Proyecto de Historia del Pueblo de Islip. Ayudan a situar las fuentes primarias en su contexto: explican a las personas, los lugares, las leyes, la ocupación militar, el gobierno local y la experiencia cotidiana de la Revolución en el Precinto de Islip. Muchos provienen de Vignettes of Islip Town History y de la Guía de Recursos sobre la Guerra de Independencia. Cada entrada es un extracto seleccionado con su nota de fuente; el texto histórico se muestra en inglés.",
+  "categories": {
+    "revolution": "La Revolución y la decisión local",
+    "sagtikos": "La Mansión Sagtikos e Isaac Thompson",
+    "occupation": "La vida bajo la ocupación",
+    "music": "Música, culto y resistencia",
+    "flags": "Banderas y símbolos",
+    "patriots": "Patriotas locales y memoria",
+    "method": "Métodos de investigación y vacíos en las fuentes"
+  },
+  "keyExcerpts": "Extractos clave",
+  "whyMatters": "Por qué importa"
+}

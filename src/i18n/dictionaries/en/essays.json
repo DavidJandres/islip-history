@@ -1,0 +1,17 @@
+{
+  "breadcrumb": "Essays",
+  "eyebrow": "Research",
+  "title": "Essays & Interpretive Articles",
+  "intro": "This section gathers interpretive essays and research notes used in the Town of Islip History Project. They help place primary sources in context, explaining people, places, laws, military occupation, local government, and the everyday experience of the Revolution in Islip Precinct. Many are drawn from Vignettes of Islip Town History and the Town of Islip Revolutionary War Resource Guide. Each entry is a curated excerpt with a source note; more will be added as sources are reviewed.",
+  "categories": {
+    "revolution": "Revolution & Local Choice",
+    "sagtikos": "Sagtikos Manor & Isaac Thompson",
+    "occupation": "Life Under Occupation",
+    "music": "Music, Worship & Resistance",
+    "flags": "Flags & Symbols",
+    "patriots": "Local Patriots & Memory",
+    "method": "Research Methods & Source Gaps"
+  },
+  "keyExcerpts": "Key excerpts",
+  "whyMatters": "Why this matters"
+}

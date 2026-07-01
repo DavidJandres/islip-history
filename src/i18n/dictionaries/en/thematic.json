@@ -1,0 +1,67 @@
+{
+  "sourcesHeading": "Primary sources",
+  "essaysHeading": "Essays & articles",
+  "occupation": {
+    "breadcrumb": "Life Under Occupation",
+    "eyebrow": "Research",
+    "title": "Life Under Occupation",
+    "intro": "For six years after 1776, Islip Precinct lived under British occupation. This was not only a military condition. Soldiers were quartered in homes; forage, livestock, fences, and firewood were taken; and families lived under Crown authority while also facing raids from across the Sound. The sources and essays below show occupation as ordinary people lived it, with divided loyalties, fear, and survival."
+  },
+  "flags": {
+    "breadcrumb": "Flags & Symbols",
+    "eyebrow": "Research",
+    "title": "Flags & Symbols",
+    "intro": "Flags marked the shifting loyalties of Islip Precinct, from the British Red Ensign to the Liberty flag raised in nearby Huntington, and back again under occupation. This page reserves space for those flags. The Town Historian is careful: because Islip's militia was closely tied to Huntington, Islip militiamen likely marched under the Huntington Liberty Flag, but the project does not claim Islip had its own.",
+    "galleryHeading": "The flags",
+    "gallery": [
+      { "name": "The Red Ensign (the “Red Duster”)", "note": "The civil flag used in the colonies, flown over Islip in colonial times and during the British occupation." },
+      { "name": "The Union Flag", "note": "The Crown flag of Great Britain, in the canton of the Red Ensign." },
+      { "name": "The Huntington Liberty Flag", "note": "A red flag marked “Liberty,” likely carried by Islip militiamen because of their close tie to Huntington." }
+    ]
+  },
+  "militia": {
+    "breadcrumb": "Islip Militia",
+    "eyebrow": "Research",
+    "title": "The Islip Militia",
+    "intro": "Before the British occupation, the people of Islip Precinct organized their own militia company rather than remain split between the Smithtown and Huntington companies. Judge Isaac Thompson and Captain Benajah Strong led the effort. The 1775 census counted the men eligible for service, and in February 1776 Islip asked the Provincial Congress to commission its own officers.",
+    "factsHeading": "By the numbers",
+    "facts": [
+      { "label": "1775 population", "value": "375 residents of Islip Precinct" },
+      { "label": "Eligible for service", "value": "64 men aged 16 to 50 (June 26, 1775 census)" },
+      { "label": "The company", "value": "About 36 to 38 men, First Suffolk County Militia Regiment" },
+      { "label": "Organized by", "value": "Judge Isaac Thompson and Captain Benajah Strong" }
+    ]
+  },
+  "questions": {
+    "breadcrumb": "Research Questions",
+    "eyebrow": "Research",
+    "title": "Research Questions & Evidence Under Review",
+    "intro": "Good public history is honest about what it does not yet know. These are open questions the project is actively researching. Some rest on suggestive evidence that cannot yet be proven; where that is the case, this page says so plainly rather than turning possibility into certainty.",
+    "items": [
+      {
+        "q": "Was Isaac Thompson connected to Revolutionary intelligence networks?",
+        "note": "Isaac Thompson was a first cousin of Abraham Woodhull and was related to others associated with the Culper Spy Ring. The Town Historian notes these family ties and asks whether Thompson had knowledge of, or helped, the ring, while stating plainly that this cannot be proven. The project does not claim that Isaac Thompson was part of the Culper Spy Ring."
+      },
+      {
+        "q": "Did Washington's 1790 stop at Sagtikos have a deeper meaning?",
+        "note": "Some modern accounts suggest Washington's Long Island tour was partly to thank those who had supported him with intelligence. The evidence is not conclusive, so the project does not present the visit as a proven act of thanks."
+      },
+      {
+        "q": "What flag did Islip militiamen actually carry?",
+        "note": "Because Islip's militia was tied to Huntington, they likely marched under the Huntington Liberty Flag. No source confirms a separate Islip flag."
+      },
+      {
+        "q": "Where is the complete Articles of Association signer list?",
+        "note": "About 35 Islip residents are believed to have signed, with some signing in Huntington or Brookhaven. Different researchers list somewhat different names, and the full, reconciled signer list is still being gathered."
+      },
+      {
+        "q": "What records remain to be digitized?",
+        "note": "Colonial records of Smithtown, Brookhaven, and the colonial administration may hold more about Islip. The Washington 1790 diary entry and fuller Huntington Town Records are identified but not yet fully transcribed here."
+      },
+      {
+        "q": "How should we read the silence in Islip's town minutes during occupation?",
+        "note": "Islip's minutes say little about the occupation, while Huntington's record more. The quiet itself may reflect the control and danger of living under occupation."
+      }
+    ]
+  }
+}

@@ -14,6 +14,7 @@ import { timeline } from "@/lib/timeline";
 import { exhibitPanels, panelNumber, panelStatus } from "@/lib/exhibit";
 import { bibliographyFlat } from "@/lib/bibliography";
 import { primarySourcesSearchText } from "@/lib/primary-sources";
+import { essaysSearchText } from "@/lib/essays";
 import type { SearchDoc } from "./types";
 
 const join = (parts: Array<string | undefined | null>) =>
@@ -103,7 +104,36 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
       path: "/explore/primary-sources",
     },
     { key: "research", title: nav.research, body: sum.research, path: "/research" },
-    { key: "essays", title: nav.essays, body: sum.essays, path: "/research/essays" },
+    {
+      key: "essays",
+      title: nav.essays,
+      body: [sum.essays, essaysSearchText].join(" "),
+      path: "/research/essays",
+    },
+    {
+      key: "occupation",
+      title: nav.occupation,
+      body: dict.thematic.occupation.intro,
+      path: "/research/occupation",
+    },
+    {
+      key: "flags",
+      title: nav.flags,
+      body: dict.thematic.flags.intro,
+      path: "/research/flags",
+    },
+    {
+      key: "militia",
+      title: nav.militia,
+      body: dict.thematic.militia.intro,
+      path: "/research/militia",
+    },
+    {
+      key: "questions",
+      title: nav.questions,
+      body: dict.thematic.questions.intro,
+      path: "/research/questions",
+    },
     {
       key: "sources",
       title: nav.sources,

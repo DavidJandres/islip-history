@@ -53,6 +53,10 @@ export const primaryNav: NavItem[] = [
     href: "/research",
     children: [
       { key: "essays", href: "/research/essays" },
+      { key: "occupation", href: "/research/occupation" },
+      { key: "flags", href: "/research/flags" },
+      { key: "militia", href: "/research/militia" },
+      { key: "questions", href: "/research/questions" },
       { key: "sources", href: "/research/sources" },
     ],
   },
@@ -91,6 +95,10 @@ export const footerNav: FooterGroup[] = [
     headingKey: "researchHeading",
     items: [
       { key: "essays", href: "/research/essays" },
+      { key: "occupation", href: "/research/occupation" },
+      { key: "flags", href: "/research/flags" },
+      { key: "militia", href: "/research/militia" },
+      { key: "questions", href: "/research/questions" },
       { key: "sources", href: "/research/sources" },
       { key: "timeline", href: "/timeline" },
       { key: "people", href: "/people" },

@@ -153,6 +153,30 @@ export const timeline: TimelineEntry[] = [
     sources: ["St. John's Episcopal Church booklet (parish history)."],
   },
   {
+    id: "1775-april-meeting",
+    date: "April 4, 1775",
+    title: "Islip's last peacetime annual meeting",
+    era: "revolution",
+    body: [
+      "At the annual meeting of Islip Precinct on April 4, 1775, the minutes record routine local business: town offices, the problem of feral hogs, and the precinct's accounts. There is no sign of the crisis about to arrive.",
+    ],
+    whyToday:
+      "It shows ordinary people living normal lives just before history overtook them, a reminder that upheaval can arrive without warning.",
+    sources: ['George J. Munkenbeck, "In the Good Old Colony Day: When We Were Under the King."'],
+  },
+  {
+    id: "1775-lexington",
+    date: "April 19, 1775",
+    title: "Lexington and Concord",
+    era: "revolution",
+    body: [
+      "Fifteen days after Islip's annual meeting, fighting broke out at Lexington and Concord in Massachusetts. News reached Long Island slowly, often by word of mouth carried by boat.",
+    ],
+    whyToday:
+      "The war that would occupy Islip for seven years began far away, but its consequences reached every Long Island town.",
+    sources: ['George J. Munkenbeck, "In the Good Old Colony Day: When We Were Under the King."'],
+  },
+  {
     id: "1775-articles",
     date: "May 10, 1775",
     title: "Islip meeting on the Articles of Association",
@@ -163,6 +187,114 @@ export const timeline: TimelineEntry[] = [
     whyToday:
       "This event gives Islip a local pre-independence moment tied to the coming Revolution.",
     sources: ['George J. Munkenbeck, "Isaac Thompson \u2014 A Man on a Tightrope."'],
+  },
+  {
+    id: "1775-census",
+    date: "June 26, 1775",
+    title: "Islip census and militia eligibility",
+    era: "revolution",
+    body: [
+      "A census conducted by John Mowbrey and witnessed by Judge Isaac Thompson counted 375 residents of Islip Precinct and identified 64 men aged 16 to 50 subject to militia service. It was completed days after the Battle of Bunker Hill.",
+    ],
+    whyToday:
+      "It gives a concrete sense of scale: a small precinct still had to make political and military decisions.",
+    sources: ['Robert Finnegan, "Islip Militia: 250th Anniversary, 1776–2026," The Quahog, Winter 2026.'],
+  },
+  {
+    id: "1776-militia-letter",
+    date: "February 9, 1776",
+    title: "Islip asks for its own militia company",
+    era: "revolution",
+    body: [
+      "Writing as chairman of the Committee of Islip, Isaac Thompson asked the Provincial Congress to commission officers for a militia company chosen by the precinct, naming Benajah Strong as captain. The company numbered about 36 or 37 men.",
+    ],
+    whyToday:
+      "Islip organized itself politically and militarily before the occupation, rather than waiting to be acted upon.",
+    sources: ['Isaac Thompson to the Provincial Congress, February 9, 1776, in George J. Munkenbeck, "Isaac Thompson — A Man on a Tightrope."'],
+  },
+  {
+    id: "1776-declaration-huntington",
+    date: "July 22, 1776",
+    title: "The Declaration read at Huntington",
+    era: "revolution",
+    body: [
+      "The Declaration of Independence was read publicly at Huntington. Nearby towns celebrated, but British military movements soon changed the mood across Long Island.",
+    ],
+    whyToday:
+      "Independence was proclaimed just as the danger of invasion reached Islip's doorstep.",
+    sources: ["Charles R. Street, ed., Huntington Town Records, vol. 3, excerpted in Town of Islip Revolutionary War Resource Guide."],
+  },
+  {
+    id: "1776-battle-long-island",
+    date: "August 27–29, 1776",
+    title: "The Battle of Long Island",
+    era: "revolution",
+    body: [
+      "British forces defeated the Continental Army at the Battle of Long Island, fought in Brooklyn (Kings County). Suffolk County militia, including men connected to Islip, had marched west after the Declaration was read.",
+    ],
+    whyToday:
+      "The defeat opened Long Island to occupation. The battle was not fought in Islip, but its outcome shaped Islip's next seven years.",
+    sources: ['George J. Munkenbeck, "The Colonial Flags of Islip Precinct: Part Two, The American Revolution."'],
+  },
+  {
+    id: "1776-occupation-begins",
+    date: "September 1, 1776",
+    title: "British occupation of Long Island begins",
+    era: "revolution",
+    body: [
+      "Following the defeat at Brooklyn, British and Loyalist forces occupied Long Island. Islip Precinct would remain under Crown authority until late 1783.",
+    ],
+    whyToday:
+      "For six years, occupation shaped everyday life in Islip: homes, farms, loyalty, and survival.",
+    sources: ['George J. Munkenbeck, "What was life like in Islip and the surrounding areas during the occupation?"'],
+  },
+  {
+    id: "1778-suspected",
+    date: "June 30, 1778",
+    title: "New York targets “suspected characters”",
+    era: "revolution",
+    body: [
+      "A New York law authorized commissioners to summon people considered neutral or of “equivocal and suspected” loyalty and require them to swear allegiance to the State.",
+    ],
+    whyToday:
+      "It shows the Revolution was also a civil conflict, where neutrality itself could be treated as dangerous.",
+    sources: ["New York State, Laws of the State of New York, vol. 1 (Albany, 1886)."],
+  },
+  {
+    id: "1779-loyalty-laws",
+    date: "October 1779",
+    title: "New York punishes loyalty and plans for reoccupation",
+    era: "revolution",
+    body: [
+      "Within two days, New York passed an act forfeiting and selling the estates of people who had adhered to the enemy (naming figures including Sir Henry Clinton), and an act to plan the temporary government of the southern district once the British left.",
+    ],
+    whyToday:
+      "Property, punishment, and the difficult return to civil government were all part of the Revolution's local reach.",
+    sources: ["New York State, Laws of the State of New York, vol. 1 (Albany, 1886)."],
+  },
+  {
+    id: "1781-plundering",
+    date: "1781",
+    title: "Whaleboat raids and the plundering resolution",
+    era: "revolution",
+    body: [
+      "As armed boats from Connecticut raided occupied Long Island, New York resolved that its residents, though under British control, were still its subjects and deserved protection, not plunder. Newspaper accounts record repeated raids on the Nicoll house in Islip.",
+    ],
+    whyToday:
+      "Islip residents were caught between occupiers, raiders, and suspicion from all sides, the “Whaleboat War” at their own shore.",
+    sources: ["New York State Senate and Assembly resolution, June 28, 1781; Henry Onderdonk Jr., Revolutionary Incidents of Suffolk and Kings Counties."],
+  },
+  {
+    id: "1783-evacuation",
+    date: "November 23, 1783",
+    title: "The British evacuate; Islip rejoins the state",
+    era: "revolution",
+    body: [
+      "The last British forces left New York City, and Continental troops entered. After more than seven years, the occupation of Long Island ended and Islip returned to the State of New York.",
+    ],
+    whyToday:
+      "Independence, declared in 1776, only became reality in Islip at the end of 1783.",
+    sources: ['Office of the Town Historian, Town of Islip, "Abbreviated Time Line for Islip Precinct in the Revolution."'],
   },
   {
     id: "1776-1783-occupation",
@@ -353,6 +485,18 @@ export const timeline: TimelineEntry[] = [
     sources: [
       "Town of Islip Historian's Office, Vignettes, 2025 special issue.",
     ],
+  },
+  {
+    id: "2026-250th",
+    date: "2025–2026",
+    title: "Patriot markers and the 250th commemoration",
+    era: "today",
+    body: [
+      "With the Sons of the American Revolution, the Town Historian's Office researched and marked the burial places of Islip's known patriots, and a historic “Islip Militia” marker is planned near Islip Town Hall. These are among the first steps in the Town's 250th commemoration.",
+    ],
+    whyToday:
+      "The Revolution is not only in old documents. It is still being researched, marked, and remembered in Islip today.",
+    sources: ['George J. Munkenbeck, "Islip Patriots Honored this Summer"; Robert Finnegan, "Islip Militia: 250th Anniversary, 1776–2026."'],
   },
 ];
 
