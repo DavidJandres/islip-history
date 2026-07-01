@@ -2,49 +2,19 @@
   "breadcrumb": "Bibliography & Sources",
   "eyebrow": "Research",
   "title": "Bibliography & Sources",
-  "intro": "The archives, publications, and records this project draws on. Entries are grouped by kind. This list grows as the research continues, and where a source is secondary or still being confirmed, it is marked as such.",
-  "groups": [
-    {
-      "heading": "Town of Islip Historian's Office",
-      "items": [
-        "George J. Munkenbeck, “The Origins of the Town of Islip.” Town of Islip Historian's Office.",
-        "George J. Munkenbeck, “Isaac Thompson — A Man on a Tightrope.” Town of Islip Historian's Office.",
-        "Town of Islip Historian's Office, “A 250th Story.”",
-        "Town of Islip Historian's Office, Vignettes, 2024 special issue.",
-        "Town of Islip Historian's Office, Vignettes, 2025 special issue.",
-        "Town of Islip Historian's Office, material on Abraham Gardiner Thompson and the design of the Town Seal (1883)."
-      ]
-    },
-    {
-      "heading": "Primary sources & historical documents",
-      "items": [
-        "Nathaniel Conklin, “Description of the Town of Islip in Suffolk County,” January 11, 1798; transcribed and annotated by the Town of Islip Historian's Office (original in the New York State Archives). The annotated edition also quotes George Washington's diary, April 21–22, 1790.",
-        "St. John's Episcopal Church, parish history booklet (records including the 1783 marriage of York and Elizabeth, and the dating of the church building)."
-      ]
-    },
-    {
-      "heading": "State & government sources",
-      "items": [
-        "New York State 250th Commemoration Field Guide.",
-        "U.S. Census Bureau, QuickFacts — Town of Islip, Suffolk County, New York.",
-        "U.S. Census Bureau, QuickFacts — Central Islip CDP, New York.",
-        "U.S. Census Bureau, QuickFacts — Bay Shore CDP, New York."
-      ]
-    },
-    {
-      "heading": "Community & local histories",
-      "items": [
-        "Mollie Sebor, “The Story of the Jewish Community of Islip Town” (Girl Scout Gold Award booklet).",
-        "Michele Antonio, “George Washington Slept at Sagtikos Manor,” Patch, June 26, 2010 (updated June 27, 2010). Secondary local-history source."
-      ]
-    },
-    {
-      "heading": "Scholarly works",
-      "items": [
-        "Christopher Verga, research on slavery in Suffolk County (drawn on in Munkenbeck's “Isaac Thompson — A Man on a Tightrope”)."
-      ]
-    }
-  ],
-  "censusNote": "The demographic figures cited on this site are approximate and are being confirmed against the live U.S. Census Bureau QuickFacts tables before publication.",
+  "intro": "The archives, publications, and records this project draws on, grouped by kind. Many are drawn from the Town of Islip Historian's Office Revolutionary War Resource Guide and its addenda. This working list grows as the research continues.",
+  "categories": {
+    "packets": "Town Historian Source Packets",
+    "essays": "Town Historian Articles & Essays",
+    "primary": "Primary Sources & Government Records",
+    "revwar": "Revolutionary War & Long Island Context",
+    "sagtikos": "Sagtikos Manor, Islip Grange & Local Institutions",
+    "community": "Community History & Vignettes",
+    "newspapers": "Newspapers",
+    "visual": "Visual & Material-Culture Sources",
+    "digital": "Digital Databases & Repositories",
+    "review": "Sources Under Review"
+  },
+  "reviewIntro": "The following are usable, but should be verified against title pages, archival records, or stronger corroborating sources before final publication.",
   "missingNote": "Have a source we should add, or a correction to one here? Please get in touch through the contact page."
 }

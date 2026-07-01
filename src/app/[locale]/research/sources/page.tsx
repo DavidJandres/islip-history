@@ -1,10 +1,11 @@
+import { Fragment } from "react";
 import { localizedPath } from "@/i18n/config";
 import { loadLocale, type LocaleParams } from "@/i18n/page";
 import { buildMetadata } from "@/lib/metadata";
+import { bibliographyGroups } from "@/lib/bibliography";
 import { Section } from "@/components/ui/section";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Rule } from "@/components/ui/rule";
-import { Notice } from "@/components/ui/notice";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 
 export async function generateMetadata({ params }: LocaleParams) {
@@ -18,9 +19,33 @@ export async function generateMetadata({ params }: LocaleParams) {
   });
 }
 
+// Render a citation, turning any embedded URLs into links (trailing punctuation
+// stays as plain text so the link target is clean).
+function renderCitation(text: string) {
+  return text.split(/(https?:\/\/\S+)/g).map((part, i) => {
+    if (!/^https?:\/\//.test(part)) return <Fragment key={i}>{part}</Fragment>;
+    const url = part.replace(/[.,;]+$/, "");
+    const trailing = part.slice(url.length);
+    return (
+      <Fragment key={i}>
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="break-words text-blue underline underline-offset-2"
+        >
+          {url}
+        </a>
+        {trailing}
+      </Fragment>
+    );
+  });
+}
+
 export default async function SourcesPage({ params }: LocaleParams) {
   const { locale, dict } = await loadLocale(params);
   const s = dict.sources;
+  const categories = s.categories as Record<string, string>;
 
   return (
     <Section size="narrow">
@@ -40,13 +65,21 @@ export default async function SourcesPage({ params }: LocaleParams) {
       </div>
 
       <div className="mt-10 measure space-y-10">
-        {s.groups.map((group) => (
-          <section key={group.heading}>
-            <h2 className="font-heading text-xl font-bold text-blue">{group.heading}</h2>
+        {bibliographyGroups.map((group) => (
+          <section key={group.id} aria-labelledby={`cat-${group.id}`}>
+            <h2
+              id={`cat-${group.id}`}
+              className="scroll-mt-24 font-heading text-xl font-bold text-blue"
+            >
+              {categories[group.id]}
+            </h2>
+            {group.id === "review" && (
+              <p className="mt-2 text-sm leading-relaxed text-muted">{s.reviewIntro}</p>
+            )}
             <ol className="mt-4 space-y-3 text-[0.95rem] leading-relaxed text-ink/90">
               {group.items.map((item) => (
                 <li key={item} className="border-l-2 border-line pl-4">
-                  {item}
+                  {renderCitation(item)}
                 </li>
               ))}
             </ol>
@@ -54,11 +87,7 @@ export default async function SourcesPage({ params }: LocaleParams) {
         ))}
       </div>
 
-      <Notice intent="editorial" label={dict.common.noticeEditorial} className="mt-10 measure">
-        {s.censusNote}
-      </Notice>
-
-      <Rule className="mt-10" />
+      <Rule className="mt-12" />
       <p className="mt-6 measure text-sm text-muted">{s.missingNote}</p>
     </Section>
   );

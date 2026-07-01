@@ -12,6 +12,7 @@ import { localizedPath, type Locale } from "@/i18n/config";
 import { people } from "@/lib/people";
 import { timeline } from "@/lib/timeline";
 import { exhibitPanels, panelNumber, panelStatus } from "@/lib/exhibit";
+import { bibliographyFlat } from "@/lib/bibliography";
 import type { SearchDoc } from "./types";
 
 const join = (parts: Array<string | undefined | null>) =>
@@ -100,7 +101,7 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
     {
       key: "sources",
       title: nav.sources,
-      body: [sum.sources, ...dict.sources.groups.flatMap((g) => g.items)].join(" "),
+      body: [sum.sources, ...bibliographyFlat].join(" "),
       path: "/research/sources",
     },
     {
