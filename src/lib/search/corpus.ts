@@ -13,6 +13,7 @@ import { people } from "@/lib/people";
 import { timeline } from "@/lib/timeline";
 import { exhibitPanels, panelNumber, panelStatus } from "@/lib/exhibit";
 import { bibliographyFlat } from "@/lib/bibliography";
+import { primarySourcesSearchText } from "@/lib/primary-sources";
 import type { SearchDoc } from "./types";
 
 const join = (parts: Array<string | undefined | null>) =>
@@ -95,7 +96,12 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
     { key: "collections", title: nav.collections, body: sum.collections, path: "/explore/collections" },
     { key: "maps", title: nav.maps, body: sum.maps, path: "/explore/maps" },
     { key: "photographs", title: nav.photographs, body: sum.photographs, path: "/explore/photographs" },
-    { key: "primarySources", title: nav.primarySources, body: sum.primarySources, path: "/explore/primary-sources" },
+    {
+      key: "primarySources",
+      title: nav.primarySources,
+      body: [sum.primarySources, primarySourcesSearchText].join(" "),
+      path: "/explore/primary-sources",
+    },
     { key: "research", title: nav.research, body: sum.research, path: "/research" },
     { key: "essays", title: nav.essays, body: sum.essays, path: "/research/essays" },
     {

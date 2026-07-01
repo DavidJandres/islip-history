@@ -1,0 +1,24 @@
+{
+  "breadcrumb": "Primary Sources",
+  "eyebrow": "Explore the archive",
+  "title": "Primary Sources",
+  "intro": "This page gathers primary sources used in the Town of Islip History Project. These documents include colonial laws, Revolutionary-era state records, town minutes, government resolutions, and other records that help explain life in Islip Precinct during the American Revolution.",
+  "note": "Some documents are transcribed from eighteenth- and nineteenth-century printed sources. Spelling, capitalization, punctuation, and wording may reflect the original source or the available transcription. Short notes explain why each document matters to Islip.",
+  "themes": {
+    "founding": "Founding & Local Government",
+    "revolution": "Revolution & Loyalty",
+    "militia": "Militia & Military Organization",
+    "occupation": "Occupation & Civilian Life",
+    "laws": "Laws, Property & Punishment",
+    "newspapers": "Newspapers & Raid Accounts",
+    "context": "Regional Context"
+  },
+  "readSource": "Read the source text",
+  "whyMatters": "Why this matters",
+  "status": {
+    "verified": "Verified",
+    "draft": "Draft",
+    "review": "Under review",
+    "pending": "Text pending"
+  }
+}
