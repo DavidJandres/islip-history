@@ -1,0 +1,41 @@
+{
+  "breadcrumb": "La beca",
+  "eyebrow": "Sobre la beca",
+  "title": "Sobre la beca",
+  "lede": "Este trabajo forma parte del Proyecto de Becas Estudiantiles del 250.º Aniversario de la Fundación Gardiner, que conecta a estudiantes de historia con las comunidades cuya historia estudian.",
+  "intro": [
+    "El proyecto está dirigido por Michael Leroy Oberg, de SUNY Geneseo, y abarca tres campus de la Universidad Estatal de Nueva York —Geneseo, Stony Brook y Potsdam—, emparejando a becarios de pregrado con historiadores municipales y sociedades históricas locales de todo el estado de Nueva York. Los becarios examinan los múltiples significados de la independencia estadounidense durante el año del 250.º aniversario de la nación. El programa se extiende hasta el verano de 2027.",
+    "Como becario de Stony Brook para el pueblo de Islip, David Jandres-Ceballo está emparejado con el Historiador del Pueblo de Islip y recibe tutoría local en Stony Brook, produciendo el estudio y la exhibición inaugurales del proyecto."
+  ],
+  "foundationTitle": "La Fundación Robert David Lion Gardiner",
+  "foundationBody": "Fundada en 1987, la Fundación Robert David Lion Gardiner apoya el estudio de la historia de Long Island y su papel en la experiencia estadounidense, con especial énfasis en el condado de Suffolk y el pueblo de Islip. La Fundación lleva el nombre de Robert David Lion Gardiner (1911–2004), 16.º señor de la Mansión de la Isla Gardiner, una familia cuya propia historia atraviesa la Mansión Sagtikos, en el mismo Islip.",
+  "teamTitle": "El equipo",
+  "team": [
+    {
+      "id": "david-jandres",
+      "name": "David Jandres-Ceballo",
+      "role": "Becario del 250.º Aniversario Gardiner",
+      "bio": "Nacido en El Salvador, David emigró a Nueva York en su adolescencia y es hablante nativo de español con el Sello de Alfabetización Bilingüe del Estado de Nueva York. Estudiante de Historia en la Universidad Stony Brook y del programa BA/MAT de Educación en Estudios Sociales (graduación en 2026), su perspectiva bilingüe y de primera generación da forma a la exhibición multilingüe que está en el centro de este proyecto. Planea estudiar Derecho, con interés en la economía, el civismo y la ley y la política migratoria."
+    },
+    {
+      "id": "munkenbeck",
+      "name": "George J. Munkenbeck",
+      "role": "Historiador del Pueblo de Islip · mentor (historiador municipal)",
+      "bio": "George Munkenbeck es Historiador del Pueblo de Islip desde 2015 y es el mentor local principal de David. Reconocido como el 145.º Historiador Público Registrado del Estado de Nueva York, recibió en 2024 el Premio a la Excelencia Edward J. Winslow para Historiadores de Gobiernos Locales. Comandante de la Reserva de la Guardia Costera de los Estados Unidos, colabora con numerosas sociedades históricas y organizaciones cívicas de Long Island, y su investigación y sus programas públicos siguen profundizando el conocimiento de la comunidad sobre su herencia."
+    },
+    {
+      "id": "chambers",
+      "name": "Dr. Mark M. Chambers",
+      "role": "Mentor docente, Universidad Stony Brook",
+      "bio": "Mark Chambers es Profesor Asistente de Historia y Estudios Africanos en la Universidad Stony Brook y mentor docente de David en el campus. Historiador del medio ambiente, la ciencia y la justicia comunitaria, es autor de Gray Gold: Lead Mining and Its Impact on the Natural and Cultural Environment, 1700–1840 (University of Tennessee Press, 2021) y fue becario Rita Allen de Ciencia Cívica; su trabajo actual examina la justicia ambiental y la investigación participativa basada en la comunidad."
+    },
+    {
+      "id": "oberg",
+      "name": "Dr. Michael Leroy Oberg",
+      "role": "Director del proyecto · SUNY Geneseo",
+      "bio": "Michael Oberg es Profesor Distinguido de Historia en SUNY Geneseo y dirige el Proyecto de Becas Estudiantiles del 250.º Aniversario de la Fundación Gardiner. Especialista en historia de los pueblos nativos y de la temprana América, y autor de numerosos libros, encabeza el programa multicampus que vincula a los becarios estudiantiles con las comunidades cuya historia investigan."
+    }
+  ],
+  "ackTitle": "Agradecimiento",
+  "ackBody": "Este proyecto es posible gracias a la Fundación Robert David Lion Gardiner y se realiza en colaboración con la Oficina del Historiador del Pueblo de Islip y el Departamento de Historia de la Universidad Stony Brook."
+}

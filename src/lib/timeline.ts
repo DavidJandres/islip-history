@@ -1,0 +1,361 @@
+// The working timeline. Like people.ts, entries are structured English data;
+// the Spanish site shows them in English with a notice until translated, while
+// UI chrome and era titles are translated (dictionaries/<locale>/timeline.json).
+// The list is deliberately incomplete and grows as sources are digitized.
+
+export const timelineEras = [
+  "before",
+  "colonial",
+  "revolution",
+  "civic",
+  "community",
+  "today",
+] as const;
+
+export type TimelineEra = (typeof timelineEras)[number];
+
+export interface TimelineEntry {
+  id: string;
+  date: string;
+  title: string;
+  era: TimelineEra;
+  body: string[];
+  whyToday: string;
+  sources: string[];
+}
+
+export const timeline: TimelineEntry[] = [
+  {
+    id: "pre-1683",
+    date: "Before 1683",
+    title: "Indigenous land before colonial Islip",
+    era: "before",
+    body: [
+      "The land that became Islip was Indigenous land before colonial patents and town government. Later colonial records identify Winnaquaheagh as Sachem of the lands in today's Islip Town and describe the transfer of land to William Nicoll.",
+    ],
+    whyToday:
+      "The town's history begins before it had a European name. This shapes how the project discusses land, memory, and belonging.",
+    sources: ['George J. Munkenbeck, "The Origins of the Town of Islip."'],
+  },
+  {
+    id: "1683-nicoll-purchase",
+    date: "November 29, 1683",
+    title: "William Nicoll's first purchase and Islip Grange",
+    era: "colonial",
+    body: [
+      "William Nicoll made the first purchase of land that became Islip Grange on November 29, 1683. The annotated 1798 letter describes this as the first deeded land and the beginning of Islip Grange, covering areas connected to today's East Islip, Great River, Islip Terrace, and surrounding hamlets.",
+    ],
+    whyToday:
+      "This date appears in Islip's civic identity and Town Seal, but it marks a land purchase, not the full creation of modern town government.",
+    sources: [
+      'Nathaniel Conklin, "Description of the Town of Islip in Suffolk County," 1798 (annotated, Town of Islip Historian\'s Office).',
+    ],
+  },
+  {
+    id: "1684-royal-patent",
+    date: "December 5, 1684",
+    title: "Royal patent to William Nicoll",
+    era: "colonial",
+    body: [
+      "Royal Governor Thomas Dongan confirmed Nicoll's purchase with a royal patent on December 5, 1684. The patent required Nicoll to pay yearly rent to the Crown.",
+    ],
+    whyToday:
+      "The patent story explains why land, law, and colonial authority are central to Islip's origins.",
+    sources: [
+      'Nathaniel Conklin, "Description of the Town of Islip in Suffolk County," 1798 (annotated, Town of Islip Historian\'s Office).',
+    ],
+  },
+  {
+    id: "1692-1697-sagtikos",
+    date: "1692 / 1697",
+    title: "Beginnings of Sagtikos Manor",
+    era: "colonial",
+    body: [
+      "The Sagtikos Manor property story begins with Stephanus Van Cortlandt's 1692 purchase of land and a royal patent granted on June 2, 1697. This became the first part of what later developed into Sagtikos Manor.",
+    ],
+    whyToday:
+      "Sagtikos becomes one of the project's strongest physical links between colonial Islip, the Revolution, and later Gardiner family history.",
+    sources: [
+      'George J. Munkenbeck, "The Origins of the Town of Islip."',
+      'Michele Antonio, "George Washington Slept at Sagtikos Manor," Patch, June 26, 2010. Secondary local-history source.',
+    ],
+  },
+  {
+    id: "1706-carll",
+    date: "1706",
+    title: "Carll family acquisition of Sagtikos property",
+    era: "colonial",
+    body: [
+      "Timothy Carll purchased the Sagtikos Manor property from the heirs of Stephanus Van Cortlandt in 1706. His son Ananias later inherited the land and became active in local government.",
+    ],
+    whyToday:
+      "This shows how property, family networks, and local officeholding were connected in early Islip.",
+    sources: ['George J. Munkenbeck, "The Origins of the Town of Islip."'],
+  },
+  {
+    id: "1710-precinct",
+    date: "1710",
+    title: "Precinct government authorized",
+    era: "colonial",
+    body: [
+      "A colonial act passed in 1710 allowed the Precinct of Islip to elect assessors, a collector, constable, and supervisor. This is a key moment in the development of local government.",
+    ],
+    whyToday:
+      "This is one of the strongest dates for explaining the beginning of Islip government, rather than leaning on 1683 too simply.",
+    sources: ['George J. Munkenbeck, "The Origins of the Town of Islip."'],
+  },
+  {
+    id: "1720-freeholders",
+    date: "1720",
+    title: "Early election by freeholders",
+    era: "colonial",
+    body: [
+      "Town records show that early local elections involved freeholders — male, property-holding qualified voters. This reveals that early local government was limited by property and gender.",
+    ],
+    whyToday:
+      "This connects early local government to the exhibit's larger theme: the promise of civic participation was not originally open to everyone.",
+    sources: ['George J. Munkenbeck, "The Origins of the Town of Islip."'],
+  },
+  {
+    id: "1731-1742-carll-duties",
+    date: "1731\u20131742",
+    title: "Ananias Carll and early town duties",
+    era: "colonial",
+    body: [
+      "Ananias Carll was elected supervisor in 1731, served as an overseer for the poor in the late 1730s, and helped carry out public highway work through the Precinct of Islip.",
+    ],
+    whyToday:
+      "Roads, poor relief, and records show the practical beginnings of town government.",
+    sources: ['George J. Munkenbeck, "The Origins of the Town of Islip."'],
+  },
+  {
+    id: "1758-jonathan-thompson",
+    date: "1758",
+    title: "Jonathan Thompson purchases Sagtikos Manor",
+    era: "colonial",
+    body: [
+      "Jonathan Thompson purchased Sagtikos Manor / Apple Tree Farm in 1758. The property later became central to Isaac Thompson's Revolutionary-era story.",
+    ],
+    whyToday:
+      "This purchase sets up Sagtikos as a major Revolutionary site in Islip memory.",
+    sources: ['George J. Munkenbeck, "Isaac Thompson \u2014 A Man on a Tightrope."'],
+  },
+  {
+    id: "1765-st-johns",
+    date: "circa 1765",
+    title: "St. John's / Charlotte Church built",
+    era: "colonial",
+    body: [
+      "The St. John's Episcopal Church booklet says 1765 appears to be the most reliable date for the church building. It describes the building as the first church in Islip Town and the second oldest in Suffolk County.",
+    ],
+    whyToday:
+      "The churchyard and church records preserve early Islip family, religious, and racial history.",
+    sources: ["St. John's Episcopal Church booklet (parish history)."],
+  },
+  {
+    id: "1775-articles",
+    date: "May 10, 1775",
+    title: "Islip meeting on the Articles of Association",
+    era: "revolution",
+    body: [
+      "Isaac Thompson attended a May 10, 1775 meeting of freeholders and residents of the Precinct of Islip to discuss whether to support the Continental Congress Articles of Association. He signed the Islip Precinct articles, placing himself and his family at risk because he was also a Crown magistrate and precinct official.",
+    ],
+    whyToday:
+      "This event gives Islip a local pre-independence moment tied to the coming Revolution.",
+    sources: ['George J. Munkenbeck, "Isaac Thompson \u2014 A Man on a Tightrope."'],
+  },
+  {
+    id: "1776-1783-occupation",
+    date: "1776\u20131783",
+    title: "British occupation affects Islip",
+    era: "revolution",
+    body: [
+      "During the Revolution, Islip lived under British occupation. The St. John's booklet says the little shingled church was used as a military outpost and was left in bad shape after the British evacuated New York in 1783.",
+    ],
+    whyToday:
+      "This makes the Revolution local: occupation affected buildings, families, worship, and daily life.",
+    sources: ["St. John's Episcopal Church booklet (parish history)."],
+  },
+  {
+    id: "1776-mary-thompson",
+    date: "September\u2013October 1776",
+    title: "Mary Gardiner Thompson and family under occupation",
+    era: "revolution",
+    body: [
+      "At the beginning of occupation, Mary Gardiner Thompson was late in pregnancy and caring for a young child. Town Historian material uses this to explain why Isaac Thompson may have remained at Sagtikos, choosing his family's health and safety during danger.",
+    ],
+    whyToday:
+      "This shows the Revolution through family life, not only military or political events.",
+    sources: ['George J. Munkenbeck, "Isaac Thompson \u2014 A Man on a Tightrope."'],
+  },
+  {
+    id: "1783-st-johns-mixed",
+    date: "1783",
+    title: "St. John's name change and a mixed-population record",
+    era: "revolution",
+    body: [
+      "After the Revolution, parishioners voted to rename Charlotte Church as St. John's. The 1783 marriage record of York, a Black servant to William Nicoll, and Elizabeth, a free Indian woman, gives a rare glimpse into the small but ethnically mixed population of Islip Grange.",
+    ],
+    whyToday:
+      "This connects the new nation to the unfinished promise of belonging and racial inclusion.",
+    sources: ["St. John's Episcopal Church booklet (parish history)."],
+  },
+  {
+    id: "1790-washington",
+    date: "April 21\u201322, 1790",
+    title: "Washington's Long Island tour and Sagtikos Manor",
+    era: "revolution",
+    body: [
+      'George Washington\'s diary describes stopping at "Squire Thompson\'s" house on April 21, 1790, and leaving "Mr. Thompson\'s" the next morning. The Town Historian annotation identifies this house as Sagtikos Manor on today\'s Montauk Highway.',
+    ],
+    whyToday:
+      "Washington's visit links Islip's occupied Revolutionary landscape to the new republic.",
+    sources: [
+      'Nathaniel Conklin, "Description of the Town of Islip in Suffolk County," 1798 (annotated, Town of Islip Historian\'s Office), quoting Washington\'s diary.',
+    ],
+  },
+  {
+    id: "1798-conklin",
+    date: "January 11, 1798",
+    title: "Nathaniel Conklin describes Islip",
+    era: "revolution",
+    body: [
+      "Supervisor Nathaniel Conklin wrote a description of the Town of Islip on January 11, 1798. The publication explains that the letter was written to defend Islip's land claims and provides a glimpse of an Islip long lost.",
+    ],
+    whyToday:
+      "This shows how archives preserve the town's land, population, economy, and civic structure.",
+    sources: [
+      'Nathaniel Conklin, "Description of the Town of Islip in Suffolk County," January 11, 1798 (annotated, Town of Islip Historian\'s Office).',
+    ],
+  },
+  {
+    id: "1790-1800-population",
+    date: "1790\u20131800",
+    title: "Early population and people of color in Islip",
+    era: "revolution",
+    body: [
+      "The annotated Conklin publication states that Islip's population was 609 in 1790 and 958 by 1800. It also notes that about 21 percent of 120 dwellings were occupied by people of color, estimating roughly 128 to 201 people in that category.",
+    ],
+    whyToday:
+      "This is crucial for showing that early Islip was not only a story of white landholding families.",
+    sources: [
+      'Nathaniel Conklin, "Description of the Town of Islip in Suffolk County," 1798 (annotated, Town of Islip Historian\'s Office).',
+    ],
+  },
+  {
+    id: "1883-town-seal",
+    date: "1883",
+    title: "Abraham Gardiner Thompson designs the Town Seal",
+    era: "civic",
+    body: [
+      'In 1883, Town Clerk Seth Clock asked Abraham Gardiner Thompson to design a seal for the Town of Islip. Thompson\'s design used an "eye" and a "slip" of a plant as a rebus and connected the symbol to the town\'s unusual origins.',
+    ],
+    whyToday:
+      "The Town Seal still appears in government and civic life today, making this one of the most visible links between past and present.",
+    sources: [
+      "Town of Islip Historian's Office material on the Town Seal.",
+    ],
+  },
+  {
+    id: "1897-cemetery",
+    date: "December 10, 1897",
+    title: "Bay Shore United Hebrew Benevolent Cemetery Association recognized",
+    era: "community",
+    body: [
+      "The Jewish Community booklet states that the Bay Shore United Hebrew Benevolent Cemetery Association became legally recognized on December 10, 1897. This helped establish Jewish burial and religious community life in Islip Town.",
+    ],
+    whyToday:
+      "This shows how immigrant and religious communities built institutions that made belonging visible.",
+    sources: ['Mollie Sebor, "The Story of the Jewish Community of Islip Town."'],
+  },
+  {
+    id: "1918-synagogue",
+    date: "1918",
+    title: "First synagogue purchased in Islip Town",
+    era: "community",
+    body: [
+      "The Jewish Community booklet says the Bay Shore United Hebrew Benevolent Cemetery Association purchased the first synagogue in Islip Town from the Knights of Columbus in 1918.",
+    ],
+    whyToday: "This marks a major institutional step in Jewish life in Islip.",
+    sources: ['Mollie Sebor, "The Story of the Jewish Community of Islip Town."'],
+  },
+  {
+    id: "1933-merge",
+    date: "1933",
+    title: "Jewish organizations merge into the Bay Shore Jewish Center",
+    era: "community",
+    body: [
+      "The Bay Shore United Hebrew Benevolent Cemetery Association merged with the Bay Shore Jewish Alliance, Ladies Aid Society, and Junior League to become what is now known as the Bay Shore Jewish Center.",
+    ],
+    whyToday: "This shows how small community groups became lasting institutions.",
+    sources: ['Mollie Sebor, "The Story of the Jewish Community of Islip Town."'],
+  },
+  {
+    id: "postwar-refuge",
+    date: "Post\u2013World War II",
+    title: "Holocaust survivors find refuge in Central Islip",
+    era: "community",
+    body: [
+      "After World War II, Jewish refugees came through Ellis Island and some made their way to Islip Town. Adasse Farm in Central Islip served as one sanctuary, including for Samuel Sitko and at least three other known survivors.",
+    ],
+    whyToday:
+      "This connects Islip to global history, refuge, rebuilding, and immigrant belonging.",
+    sources: ['Mollie Sebor, "The Story of the Jewish Community of Islip Town."'],
+  },
+  {
+    id: "1958-brentwood",
+    date: "August\u2013September 1958",
+    title: "Brentwood Jewish Center organized",
+    era: "community",
+    body: [
+      "About 30 people met at the home of Ruby and Doris Hodus on August 29, 1958, to discuss forming a Jewish sanctuary in Brentwood. On September 1, the name Brentwood Jewish Center was chosen.",
+    ],
+    whyToday:
+      "This shows how residents created institutions to serve changing community needs.",
+    sources: ['Mollie Sebor, "The Story of the Jewish Community of Islip Town."'],
+  },
+  {
+    id: "1964-bnai-israel",
+    date: "July 1964",
+    title: "B'nai Israel Reform Temple founded",
+    era: "community",
+    body: [
+      "The Jewish Community booklet says B'nai Israel Reform Temple was founded in July 1964 after community organizing among families in the East Islip and Sayville area.",
+    ],
+    whyToday:
+      "This connects family life, children, faith, and local institution-building.",
+    sources: ['Mollie Sebor, "The Story of the Jewish Community of Islip Town."'],
+  },
+  {
+    id: "2022-internship",
+    date: "2022",
+    title: "Town Historian internship and apprenticeship program",
+    era: "today",
+    body: [
+      "The 2024 Vignettes issue says that since 2022, an intern and apprentice program has been part of the Town Historian's Office. The program teaches research, writing, document handling, preservation, interpretation, and public presentation.",
+    ],
+    whyToday:
+      "This connects the project itself to a living tradition of public history in Islip.",
+    sources: [
+      "Town of Islip Historian's Office, Vignettes, 2024 special issue.",
+    ],
+  },
+  {
+    id: "2025-2026-expansion",
+    date: "2025\u20132026",
+    title: "Town Historian's Office expands public history work",
+    era: "today",
+    body: [
+      "The 2025 Vignettes issue describes the Historian's Office entering its eleventh year and continuing efforts to open Islip's unique history to residents through staff, volunteers, agencies, organizations, events, and publications.",
+    ],
+    whyToday:
+      "This is the institutional context for the website: the project is part of a larger effort to make Islip's history public, accessible, and useful.",
+    sources: [
+      "Town of Islip Historian's Office, Vignettes, 2025 special issue.",
+    ],
+  },
+];
+
+export function timelineInEra(era: TimelineEra): TimelineEntry[] {
+  return timeline.filter((e) => e.era === era);
+}

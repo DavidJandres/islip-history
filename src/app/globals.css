@@ -1,0 +1,100 @@
+/* Tailwind v4 is configured here, CSS-first. @theme is the design system: every
+   colour, font, and radius the components use is generated from these tokens.
+   The palette and type pairing are fixed for the life of the project. */
+
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #faf8f5;       /* page background */
+  --color-ink: #1e293b;         /* body text */
+  --color-blue: #174a7c;        /* primary: headings, links */
+  --color-blue-dark: #103758;   /* hover, footer */
+  --color-gold: #b78c3b;        /* accent: large text, rules, focus ring */
+  --color-gold-dark: #8c6a2c;   /* accent for small text (AA on paper) */
+  --color-gray: #f1f3f5;        /* light panel */
+  --color-muted: #4b5563;       /* secondary text, captions */
+  --color-line: #dad8d1;        /* hairline on paper */
+  --color-line-cool: #dde2e8;   /* hairline on cool/blue surfaces */
+
+  /* Font variables come from next/font (self-hosted) in the root layout. */
+  --font-heading: var(--font-merriweather), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-source-sans), system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 3px;
+
+  --measure: 68ch;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 1.0625rem; /* 17px */
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+    color: var(--color-blue);
+    font-weight: 700;
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
+  /* One focus ring for the whole site. Gold reads on both paper and the dark
+     blue surfaces, so components don't (and shouldn't) redefine it. */
+  :focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  a {
+    color: var(--color-blue);
+    text-underline-offset: 0.18em;
+  }
+}
+
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .measure {
+    max-width: var(--measure);
+  }
+}

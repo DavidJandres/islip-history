@@ -1,0 +1,108 @@
+{
+  "breadcrumb": "La exposición",
+  "eyebrow": "Exposición digital",
+  "title": "La promesa de la independencia",
+  "lede": "250 años de la independencia estadounidense, a través de un pueblo de Long Island: su tierra, su gente y una promesa que aún se cumple. Siete capítulos breves, en inglés y español.",
+  "intro": [
+    "Esta exposición sigue la promesa de la independencia a través del Pueblo de Islip, panel por panel, desde la tierra anterior a que el pueblo tuviera nombre hasta la comunidad que es hoy.",
+    "Léela de principio a fin o abre cualquier panel por separado. Cada uno tiene su propia dirección web, así que más adelante podrá aparecer en un cartel impreso en una biblioteca, abierto con el teléfono."
+  ],
+  "panelsHeading": "Los siete paneles",
+  "panelsHint": "Léelos en orden o salta a cualquier capítulo.",
+  "startLabel": "Comenzar la historia",
+  "continueLabel": "Continuar",
+  "panelWord": "Panel",
+  "ofWord": "de",
+  "prevLabel": "Anterior",
+  "nextLabel": "Siguiente",
+  "backToExhibit": "Todos los paneles",
+  "startOver": "Volver al inicio",
+  "sourcesHeading": "Fuentes",
+  "draftNoticeTitle": "Borrador",
+  "draftNotice": "Este texto es un borrador preliminar en revisión. La redacción puede cambiar, y algunos paneles indican cuándo una afirmación se basa en una fuente secundaria o local.",
+  "sourcingNoticeTitle": "A la espera de fuentes",
+  "sourcingNotice": "Este panel aún se está redactando. Su texto es provisional y está a la espera de fuentes confirmadas, por lo que nada aquí debe citarse ni tomarse como definitivo todavía.",
+  "translationPendingTitle": "Español en preparación",
+  "translationPending": "El texto en inglés de este panel ya está redactado; la traducción al español se está preparando. Mientras tanto, puedes leer la versión en inglés.",
+  "readInEnglish": "Leer en inglés",
+  "panels": {
+    "the-promise": {
+      "title": "La promesa",
+      "summary": "Lo que prometió la independencia y la pregunta que plantea esta exposición.",
+      "sources": [
+        "New York State 250th Commemoration Field Guide."
+      ],
+      "body": [
+        "El texto en inglés de este panel ya está redactado. La traducción al español llegará cuando se apruebe el texto en inglés."
+      ]
+    },
+    "before-the-town": {
+      "title": "Antes del pueblo",
+      "summary": "Por qué Islip no tiene una única fecha de fundación.",
+      "sources": [
+        "George J. Munkenbeck, \u201cThe Origins of the Town of Islip.\u201d"
+      ],
+      "body": [
+        "El texto en inglés de este panel ya está redactado. La traducción al español llegará cuando se apruebe el texto en inglés."
+      ]
+    },
+    "revolution-comes-to-islip": {
+      "title": "La Revolución llega a Islip",
+      "summary": "Cómo la Revolución entró en los hogares y las granjas de Islip.",
+      "sources": [
+        "Town of Islip Historian's Office, \u201cA 250th Story.\u201d",
+        "George J. Munkenbeck, \u201cIsaac Thompson \u2014 A Man on a Tightrope.\u201d",
+        "Michele Antonio, \u201cGeorge Washington Slept at Sagtikos Manor,\u201d Patch, June 26, 2010 (updated June 27, 2010). Secondary local-history source."
+      ],
+      "body": [
+        "El texto en inglés de este panel ya está redactado. La traducción al español llegará cuando se apruebe el texto en inglés."
+      ]
+    },
+    "washingtons-visit": {
+      "title": "La visita de Washington",
+      "summary": "Una parada presidencial en 1790 y lo que cuenta la tradición local.",
+      "sources": [
+        "George J. Munkenbeck, \u201cIsaac Thompson \u2014 A Man on a Tightrope.\u201d",
+        "Michele Antonio, \u201cGeorge Washington Slept at Sagtikos Manor,\u201d Patch, June 26, 2010 (updated June 27, 2010). Secondary local-history source."
+      ],
+      "body": [
+        "El texto en inglés de este panel ya está redactado. La traducción al español llegará cuando se apruebe el texto en inglés."
+      ]
+    },
+    "an-unfinished-promise": {
+      "title": "Una promesa incumplida",
+      "summary": "El lenguaje de la libertad y las personas a las que aún no alcanzaba.",
+      "sources": [
+        "New York State 250th Commemoration Field Guide.",
+        "George J. Munkenbeck, \u201cThe Origins of the Town of Islip.\u201d",
+        "Nathaniel Conklin, \u201cDescription of the Town of Islip in Suffolk County,\u201d January 11, 1798; transcribed and annotated by the Town of Islip Historian's Office.",
+        "George J. Munkenbeck, \u201cIsaac Thompson \u2014 A Man on a Tightrope,\u201d drawing on Christopher Verga's research on slavery in Suffolk County."
+      ],
+      "body": [
+        "El texto en inglés de este panel ya está redactado. La traducción al español llegará cuando se apruebe el texto en inglés."
+      ]
+    },
+    "many-roots-one-town": {
+      "title": "Muchas raíces, un pueblo",
+      "summary": "Las comunidades que siguieron ampliando quién pertenece.",
+      "sources": [
+        "Mollie Sebor, \u201cThe Story of the Jewish Community of Islip Town\u201d (Girl Scout Gold Award booklet)."
+      ],
+      "body": [
+        "El texto en inglés de este panel ya está redactado. La traducción al español llegará cuando se apruebe el texto en inglés."
+      ]
+    },
+    "the-promise-continues": {
+      "title": "La promesa continúa",
+      "summary": "Por qué esta historia todavía se está escribiendo.",
+      "sources": [
+        "New York State 250th Commemoration Field Guide.",
+        "Town of Islip Historian's Office, Vignettes, 2024 special issue.",
+        "Town of Islip Historian's Office, Vignettes, 2025 special issue."
+      ],
+      "body": [
+        "El texto en inglés de este panel ya está redactado. La traducción al español llegará cuando se apruebe el texto en inglés."
+      ]
+    }
+  }
+}

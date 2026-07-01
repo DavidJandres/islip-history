@@ -1,0 +1,21 @@
+{
+  "breadcrumb": "Cronología",
+  "eyebrow": "Cómo se desarrolló Islip",
+  "title": "Cronología",
+  "intro": [
+    "Esta cronología sigue al Pueblo de Islip desde la tierra indígena y las patentes coloniales hasta la Revolución, el gobierno local, la construcción de comunidades y la historia pública de hoy.",
+    "No está completa. Es una cronología en desarrollo, construida a partir de las fuentes actualmente digitalizadas para el Proyecto de Historia del Pueblo de Islip. Se añadirán más fechas y eventos a medida que se procesen otros registros, fotografías, mapas y vignettes."
+  ],
+  "workingNote": "Esta es una cronología en desarrollo. Se añadirán más fechas y eventos a medida que se digitalicen y revisen otras fuentes.",
+  "translationNote": "Estas entradas se muestran en inglés mientras se prepara la traducción al español.",
+  "eras": {
+    "before": "Antes del pueblo",
+    "colonial": "Tierra colonial y gobierno local",
+    "revolution": "Revolución y nueva nación",
+    "civic": "Identidad cívica e instituciones",
+    "community": "Comunidades y pertenencia",
+    "today": "Historia pública hoy"
+  },
+  "whyTodayLabel": "Por qué importa hoy",
+  "sourcesLabel": "Fuentes"
+}

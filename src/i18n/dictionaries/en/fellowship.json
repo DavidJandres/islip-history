@@ -1,0 +1,41 @@
+{
+  "breadcrumb": "The Fellowship",
+  "eyebrow": "About the fellowship",
+  "title": "About the Fellowship",
+  "lede": "This work is part of the Gardiner Foundation Semiquincentennial Student Fellowship Project, which connects student historians with the communities whose history they study.",
+  "intro": [
+    "The project is directed by Michael Leroy Oberg of SUNY Geneseo and spans three State University of New York campuses — Geneseo, Stony Brook, and Potsdam — matching undergraduate fellows with municipal historians and local historical societies across New York State. Fellows examine the layered meanings of American independence during the nation's 250th anniversary year. The program runs through the summer of 2027.",
+    "As the Stony Brook fellow for the Town of Islip, David Jandres-Ceballo is matched with the Town of Islip Historian and mentored locally at Stony Brook, producing the project's inaugural study and exhibit."
+  ],
+  "foundationTitle": "The Robert David Lion Gardiner Foundation",
+  "foundationBody": "Established in 1987, the Robert David Lion Gardiner Foundation supports the study of Long Island history and its role in the American experience, with a particular emphasis on Suffolk County and the Town of Islip. The Foundation is named for Robert David Lion Gardiner (1911–2004), the 16th Lord of the Manor of Gardiner's Island — a family whose own history runs through Sagtikos Manor in Islip itself.",
+  "teamTitle": "The team",
+  "team": [
+    {
+      "id": "david-jandres",
+      "name": "David Jandres-Ceballo",
+      "role": "Gardiner Semiquincentennial Fellow",
+      "bio": "Born in El Salvador, David immigrated to New York as a teenager and is a native Spanish speaker who holds the New York State Seal of Biliteracy. An undergraduate in History at Stony Brook University and a student in its BA/MAT Social Studies Education program (graduating 2026), his bilingual, first-generation perspective shapes the multilingual exhibit at the heart of this project. He plans to pursue law school, with interests in economics, civics, and immigration law and policy."
+    },
+    {
+      "id": "munkenbeck",
+      "name": "George J. Munkenbeck",
+      "role": "Town of Islip Historian · municipal-historian mentor",
+      "bio": "George Munkenbeck has served as Town of Islip Historian since 2015 and is David's primary local mentor. Recognized as the 145th Registered Public Historian in New York State, he received the Edward J. Winslow Local Government Historian Award for Excellence in 2024. A U.S. Coast Guard Reserve commander, he contributes to numerous Long Island historical societies and civic organizations, and his research and public programs continue to deepen the community's understanding of its heritage."
+    },
+    {
+      "id": "chambers",
+      "name": "Mark M. Chambers, Ph.D.",
+      "role": "Stony Brook faculty mentor",
+      "bio": "Mark Chambers is Assistant Professor of History and Africana Studies at Stony Brook University and David's on-site faculty mentor. A historian of the environment, science, and community justice, he is the author of Gray Gold: Lead Mining and Its Impact on the Natural and Cultural Environment, 1700–1840 (University of Tennessee Press, 2021), and a former Rita Allen Civic Science Fellow whose current work examines environmental justice and community-based participatory research."
+    },
+    {
+      "id": "oberg",
+      "name": "Michael Leroy Oberg, Ph.D.",
+      "role": "Project Director · SUNY Geneseo",
+      "bio": "Michael Oberg is Distinguished Professor of History at SUNY Geneseo and directs the Gardiner Foundation Semiquincentennial Student Fellowship Project. A scholar of Native American and early American history and the author of numerous books, he leads the multi-campus program that places student fellows with the communities whose histories they research."
+    }
+  ],
+  "ackTitle": "Acknowledgment",
+  "ackBody": "This project is made possible by the Robert David Lion Gardiner Foundation and carried out in partnership with the Office of the Town of Islip Historian and the Stony Brook University Department of History."
+}

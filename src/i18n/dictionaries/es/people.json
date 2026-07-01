@@ -1,0 +1,23 @@
+{
+  "breadcrumb": "Personas",
+  "eyebrow": "Quiénes formaron Islip",
+  "title": "Personas de Islip",
+  "intro": [
+    "La historia la hacen las personas: sachems y titulares de patentes, trabajadores esclavizados y sirvientes, supervisores del pueblo, líderes religiosos, familias bajo la ocupación, inmigrantes, veteranos, refugiados, investigadores y vecinos que preservan la memoria hoy.",
+    "Esta página reúne a algunas de las personas cuyas vidas ayudan a explicar el Pueblo de Islip. Algunas están bien documentadas. Otras aparecen solo brevemente en los registros. Juntas, muestran cómo el pasado del pueblo sigue moldeando su presente."
+  ],
+  "workingIndexNote": "Esta sección es un índice en desarrollo. Se añadirán más nombres a medida que se digitalicen y revisen otras fuentes.",
+  "translationNote": "Estos perfiles se muestran en inglés mientras se prepara la traducción al español.",
+  "sections": {
+    "origins": "Tierra indígena y orígenes coloniales",
+    "revolution": "Revolución y ocupación",
+    "government": "Primer gobierno e identidad cívica",
+    "unfinished": "Exclusión y la promesa incumplida",
+    "community": "Comunidades y pertenencia"
+  },
+  "whyMattersLabel": "Por qué importan",
+  "connectionTodayLabel": "Conexión con el presente",
+  "sourcesLabel": "Fuentes",
+  "noLikeness": "Sin retrato conocido",
+  "backToPeople": "Todas las personas"
+}

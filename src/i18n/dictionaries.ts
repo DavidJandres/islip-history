@@ -1,0 +1,74 @@
+import type { Locale } from "./config";
+
+import enCommon from "./dictionaries/en/common.json";
+import enNav from "./dictionaries/en/nav.json";
+import enNavSummaries from "./dictionaries/en/nav-summaries.json";
+import enFooter from "./dictionaries/en/footer.json";
+import enHome from "./dictionaries/en/home.json";
+import enAbout from "./dictionaries/en/about.json";
+import enResearch from "./dictionaries/en/research.json";
+import enFellowship from "./dictionaries/en/fellowship.json";
+import enContact from "./dictionaries/en/contact.json";
+import enExhibit from "./dictionaries/en/exhibit.json";
+import enPeople from "./dictionaries/en/people.json";
+import enTimeline from "./dictionaries/en/timeline.json";
+
+import esCommon from "./dictionaries/es/common.json";
+import esNav from "./dictionaries/es/nav.json";
+import esNavSummaries from "./dictionaries/es/nav-summaries.json";
+import esFooter from "./dictionaries/es/footer.json";
+import esHome from "./dictionaries/es/home.json";
+import esAbout from "./dictionaries/es/about.json";
+import esResearch from "./dictionaries/es/research.json";
+import esFellowship from "./dictionaries/es/fellowship.json";
+import esContact from "./dictionaries/es/contact.json";
+import esExhibit from "./dictionaries/es/exhibit.json";
+import esPeople from "./dictionaries/es/people.json";
+import esTimeline from "./dictionaries/es/timeline.json";
+
+// Copy lives in one JSON file per section (dictionaries/<locale>/<section>.json)
+// so pages don't share one giant file that's painful to edit and quick to
+// merge-conflict. The sections are assembled here. English defines the shape;
+// the Spanish assembly below is type-checked against it, so a missing or
+// misnamed key fails the build rather than shipping a blank string.
+const en = {
+  common: enCommon,
+  nav: enNav,
+  navSummaries: enNavSummaries,
+  footer: enFooter,
+  home: enHome,
+  aboutProject: enAbout,
+  aboutResearch: enResearch,
+  aboutFellowship: enFellowship,
+  contact: enContact,
+  exhibit: enExhibit,
+  people: enPeople,
+  timeline: enTimeline,
+};
+
+export type Dictionary = typeof en;
+
+const es: Dictionary = {
+  common: esCommon,
+  nav: esNav,
+  navSummaries: esNavSummaries,
+  footer: esFooter,
+  home: esHome,
+  aboutProject: esAbout,
+  aboutResearch: esResearch,
+  aboutFellowship: esFellowship,
+  contact: esContact,
+  exhibit: esExhibit,
+  people: esPeople,
+  timeline: esTimeline,
+};
+
+const dictionaries: Record<Locale, Dictionary> = { en, es };
+
+export function getDictionary(locale: Locale): Dictionary {
+  return dictionaries[locale];
+}
+
+// Add a page: create en/<name>.json and es/<name>.json, import both, and add the
+// section to `en` and `es`. Add a locale (e.g. Polish): create dictionaries/pl/
+// and add a `pl` assembly plus the locale in config.ts.

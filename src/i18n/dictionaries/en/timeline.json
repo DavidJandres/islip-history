@@ -1,0 +1,21 @@
+{
+  "breadcrumb": "Timeline",
+  "eyebrow": "How Islip unfolded",
+  "title": "Timeline",
+  "intro": [
+    "This timeline follows the Town of Islip from Indigenous land and colonial patents to Revolution, local government, community-building, and public history today.",
+    "It is not complete. It is a working timeline built from sources currently digitized for the Town of Islip History Project. More dates and events will be added as additional records, photographs, maps, and vignettes are processed."
+  ],
+  "workingNote": "This is a working timeline. More dates and events will be added as additional sources are digitized and reviewed.",
+  "translationNote": "These entries are shown in English while the Spanish translation is prepared.",
+  "eras": {
+    "before": "Before the Town",
+    "colonial": "Colonial Land and Local Government",
+    "revolution": "Revolution and New Nation",
+    "civic": "Civic Identity and Institutions",
+    "community": "Communities and Belonging",
+    "today": "Public History Today"
+  },
+  "whyTodayLabel": "Why it matters today",
+  "sourcesLabel": "Sources"
+}

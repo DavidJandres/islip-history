@@ -1,0 +1,23 @@
+{
+  "breadcrumb": "People",
+  "eyebrow": "Who made Islip",
+  "title": "People of Islip",
+  "intro": [
+    "History is made by people: sachems and patentees, enslaved workers and servants, town supervisors, church leaders, families under occupation, immigrants, veterans, refugees, researchers, and neighbors preserving memory today.",
+    "This page gathers some of the people whose lives help explain the Town of Islip. Some are well documented. Others appear only briefly in the records. Together, they show how the town's past still shapes its present."
+  ],
+  "workingIndexNote": "This section is a working index. More names will be added as additional sources are digitized and reviewed.",
+  "translationNote": "These profiles are shown in English while the Spanish translation is prepared.",
+  "sections": {
+    "origins": "Indigenous Land and Colonial Origins",
+    "revolution": "Revolution and Occupation",
+    "government": "Early Government and Civic Identity",
+    "unfinished": "Exclusion and the Unfinished Promise",
+    "community": "Communities and Belonging"
+  },
+  "whyMattersLabel": "Why they matter",
+  "connectionTodayLabel": "Connection to today",
+  "sourcesLabel": "Sources",
+  "noLikeness": "No known likeness",
+  "backToPeople": "All people"
+}
