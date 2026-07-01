@@ -12,6 +12,9 @@ interface PrimaryNavProps {
   locale: Locale;
   labels: Record<string, string>;
   summaries: Record<string, string>;
+  // Labels for a "people-by-category" style dropdown built from an item's
+  // `sectionKeys` (resolved from dict.people.sections).
+  sectionLabels: Record<string, string>;
   menuLabel: string;
   closeLabel: string;
 }
@@ -19,10 +22,44 @@ interface PrimaryNavProps {
 const isActive = (pathname: string, href: string) =>
   pathname === href || pathname.startsWith(href + "/");
 
+interface DropdownEntry {
+  href: string;
+  label: string;
+  summary?: string;
+}
+
+// A nav item's dropdown can come from either sub-routes (`children`, e.g.
+// Explore) or in-page section anchors (`sectionKeys`, e.g. People by category).
+// Both render the same way; only the target differs (a real route vs a #anchor
+// on the item's own page).
+function dropdownEntries(
+  item: NavItem,
+  locale: Locale,
+  labels: Record<string, string>,
+  summaries: Record<string, string>,
+  sectionLabels: Record<string, string>,
+): DropdownEntry[] {
+  if (item.children?.length) {
+    return item.children.map((c) => ({
+      href: localizedPath(locale, c.href),
+      label: labels[c.key],
+      summary: summaries[c.key],
+    }));
+  }
+  if (item.sectionKeys?.length) {
+    return item.sectionKeys.map((k) => ({
+      href: localizedPath(locale, `${item.href}#section-${k}`),
+      label: sectionLabels[k],
+    }));
+  }
+  return [];
+}
+
 export function PrimaryNav({
   locale,
   labels,
   summaries,
+  sectionLabels,
   menuLabel,
   closeLabel,
 }: PrimaryNavProps) {
@@ -58,6 +95,7 @@ export function PrimaryNav({
               locale={locale}
               labels={labels}
               summaries={summaries}
+              sectionLabels={sectionLabels}
             />
           ))}
         </ul>
@@ -96,6 +134,8 @@ export function PrimaryNav({
                 pathname={pathname}
                 locale={locale}
                 labels={labels}
+                summaries={summaries}
+                sectionLabels={sectionLabels}
               />
             ))}
           </ul>
@@ -111,22 +151,25 @@ function DesktopItem({
   locale,
   labels,
   summaries,
+  sectionLabels,
 }: {
   item: NavItem;
   pathname: string;
   locale: Locale;
   labels: Record<string, string>;
   summaries: Record<string, string>;
+  sectionLabels: Record<string, string>;
 }) {
   const href = localizedPath(locale, item.href);
   const active = isActive(pathname, href);
-  const children = item.children ?? [];
+  const entries = dropdownEntries(item, locale, labels, summaries, sectionLabels);
 
   return (
     <li className="group relative">
       <Link
         href={href}
         aria-current={active ? "page" : undefined}
+        aria-haspopup={entries.length > 0 || undefined}
         className={cn(
           "flex items-center gap-1 border-b-2 px-4 py-4 text-sm font-semibold transition-colors",
           active
@@ -135,7 +178,7 @@ function DesktopItem({
         )}
       >
         {labels[item.key]}
-        {children.length > 0 && (
+        {entries.length > 0 && (
           <ChevronDown
             aria-hidden
             className="h-3.5 w-3.5 text-muted transition-transform group-hover:rotate-180"
@@ -143,23 +186,23 @@ function DesktopItem({
         )}
       </Link>
 
-      {children.length > 0 && (
+      {entries.length > 0 && (
         <div
           className="invisible absolute left-0 top-full z-40 w-72 -translate-y-1 rounded-sm
             border border-line bg-white p-2 opacity-0 transition-all duration-150
             group-hover:visible group-hover:translate-y-0 group-hover:opacity-100
             group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100"
         >
-          {children.map((child) => (
+          {entries.map((entry) => (
             <Link
-              key={child.href}
-              href={localizedPath(locale, child.href)}
+              key={entry.href}
+              href={entry.href}
               className="block rounded-sm px-3 py-2 hover:bg-gray"
             >
-              <span className="text-sm font-semibold text-blue">{labels[child.key]}</span>
-              {summaries[child.key] && (
+              <span className="text-sm font-semibold text-blue">{entry.label}</span>
+              {entry.summary && (
                 <span className="mt-0.5 block text-xs leading-snug text-muted">
-                  {summaries[child.key]}
+                  {entry.summary}
                 </span>
               )}
             </Link>
@@ -175,14 +218,19 @@ function MobileItem({
   pathname,
   locale,
   labels,
+  summaries,
+  sectionLabels,
 }: {
   item: NavItem;
   pathname: string;
   locale: Locale;
   labels: Record<string, string>;
+  summaries: Record<string, string>;
+  sectionLabels: Record<string, string>;
 }) {
   const href = localizedPath(locale, item.href);
   const active = isActive(pathname, href);
+  const entries = dropdownEntries(item, locale, labels, summaries, sectionLabels);
 
   return (
     <li className="border-b border-line last:border-0">
@@ -193,15 +241,15 @@ function MobileItem({
       >
         {labels[item.key]}
       </Link>
-      {item.children && item.children.length > 0 && (
+      {entries.length > 0 && (
         <ul className="-mt-1 mb-2 ml-3 space-y-1 border-l border-line pl-3">
-          {item.children.map((child) => (
-            <li key={child.href}>
+          {entries.map((entry) => (
+            <li key={entry.href}>
               <Link
-                href={localizedPath(locale, child.href)}
+                href={entry.href}
                 className="block py-1.5 text-sm text-muted hover:text-blue"
               >
-                {labels[child.key]}
+                {entry.label}
               </Link>
             </li>
           ))}

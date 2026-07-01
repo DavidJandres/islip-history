@@ -1,0 +1,54 @@
+{
+  "breadcrumb": "FAQ",
+  "eyebrow": "Questions & answers",
+  "title": "Frequently Asked Questions",
+  "intro": "Common questions about the project, its sources, and how to use and contribute to the archive. If your question isn't here, ask it at the bottom of the page.",
+  "items": [
+    {
+      "q": "What is the Town of Islip History Project?",
+      "a": "It is a public-history archive documenting the history of the Town of Islip, in Suffolk County, New York. It gathers primary sources and presents them through a bilingual digital exhibit, a people index, a timeline, and research notes, built to remain accurate and citable over time."
+    },
+    {
+      "q": "Who created it?",
+      "a": "The project is produced through a Robert David Lion Gardiner Foundation fellowship at Stony Brook University, part of a statewide effort marking the 250th anniversary of American independence. The About and Fellowship pages name the people and partners involved."
+    },
+    {
+      "q": "Why does it center on the Revolution and the promise of independence?",
+      "a": "Islip lived the Revolution directly. The town was under British occupation after 1776, and Sagtikos Manor in West Bay Shore is tied to that history. The project asks what the Revolution's promise of liberty, citizenship, and belonging has meant in Islip ever since, including for the many communities who made their home here later."
+    },
+    {
+      "q": "What languages is the site available in?",
+      "a": "English and Spanish, with Polish planned. You can switch languages at any time using the language button in the header. Some longer passages are still being translated; those are shown in English with a note until the Spanish version is ready."
+    },
+    {
+      "q": "Can I cite or reuse what I find here?",
+      "a": "Yes. The materials are offered for research, teaching, and public education, and may be cited and shared for those purposes. Rights to individual items belong to the institutions that hold them, noted on each record."
+    },
+    {
+      "q": "Some pages say the text is a draft or under review. Why?",
+      "a": "The project marks its work honestly. Where a date, figure, or attribution is still being confirmed against original sources, it is labeled as such rather than presented as final. That is a deliberate scholarly standard, not an oversight."
+    },
+    {
+      "q": "I have a photograph, document, or family story connected to Islip. Can I contribute?",
+      "a": "Yes, and contributions are welcome. Use the form below or the Contact page to get in touch. Please describe the material first; you do not need to send files right away."
+    },
+    {
+      "q": "How do I reach the project?",
+      "a": "Use the question form below and it will reach the project directly, or see the Contact page for more ways to get in touch."
+    }
+  ],
+  "askEyebrow": "Ask a question",
+  "askTitle": "Have a different question?",
+  "askBody": "Ask it here and it will reach the project directly. Leave your email if you would like a reply.",
+  "nameLabel": "Your name (optional)",
+  "emailLabel": "Email",
+  "questionLabel": "Your question",
+  "submit": "Send question",
+  "sending": "Sending…",
+  "successTitle": "Thank you.",
+  "successBody": "Your question has been sent. If you left your email, we will reply as we can.",
+  "errorInvalid": "Please enter a valid email and a question of at least a few words.",
+  "errorGeneric": "Something went wrong sending your question. Please try again in a moment, or use the Contact page.",
+  "errorNotConfigured": "The question form isn't fully set up yet. Please use the Contact page for now.",
+  "privacyNote": "Your email is used only to reply to you. It is not shared or added to any list."
+}

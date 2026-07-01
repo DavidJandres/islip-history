@@ -51,7 +51,26 @@ export default async function PeoplePage({ params }: LocaleParams) {
         )}
       </div>
 
-      <Rule className="mt-12" />
+      {/* Jump to a category, or simply scroll to browse everyone. The full
+          roster always renders below; these are in-page anchors, not filters. */}
+      <nav aria-label={p.browseByCategory} className="mt-8 flex flex-wrap gap-2">
+        {peopleSections.map((section) => {
+          const count = peopleInSection(section).length;
+          if (count === 0) return null;
+          return (
+            <a
+              key={section}
+              href={`#section-${section}`}
+              className="inline-flex items-baseline gap-1.5 rounded-sm border border-line bg-white px-3 py-1.5 text-sm font-semibold text-blue transition-colors hover:border-blue hover:bg-gray"
+            >
+              {p.sections[section]}
+              <span className="text-xs font-normal text-muted">{count}</span>
+            </a>
+          );
+        })}
+      </nav>
+
+      <Rule className="mt-8" />
 
       <div className="mt-8 space-y-12">
         {peopleSections.map((section) => {
@@ -61,7 +80,7 @@ export default async function PeoplePage({ params }: LocaleParams) {
             <section key={section} aria-labelledby={`section-${section}`}>
               <h2
                 id={`section-${section}`}
-                className="text-xl font-bold text-blue sm:text-2xl"
+                className="scroll-mt-24 text-xl font-bold text-blue sm:text-2xl"
               >
                 {p.sections[section]}
               </h2>

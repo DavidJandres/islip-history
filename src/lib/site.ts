@@ -2,6 +2,8 @@
 // sitemap all read one source. Items carry a `key` (resolved to a label via
 // dict.nav[key]) and a locale-agnostic href that components prefix at render.
 
+import { peopleSections } from "./people";
+
 // Canonical base URL, used for canonicals, hreflang, the sitemap, and JSON-LD.
 // Order of preference: an explicit NEXT_PUBLIC_SITE_URL (set this to the real
 // domain in production), then the URLs Vercel injects automatically, then local
@@ -25,6 +27,11 @@ export interface NavItem {
   key: string;
   href: string;
   children?: NavItem[];
+  // In-page section anchors shown as a hover/expand dropdown (e.g. People by
+  // category). Rendered like children, but they deep-link to `#section-<key>`
+  // on the item's OWN page, so they are intentionally excluded from the sitemap
+  // (which only walks `children`). Labels resolve from dict.people.sections.
+  sectionKeys?: readonly string[];
 }
 
 export const primaryNav: NavItem[] = [
@@ -39,7 +46,7 @@ export const primaryNav: NavItem[] = [
       { key: "primarySources", href: "/explore/primary-sources" },
     ],
   },
-  { key: "people", href: "/people" },
+  { key: "people", href: "/people", sectionKeys: peopleSections },
   { key: "timeline", href: "/timeline" },
   {
     key: "research",
@@ -56,6 +63,7 @@ export const primaryNav: NavItem[] = [
       { key: "aboutProject", href: "/about" },
       { key: "aboutResearch", href: "/about/research" },
       { key: "aboutFellowship", href: "/about/fellowship" },
+      { key: "faq", href: "/about/faq" },
       { key: "contact", href: "/about/contact" },
     ],
   },
@@ -94,6 +102,7 @@ export const footerNav: FooterGroup[] = [
       { key: "aboutProject", href: "/about" },
       { key: "aboutResearch", href: "/about/research" },
       { key: "aboutFellowship", href: "/about/fellowship" },
+      { key: "faq", href: "/about/faq" },
       { key: "contact", href: "/about/contact" },
     ],
   },

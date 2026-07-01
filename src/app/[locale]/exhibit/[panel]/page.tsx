@@ -10,6 +10,7 @@ import {
   panelNumber,
   panelNeighbors,
   panelCount,
+  panelImages,
   isPanelSlug,
   type PanelSlug,
 } from "@/lib/exhibit";
@@ -17,6 +18,7 @@ import { Section } from "@/components/ui/section";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Rule } from "@/components/ui/rule";
 import { Notice } from "@/components/ui/notice";
+import { ImageSlot } from "@/components/ui/image-slot";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 
 type PanelParams = { params: Promise<{ locale: string; panel: string }> };
@@ -114,6 +116,18 @@ export default async function PanelPage({ params }: PanelParams) {
             {ex.draftNotice}
           </Notice>
         )}
+
+        {/* Lead image frame. Renders a real image once one is added to
+            panelImages (lib/exhibit.ts); until then, a reserved placeholder. */}
+        <ImageSlot
+          src={panelImages[panel]?.src}
+          alt={panelImages[panel]?.alt}
+          credit={panelImages[panel]?.credit}
+          caption={copy.summary}
+          label={dict.common.imageComingSoon}
+          aspect="wide"
+          priority
+        />
 
         {/* Larger body type than a standard article: this exhibit is written to
             be read by children as well as adults. */}

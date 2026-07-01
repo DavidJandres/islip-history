@@ -60,3 +60,19 @@ export function isPanelSlug(value: string): value is PanelSlug {
 
 // Locale-agnostic panel paths, for the sitemap to append.
 export const exhibitPanelPaths = exhibitPanels.map((s) => `/exhibit/${s}`);
+
+// Lead image for each panel. Empty for now: every panel renders a reserved
+// "image coming soon" frame (see the [panel] page). To add a real image later,
+// drop the file in /public/exhibit and add one entry here — no layout changes:
+//   "washingtons-visit": {
+//     src: "/exhibit/washingtons-visit.jpg",
+//     alt: "Sagtikos Manor on Montauk Highway, West Bay Shore.",
+//     credit: "Photograph, Public domain.",
+//   },
+export interface PanelImage {
+  src: string;
+  alt: string;
+  credit?: string;
+}
+
+export const panelImages: Partial<Record<PanelSlug, PanelImage>> = {};

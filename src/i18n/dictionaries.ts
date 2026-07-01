@@ -9,6 +9,7 @@ import enAbout from "./dictionaries/en/about.json";
 import enResearch from "./dictionaries/en/research.json";
 import enFellowship from "./dictionaries/en/fellowship.json";
 import enContact from "./dictionaries/en/contact.json";
+import enFaq from "./dictionaries/en/faq.json";
 import enExhibit from "./dictionaries/en/exhibit.json";
 import enPeople from "./dictionaries/en/people.json";
 import enTimeline from "./dictionaries/en/timeline.json";
@@ -22,6 +23,7 @@ import esAbout from "./dictionaries/es/about.json";
 import esResearch from "./dictionaries/es/research.json";
 import esFellowship from "./dictionaries/es/fellowship.json";
 import esContact from "./dictionaries/es/contact.json";
+import esFaq from "./dictionaries/es/faq.json";
 import esExhibit from "./dictionaries/es/exhibit.json";
 import esPeople from "./dictionaries/es/people.json";
 import esTimeline from "./dictionaries/es/timeline.json";
@@ -41,6 +43,7 @@ const en = {
   aboutResearch: enResearch,
   aboutFellowship: enFellowship,
   contact: enContact,
+  faq: enFaq,
   exhibit: enExhibit,
   people: enPeople,
   timeline: enTimeline,
@@ -58,6 +61,7 @@ const es: Dictionary = {
   aboutResearch: esResearch,
   aboutFellowship: esFellowship,
   contact: esContact,
+  faq: esFaq,
   exhibit: esExhibit,
   people: esPeople,
   timeline: esTimeline,

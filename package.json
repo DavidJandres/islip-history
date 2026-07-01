@@ -12,10 +12,12 @@
     "test": "tsx scripts/search-test.ts && tsx scripts/search-real-test.ts"
   },
   "dependencies": {
+    "@upstash/redis": "^1.34.3",
     "lucide-react": "^0.468.0",
     "next": "^15.5.19",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "resend": "^4.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0",

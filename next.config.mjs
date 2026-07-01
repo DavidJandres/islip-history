@@ -1,6 +1,14 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // Pin the file-tracing root to this project so an unrelated lockfile elsewhere
+  // on the machine doesn't trigger a workspace-root warning during builds.
+  outputFileTracingRoot: __dirname,
   images: {
     formats: ["image/avif", "image/webp"],
     // Two partner seals (Stony Brook, SUNY Geneseo) are SVG. Allow next/image to

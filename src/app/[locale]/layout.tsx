@@ -65,6 +65,7 @@ export default async function LocaleLayout({
             locale={locale}
             labels={dict.nav}
             summaries={dict.navSummaries}
+            sectionLabels={dict.people.sections}
             menuLabel={dict.common.menu}
             closeLabel={dict.common.close}
           />

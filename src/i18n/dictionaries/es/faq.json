@@ -1,0 +1,54 @@
+{
+  "breadcrumb": "Preguntas frecuentes",
+  "eyebrow": "Preguntas y respuestas",
+  "title": "Preguntas frecuentes",
+  "intro": "Preguntas comunes sobre el proyecto, sus fuentes y cómo usar el archivo y contribuir a él. Si su pregunta no está aquí, puede hacerla al final de la página.",
+  "items": [
+    {
+      "q": "¿Qué es el Proyecto de Historia del Pueblo de Islip?",
+      "a": "Es un archivo de historia pública que documenta la historia del pueblo de Islip, en el condado de Suffolk, Nueva York. Reúne fuentes primarias y las presenta mediante una exhibición digital bilingüe, un índice de personas, una cronología y notas de investigación, con el fin de mantenerse preciso y citable a lo largo del tiempo."
+    },
+    {
+      "q": "¿Quién lo creó?",
+      "a": "El proyecto se produce mediante una beca de la Fundación Robert David Lion Gardiner en la Universidad Stony Brook, como parte de un esfuerzo estatal en torno al 250.º aniversario de la independencia estadounidense. Las páginas Acerca de y La beca nombran a las personas y los socios que participan."
+    },
+    {
+      "q": "¿Por qué se centra en la Revolución y en la promesa de la independencia?",
+      "a": "Islip vivió la Revolución de manera directa. El pueblo estuvo bajo ocupación británica después de 1776, y la Mansión Sagtikos, en West Bay Shore, está ligada a esa historia. El proyecto pregunta qué ha significado en Islip, desde entonces, la promesa de libertad, ciudadanía y pertenencia de la Revolución, incluso para las muchas comunidades que hicieron aquí su hogar más tarde."
+    },
+    {
+      "q": "¿En qué idiomas está disponible el sitio?",
+      "a": "En inglés y español, con el polaco previsto. Puede cambiar de idioma en cualquier momento con el botón de idioma en el encabezado. Algunos pasajes más largos aún se están traduciendo; esos se muestran en inglés con una nota hasta que la versión en español esté lista."
+    },
+    {
+      "q": "¿Puedo citar o reutilizar lo que encuentro aquí?",
+      "a": "Sí. Los materiales se ofrecen para la investigación, la enseñanza y la educación pública, y pueden citarse y compartirse con esos fines. Los derechos de cada pieza pertenecen a las instituciones que las conservan, indicadas en cada registro."
+    },
+    {
+      "q": "Algunas páginas dicen que el texto es un borrador o está en revisión. ¿Por qué?",
+      "a": "El proyecto señala su trabajo con honestidad. Cuando una fecha, cifra o atribución aún se está confirmando con las fuentes originales, se indica como tal en lugar de presentarse como definitiva. Es un criterio académico deliberado, no un descuido."
+    },
+    {
+      "q": "Tengo una fotografía, un documento o una historia familiar ligada a Islip. ¿Puedo contribuir?",
+      "a": "Sí, y las contribuciones son bienvenidas. Use el formulario de abajo o la página de Contacto para comunicarse. Describa primero el material; no necesita enviar archivos de inmediato."
+    },
+    {
+      "q": "¿Cómo me comunico con el proyecto?",
+      "a": "Use el formulario de preguntas de abajo y llegará directamente al proyecto, o consulte la página de Contacto para más formas de comunicarse."
+    }
+  ],
+  "askEyebrow": "Haga una pregunta",
+  "askTitle": "¿Tiene otra pregunta?",
+  "askBody": "Hágala aquí y llegará directamente al proyecto. Deje su correo electrónico si desea una respuesta.",
+  "nameLabel": "Su nombre (opcional)",
+  "emailLabel": "Correo electrónico",
+  "questionLabel": "Su pregunta",
+  "submit": "Enviar pregunta",
+  "sending": "Enviando…",
+  "successTitle": "Gracias.",
+  "successBody": "Su pregunta ha sido enviada. Si dejó su correo, le responderemos cuando podamos.",
+  "errorInvalid": "Ingrese un correo electrónico válido y una pregunta de al menos unas palabras.",
+  "errorGeneric": "Ocurrió un problema al enviar su pregunta. Vuelva a intentarlo en un momento o use la página de Contacto.",
+  "errorNotConfigured": "El formulario de preguntas aún no está configurado por completo. Por ahora, use la página de Contacto.",
+  "privacyNote": "Su correo se usa solo para responderle. No se comparte ni se agrega a ninguna lista."
+}

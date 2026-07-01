@@ -1,7 +1,6 @@
 {
   "eyebrow": "Condado de Suffolk · Long Island · Nueva York",
   "title": "La Promesa de la Independencia",
-  "titleAlt": "The Promise of Independence",
   "subtitle": "El Long Island de la Revolución y la gente de Islip: muchas raíces, un solo pueblo.",
   "lede": [
     "Islip no vio la Revolución estadounidense desde lejos. Tras la Batalla de Long Island en 1776, el pueblo vivió bajo ocupación británica; la Mansión Sagtikos, en West Bay Shore, sirvió como cuartel británico, y en 1790 el recién electo presidente Washington pasó allí una noche durante su recorrido por Long Island.",
@@ -41,5 +40,7 @@
   "aboutEyebrow": "Sobre el proyecto",
   "aboutTitle": "Un registro permanente y citable para el pueblo",
   "aboutBody": "El Proyecto de Historia del Pueblo de Islip reúne y pone a libre disposición las fuentes primarias del pasado de Islip. Se desarrolla mediante una beca de la Fundación Robert David Lion Gardiner en la Universidad Stony Brook, y comienza con su estudio inaugural y una exhibición pública bilingüe sobre la migración y el significado de la independencia.",
-  "aboutCta": "Sobre este archivo"
+  "aboutCta": "Sobre este archivo",
+  "visitorsOne": "visitante ha explorado este archivo",
+  "visitorsMany": "visitantes han explorado este archivo"
 }

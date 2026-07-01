@@ -7,6 +7,7 @@ import { Section } from "@/components/ui/section";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Rule } from "@/components/ui/rule";
 import { Button } from "@/components/ui/button";
+import { ImageSlot } from "@/components/ui/image-slot";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 
 export async function generateMetadata({ params }: LocaleParams) {
@@ -49,6 +50,14 @@ export default async function ExhibitPage({ params }: LocaleParams) {
           </Button>
         </div>
       </div>
+
+      {/* Lead image for the exhibit; a reserved frame until an image is added. */}
+      <ImageSlot
+        label={dict.common.imageComingSoon}
+        aspect="wide"
+        className="mt-10"
+        priority
+      />
 
       <Rule className="mt-12" />
 

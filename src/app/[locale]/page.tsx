@@ -6,6 +6,8 @@ import { Section } from "@/components/ui/section";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { ImageSlot } from "@/components/ui/image-slot";
+import { VisitorCount } from "@/components/home/visitor-count";
 
 export async function generateMetadata({ params }: LocaleParams) {
   const { locale, dict } = await loadLocale(params);
@@ -27,8 +29,6 @@ export default async function HomePage({ params }: LocaleParams) {
         <div className="measure">
           <Eyebrow>{home.eyebrow}</Eyebrow>
           <h1 className="text-4xl leading-[1.1] sm:text-5xl">{home.title}</h1>
-          {/* The project's name is bilingual; the other language sits beneath. */}
-          <p className="mt-2 font-heading text-xl text-gold-dark sm:text-2xl">{home.titleAlt}</p>
           <p className="mt-5 text-lg font-semibold text-ink">{home.subtitle}</p>
           {home.lede.map((para) => (
             <p key={para} className="mt-4 leading-relaxed text-muted">
@@ -44,7 +44,15 @@ export default async function HomePage({ params }: LocaleParams) {
               {home.ctaAbout}
             </Button>
           </div>
+          <VisitorCount
+            locale={locale}
+            labelOne={home.visitorsOne}
+            labelMany={home.visitorsMany}
+          />
         </div>
+
+        {/* Reserved lead image; drops in later without shifting the layout. */}
+        <ImageSlot label={dict.common.imageComingSoon} aspect="wide" className="mt-12" priority />
       </Section>
 
       <Section surface="gray" size="narrow" aria-labelledby="bridge-heading">
