@@ -4,12 +4,14 @@ A public-history archive documenting the history of the Town of Islip, Suffolk
 County, New York. Built as a statically-generated Next.js application designed
 to remain maintainable and citable for decades.
 
-> **Build status:** Phase 1 — *Bilingual shell, Home, and the About cluster*.
-> The site is now fully internationalised (English + Spanish). The Home page,
-> all four About pages (Project, Research, Fellowship, Contact), and intentional
-> "coming soon" stubs for Explore, People, Timeline, Research, and Search are in
-> place, on top of the Phase 0 design system and chrome. The collections and the
-> public exhibit follow in subsequent phases per the approved roadmap.
+> **Build status:** Phase 4 — *Search*. The site is fully internationalised
+> (English + Spanish). Live: the Home page, the four About pages (Project,
+> Research, Fellowship, Contact), the seven-panel public **Exhibit**, the
+> **People** roster, the **Timeline**, and site-wide **Search** (a dependency-free
+> ranked index with a ⌘K dialog). **Explore** and **Research** are intentional
+> "coming soon" sections — their landing and sub-section pages are in place as
+> honest placeholders so the navigation never dead-ends, and their collections
+> fill in per the approved roadmap.
 
 ## Stack
 
@@ -63,11 +65,14 @@ npm run dev        # http://localhost:3000
 npm run build      # production build
 npm run typecheck  # tsc --noEmit
 npm run lint
+npm test           # search-engine tests (tsx scripts/*.ts)
 ```
 
 Set `NEXT_PUBLIC_SITE_URL` in the environment (see `.env.example`) so canonical
 URLs, the sitemap, and Open Graph tags resolve correctly. On Vercel this is a
-project environment variable.
+project environment variable. **This must point at the real production domain**
+— if it is unset the canonical/sitemap/Open-Graph URLs fall back to the Vercel
+deployment URL (or `localhost` outside Vercel), which will mis-index the site.
 
 ## Architecture
 
@@ -77,22 +82,26 @@ Routing lives in `src/app`; everything else is reusable and imported via the
 ```
 src/
 ├── app/
-│   ├── layout.tsx          # root: fonts + base metadata
 │   ├── globals.css         # Tailwind v4 + design tokens (@theme)
-│   ├── (site)/             # route group: shared public chrome
-│   │   ├── layout.tsx      # header, nav, footer, <main> landmark
-│   │   └── page.tsx        # Home
-│   ├── not-found.tsx       # 404
+│   ├── [locale]/           # every public route (en/es)
+│   │   ├── layout.tsx      # root: <html lang>, fonts, chrome, <main> landmark
+│   │   ├── page.tsx        # Home
+│   │   ├── not-found.tsx   # 404
+│   │   └── …               # about/, exhibit/, people/, timeline/, search/, …
 │   ├── sitemap.ts          # SEO
 │   └── robots.ts
+├── middleware.ts           # redirects un-prefixed paths to a locale
 ├── components/
 │   ├── layout/             # SkipLink, TopBar, SiteHeader, PrimaryNav,
 │   │                       #   Breadcrumb, SiteFooter
+│   ├── search/             # SearchDialog (⌘K), header + results, highlight
 │   └── ui/                 # Container, Section, Eyebrow, Rule, Button,
 │                           #   Card, Notice  (the reusable primitives)
 └── lib/
     ├── site.ts             # identity + navigation (single source of truth)
     ├── metadata.ts         # SEO metadata builder
+    ├── structured-data.ts  # JSON-LD (Organization, WebSite, Person, …)
+    ├── search/             # dependency-free ranked search engine + corpus
     └── utils.ts            # cn() classname helper
 ```
 
@@ -109,8 +118,9 @@ The locked palette and type pairing are defined once in `globals.css`:
 | `--color-paper`  | `#FAF8F5` | page background               |
 | `--color-ink`    | `#1E293B` | body text                     |
 | `--color-blue`   | `#174A7C` | primary / headings / links    |
-| `--color-gold`   | `#B78C3B` | accent (large text, rules)    |
-| `--color-gold-dark` | `#8C6A2C` | accent for small text (AA) |
+| `--color-gold`   | `#B78C3B` | accent (large text, rules, focus ring) |
+| `--color-gold-dark` | `#856325` | small text on light surfaces (AA on paper & gray) |
+| `--color-gold-light` | `#E0BC6B` | small text on dark surfaces (AA on blue & blue-dark) |
 
 Headings use **Merriweather**, body text uses **Source Sans 3**. Corners are
 near-square (2px) and the design uses hairline rules rather than shadows.

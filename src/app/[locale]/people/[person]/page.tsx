@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { localizedPath, isLocale, defaultLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { buildMetadata } from "@/lib/metadata";
+import { personJsonLd, breadcrumbJsonLd } from "@/lib/structured-data";
 import { peopleSlugs, getPerson } from "@/lib/people";
 import { Section } from "@/components/ui/section";
 import { Eyebrow } from "@/components/ui/eyebrow";
@@ -38,8 +39,21 @@ export default async function PersonPage({ params }: PersonParams) {
   const { locale, person, dict } = await resolve(params);
   const p = dict.people;
 
+  const jsonLd = [
+    personJsonLd(locale, person),
+    breadcrumbJsonLd(locale, [
+      { name: dict.common.home, path: "/" },
+      { name: p.breadcrumb, path: "/people" },
+      { name: person.name },
+    ]),
+  ];
+
   return (
     <Section size="narrow">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb
         homeLabel={dict.common.home}
         homeHref={localizedPath(locale, "/")}
@@ -65,7 +79,7 @@ export default async function PersonPage({ params }: PersonParams) {
       </header>
 
       {locale !== defaultLocale && (
-        <Notice intent="info" className="mt-8">
+        <Notice intent="info" label={dict.common.noticeInfo} className="mt-8">
           {p.translationNote}
         </Notice>
       )}

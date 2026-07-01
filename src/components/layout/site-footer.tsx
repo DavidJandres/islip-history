@@ -53,7 +53,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
                 />
                 <span className="font-heading text-base font-bold text-white">
                   {dict.common.siteLineTop}
-                  <span className="block text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+                  <span className="block text-xs font-semibold uppercase tracking-[0.16em] text-gold-light">
                     {dict.common.siteLineBottom}
                   </span>
                 </span>
@@ -63,7 +63,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
 
             {footerNav.map((group) => (
               <nav key={group.headingKey} aria-label={f[group.headingKey]}>
-                <h2 className="font-heading text-sm font-bold uppercase tracking-wide text-gold">
+                <h2 className="font-heading text-sm font-bold uppercase tracking-wide text-gold-light">
                   {f[group.headingKey]}
                 </h2>
                 <ul className="mt-3 space-y-2 text-sm">
@@ -88,7 +88,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
             <p>
               © {new Date().getFullYear()} {f.copyright} {dict.common.affiliation}.
             </p>
-            <p className="text-gold">{f.languagesNote}</p>
+            <p className="text-gold-light">{f.languagesNote}</p>
           </div>
         </Container>
       </div>

@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: LocaleParams) {
   return buildMetadata({
     locale,
     title: dict.nav.research,
-    description: dict.common.comingSoonBody,
+    description: dict.navSummaries.research,
     siteName: dict.common.siteName,
     path: "/research",
   });

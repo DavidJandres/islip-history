@@ -9,13 +9,18 @@ import { SearchPageClient } from "@/components/search/search-page-client";
 
 export async function generateMetadata({ params }: LocaleParams) {
   const { locale, dict } = await loadLocale(params);
-  return buildMetadata({
-    locale,
-    title: dict.common.searchFull,
-    description: dict.common.searchStartHint,
-    siteName: dict.common.siteName,
-    path: "/search",
-  });
+  return {
+    ...buildMetadata({
+      locale,
+      title: dict.common.searchFull,
+      description: dict.common.searchStartHint,
+      siteName: dict.common.siteName,
+      path: "/search",
+    }),
+    // A results page is thin/duplicate content; keep it out of the index but let
+    // crawlers follow the links it surfaces.
+    robots: { index: false, follow: true },
+  };
 }
 
 export default async function SearchPage({ params }: LocaleParams) {

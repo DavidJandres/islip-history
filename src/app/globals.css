@@ -10,7 +10,8 @@
   --color-blue: #174a7c;        /* primary: headings, links */
   --color-blue-dark: #103758;   /* hover, footer */
   --color-gold: #b78c3b;        /* accent: large text, rules, focus ring */
-  --color-gold-dark: #8c6a2c;   /* accent for small text (AA on paper) */
+  --color-gold-dark: #856325;   /* small text on light surfaces (AA on paper & gray) */
+  --color-gold-light: #e0bc6b;  /* small text on dark surfaces (AA on blue & blue-dark) */
   --color-gray: #f1f3f5;        /* light panel */
   --color-muted: #4b5563;       /* secondary text, captions */
   --color-line: #dad8d1;        /* hairline on paper */

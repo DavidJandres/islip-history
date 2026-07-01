@@ -1,12 +1,22 @@
 import { siteConfig } from "./site";
-import { locales } from "@/i18n/config";
+import { locales, localizedPath, type Locale } from "@/i18n/config";
 
-// JSON-LD describing the site: the Project as an Organization, and the WebSite
-// that points back to it by @id. Rendered once in the root layout. A search
-// action is intentionally omitted until on-site search actually works.
-export function siteJsonLd(siteName: string) {
-  const url = siteConfig.url;
+// JSON-LD builders. The site-level graph (Organization + WebSite) is rendered
+// once in the root layout; the per-page builders (Person, Article, breadcrumb)
+// are rendered by the individual record pages so search engines can offer rich
+// results. Everything resolves against the canonical siteConfig.url.
 
+const url = siteConfig.url;
+
+// Absolute URL for a locale-agnostic path, e.g. abs("es", "/people/x").
+function abs(locale: Locale, path: string): string {
+  return new URL(localizedPath(locale, path), url).toString();
+}
+
+// The Project as an Organization, and the WebSite that points back to it by
+// @id. A SearchAction is included now that on-site search is live, so engines
+// can expose a sitelinks search box that lands on /[locale]/search?q=…
+export function siteJsonLd(siteName: string, locale: Locale) {
   return [
     {
       "@context": "https://schema.org",
@@ -24,6 +34,79 @@ export function siteJsonLd(siteName: string) {
       url,
       inLanguage: [...locales],
       publisher: { "@id": `${url}#organization` },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `${abs(locale, "/search")}?q={search_term_string}`,
+        },
+        "query-input": "required name=search_term_string",
+      },
     },
   ];
+}
+
+export interface Crumb {
+  name: string;
+  path?: string; // locale-agnostic path; omit for the current (last) page
+}
+
+// A BreadcrumbList mirroring the visible <Breadcrumb> trail on record pages.
+export function breadcrumbJsonLd(locale: Locale, crumbs: Crumb[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      ...(c.path ? { item: abs(locale, c.path) } : {}),
+    })),
+  };
+}
+
+// A Person node for a roster page. Image is included only when a real,
+// credited likeness exists (portrait is null for most historical figures).
+export function personJsonLd(
+  locale: Locale,
+  person: {
+    slug: string;
+    name: string;
+    role: string;
+    cardText: string;
+    portrait: { src: string } | null;
+  },
+) {
+  const page = abs(locale, `/people/${person.slug}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: person.name,
+    jobTitle: person.role,
+    description: person.cardText,
+    url: page,
+    mainEntityOfPage: page,
+    ...(person.portrait
+      ? { image: new URL(person.portrait.src, url).toString() }
+      : {}),
+  };
+}
+
+// An Article node for an exhibit panel, tied back to the site graph.
+export function exhibitPanelJsonLd(
+  locale: Locale,
+  panel: { slug: string; title: string; summary: string },
+) {
+  const page = abs(locale, `/exhibit/${panel.slug}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: panel.title,
+    description: panel.summary,
+    inLanguage: locale,
+    url: page,
+    mainEntityOfPage: page,
+    isPartOf: { "@id": `${url}#website` },
+    publisher: { "@id": `${url}#organization` },
+  };
 }

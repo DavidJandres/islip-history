@@ -41,11 +41,11 @@ export default async function PeoplePage({ params }: LocaleParams) {
             {para}
           </p>
         ))}
-        <Notice intent="editorial" className="mt-6">
+        <Notice intent="editorial" label={dict.common.noticeEditorial} className="mt-6">
           {p.workingIndexNote}
         </Notice>
         {locale !== defaultLocale && (
-          <Notice intent="info" className="mt-4">
+          <Notice intent="info" label={dict.common.noticeInfo} className="mt-4">
             {p.translationNote}
           </Notice>
         )}

@@ -56,7 +56,7 @@ export default async function AboutFellowshipPage({ params }: LocaleParams) {
             >
               <Image
                 src={teamPhotos[member.id]}
-                alt=""
+                alt={member.name}
                 width={480}
                 height={600}
                 sizes="(min-width: 640px) 176px, 128px"

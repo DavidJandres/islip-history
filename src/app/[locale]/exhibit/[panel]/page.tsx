@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { localizedPath, isLocale, defaultLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { buildMetadata } from "@/lib/metadata";
+import { exhibitPanelJsonLd, breadcrumbJsonLd } from "@/lib/structured-data";
 import {
   exhibitPanels,
   panelStatus,
@@ -57,8 +58,25 @@ export default async function PanelPage({ params }: PanelParams) {
   // showing a "draft under review" note over placeholder text.
   const untranslated = locale !== defaultLocale && status === "draft";
 
+  const jsonLd = [
+    exhibitPanelJsonLd(locale, {
+      slug: panel,
+      title: copy.title,
+      summary: copy.summary,
+    }),
+    breadcrumbJsonLd(locale, [
+      { name: dict.common.home, path: "/" },
+      { name: ex.breadcrumb, path: "/exhibit" },
+      { name: copy.title },
+    ]),
+  ];
+
   return (
     <Section size="narrow">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb
         homeLabel={dict.common.home}
         homeHref={localizedPath(locale, "/")}
