@@ -26,7 +26,10 @@ export function SourceCard({
   labels: SourceLabels;
 }) {
   return (
-    <article className="rounded-sm border border-line bg-white p-5 sm:p-6">
+    <article
+      id={`source-${source.id}`}
+      className="scroll-mt-24 rounded-sm border border-line bg-white p-5 sm:p-6"
+    >
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
         <span className="text-xs font-semibold uppercase tracking-[0.12em] text-gold-dark">
           {source.type}

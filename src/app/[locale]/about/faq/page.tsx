@@ -41,8 +41,8 @@ export default async function FaqPage({ params }: LocaleParams) {
       </div>
 
       <div className="mt-8 measure divide-y divide-line border-y border-line">
-        {faq.items.map((item) => (
-          <details key={item.q} className="group py-4">
+        {faq.items.map((item, i) => (
+          <details key={item.q} id={`faq-${i}`} className="group scroll-mt-24 py-4">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-heading text-lg font-bold text-blue [&::-webkit-details-marker]:hidden">
               {item.q}
               <ChevronDown

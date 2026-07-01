@@ -52,7 +52,8 @@ export default async function AboutFellowshipPage({ params }: LocaleParams) {
           {fellowship.team.map((member) => (
             <article
               key={member.id}
-              className="flex flex-col gap-5 py-8 first:pt-2 sm:flex-row sm:gap-7"
+              id={`team-${member.id}`}
+              className="flex scroll-mt-24 flex-col gap-5 py-8 first:pt-2 sm:flex-row sm:gap-7"
             >
               <Image
                 src={teamPhotos[member.id]}

@@ -130,8 +130,10 @@ export function SearchDialog({
       e.preventDefault();
       const chosen = results[active];
       if (chosen) {
-        router.push(chosen.doc.href);
-        onClose();
+        // Click the active result's link so Enter navigates exactly like a
+        // mouse click, including scrolling to the target's #anchor. (router.push
+        // does not scroll to a hash.) The link's onClick closes the dialog.
+        document.getElementById(optionId(active))?.click();
       } else {
         goToResultsPage();
       }

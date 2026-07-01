@@ -13,8 +13,8 @@ import { people } from "@/lib/people";
 import { timeline } from "@/lib/timeline";
 import { exhibitPanels, panelNumber, panelStatus } from "@/lib/exhibit";
 import { bibliographyFlat } from "@/lib/bibliography";
-import { primarySourcesSearchText } from "@/lib/primary-sources";
-import { essaysSearchText } from "@/lib/essays";
+import { primarySources } from "@/lib/primary-sources";
+import { essays } from "@/lib/essays";
 import type { SearchDoc } from "./types";
 
 const join = (parts: Array<string | undefined | null>) =>
@@ -97,19 +97,9 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
     { key: "collections", title: nav.collections, body: sum.collections, path: "/explore/collections" },
     { key: "maps", title: nav.maps, body: sum.maps, path: "/explore/maps" },
     { key: "photographs", title: nav.photographs, body: sum.photographs, path: "/explore/photographs" },
-    {
-      key: "primarySources",
-      title: nav.primarySources,
-      body: [sum.primarySources, primarySourcesSearchText].join(" "),
-      path: "/explore/primary-sources",
-    },
+    { key: "primarySources", title: nav.primarySources, body: sum.primarySources, path: "/explore/primary-sources" },
     { key: "research", title: nav.research, body: sum.research, path: "/research" },
-    {
-      key: "essays",
-      title: nav.essays,
-      body: [sum.essays, essaysSearchText].join(" "),
-      path: "/research/essays",
-    },
+    { key: "essays", title: nav.essays, body: sum.essays, path: "/research/essays" },
     {
       key: "occupation",
       title: nav.occupation,
@@ -209,8 +199,37 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
       typeLabel: c.searchTypeTeam,
       title: member.name,
       subtitle: member.role,
-      href: href("/about/fellowship"),
+      href: href(`/about/fellowship#team-${member.id}`),
       body: member.bio,
+    });
+  }
+
+  // Primary-source documents, each deep-linked to its card on the Primary
+  // Sources page so a match lands the reader on the exact document.
+  for (const s of primarySources) {
+    docs.push({
+      id: `primary-${s.id}`,
+      type: "page",
+      typeLabel: c.searchTypeSource,
+      title: s.title,
+      subtitle: [s.type, s.date].filter(Boolean).join(" · "),
+      href: href(`/explore/primary-sources#source-${s.id}`),
+      body: [s.context, s.whyItMatters, ...s.excerpts.map((e) => e.text)]
+        .filter(Boolean)
+        .join(" "),
+    });
+  }
+
+  // Essays, each deep-linked to its card on the Essays page.
+  for (const e of essays) {
+    docs.push({
+      id: `essay-${e.id}`,
+      type: "page",
+      typeLabel: c.searchTypeEssay,
+      title: e.title,
+      subtitle: e.author,
+      href: href(`/research/essays#essay-${e.id}`),
+      body: [e.summary, e.whyItMatters, ...e.excerpts].filter(Boolean).join(" "),
     });
   }
 
@@ -221,7 +240,7 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
       type: "page",
       typeLabel: c.searchTypePage,
       title: item.q,
-      href: href("/about/faq"),
+      href: href(`/about/faq#faq-${i}`),
       body: item.a,
     });
   });

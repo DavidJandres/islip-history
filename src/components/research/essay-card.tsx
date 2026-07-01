@@ -17,7 +17,10 @@ export function EssayCard({
   labels: EssayLabels;
 }) {
   return (
-    <article className="rounded-sm border border-line bg-white p-5 sm:p-6">
+    <article
+      id={`essay-${essay.id}`}
+      className="scroll-mt-24 rounded-sm border border-line bg-white p-5 sm:p-6"
+    >
       <h3 className="font-heading text-lg font-bold text-blue sm:text-xl">
         {essay.title}
       </h3>
