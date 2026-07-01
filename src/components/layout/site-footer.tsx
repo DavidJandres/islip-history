@@ -18,11 +18,11 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
     <footer className="mt-auto">
       <div className="border-t border-line bg-gray">
         <Container>
-          <div className="py-10">
+          <div className="py-12">
             <p className="text-center text-xs font-semibold uppercase tracking-[0.14em] text-gold-dark">
               {f.partnersHeading}
             </p>
-            <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 sm:gap-x-16">
+            <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-20">
               {partners.map((partner) => (
                 <li key={partner.name}>
                   <Image
@@ -30,7 +30,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
                     alt={partner.name}
                     width={partner.width}
                     height={partner.height}
-                    className="h-14 w-auto sm:h-16"
+                    className="h-20 w-auto sm:h-24"
                   />
                 </li>
               ))}

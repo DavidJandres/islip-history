@@ -32,6 +32,11 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* This is a light-only site. Declaring the scheme stops browsers (and
+       dark-mode OSes) from painting a dark canvas or dark form controls for a
+       frame before the CSS applies — the "dark flash" on refresh. */
+    color-scheme: light;
+    background-color: var(--color-paper);
   }
 
   @media (prefers-reduced-motion: reduce) {

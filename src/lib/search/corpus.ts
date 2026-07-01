@@ -97,11 +97,60 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
     { key: "primarySources", title: nav.primarySources, body: sum.primarySources, path: "/explore/primary-sources" },
     { key: "research", title: nav.research, body: sum.research, path: "/research" },
     { key: "essays", title: nav.essays, body: sum.essays, path: "/research/essays" },
-    { key: "sources", title: nav.sources, body: sum.sources, path: "/research/sources" },
-    { key: "about", title: nav.aboutProject, body: sum.aboutProject, path: "/about" },
-    { key: "aboutResearch", title: nav.aboutResearch, body: sum.aboutResearch, path: "/about/research" },
-    { key: "aboutFellowship", title: nav.aboutFellowship, body: sum.aboutFellowship, path: "/about/fellowship" },
-    { key: "contact", title: nav.contact, body: sum.contact, path: "/about/contact" },
+    {
+      key: "sources",
+      title: nav.sources,
+      body: [sum.sources, ...dict.sources.groups.flatMap((g) => g.items)].join(" "),
+      path: "/research/sources",
+    },
+    {
+      key: "about",
+      title: nav.aboutProject,
+      body: [
+        dict.aboutProject.lede,
+        ...dict.aboutProject.body,
+        dict.aboutProject.usingBody,
+        dict.aboutProject.accessBody,
+      ].join(" "),
+      path: "/about",
+    },
+    {
+      key: "aboutResearch",
+      title: nav.aboutResearch,
+      body: [
+        dict.aboutResearch.lede,
+        ...dict.aboutResearch.intro,
+        dict.aboutResearch.pillar1Body,
+        dict.aboutResearch.pillar2Body,
+        dict.aboutResearch.approachBody,
+        dict.aboutResearch.examplesBody,
+        dict.aboutResearch.standardsBody,
+        dict.aboutResearch.outcomesBody,
+      ].join(" "),
+      path: "/about/research",
+    },
+    {
+      key: "aboutFellowship",
+      title: nav.aboutFellowship,
+      body: [
+        dict.aboutFellowship.lede,
+        ...dict.aboutFellowship.intro,
+        dict.aboutFellowship.foundationBody,
+        dict.aboutFellowship.ackBody,
+      ].join(" "),
+      path: "/about/fellowship",
+    },
+    { key: "faq", title: dict.faq.title, body: dict.faq.intro, path: "/about/faq" },
+    {
+      key: "contact",
+      title: nav.contact,
+      body: [
+        dict.contact.lede,
+        dict.contact.correctionBody,
+        dict.contact.contributeBody,
+      ].join(" "),
+      path: "/about/contact",
+    },
   ];
   for (const page of pages) {
     docs.push({
@@ -113,6 +162,32 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
       body: page.body,
     });
   }
+
+  // Fellowship team and researchers, searchable by name, role, and bio so a
+  // query like "Munkenbeck" or "Oberg" lands on the fellowship page.
+  for (const member of dict.aboutFellowship.team) {
+    docs.push({
+      id: `team-${member.id}`,
+      type: "person",
+      typeLabel: c.searchTypeTeam,
+      title: member.name,
+      subtitle: member.role,
+      href: href("/about/fellowship"),
+      body: member.bio,
+    });
+  }
+
+  // FAQ entries, searchable by question and answer.
+  dict.faq.items.forEach((item, i) => {
+    docs.push({
+      id: `faq-${i}`,
+      type: "page",
+      typeLabel: c.searchTypePage,
+      title: item.q,
+      href: href("/about/faq"),
+      body: item.a,
+    });
+  });
 
   return docs;
 }

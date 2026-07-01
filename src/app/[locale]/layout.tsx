@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { Merriweather, Source_Sans_3 } from "next/font/google";
 import { locales, isLocale } from "@/i18n/config";
@@ -34,6 +34,12 @@ export function generateStaticParams() {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   robots: { index: true, follow: true },
+};
+
+// Light-only site: emit <meta name="color-scheme" content="light"> so the very
+// first paint isn't dark on dark-mode devices.
+export const viewport: Viewport = {
+  colorScheme: "light",
 };
 
 // The whole site lives under /[locale], so this is the root layout: it renders

@@ -24,6 +24,7 @@ export function ImageSlot({
   aspect = "photo",
   sizes = "(min-width: 768px) 720px, 100vw",
   priority = false,
+  contain = false,
   className,
 }: {
   src?: string;
@@ -34,6 +35,9 @@ export function ImageSlot({
   aspect?: keyof typeof ASPECT;
   sizes?: string;
   priority?: boolean;
+  // Show the whole image, letterboxed on the frame, instead of cropping to fill.
+  // Right for maps, documents, and portraits where cropping loses content.
+  contain?: boolean;
   className?: string;
 }) {
   return (
@@ -42,7 +46,11 @@ export function ImageSlot({
         className={cn(
           "relative overflow-hidden rounded-sm",
           ASPECT[aspect],
-          src ? "border border-line" : "border border-dashed border-line bg-gray",
+          src
+            ? contain
+              ? "border border-line bg-gray"
+              : "border border-line"
+            : "border border-dashed border-line bg-gray",
         )}
       >
         {src ? (
@@ -52,7 +60,7 @@ export function ImageSlot({
             fill
             sizes={sizes}
             priority={priority}
-            className="object-cover"
+            className={contain ? "object-contain" : "object-cover"}
           />
         ) : (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 p-6 text-center">

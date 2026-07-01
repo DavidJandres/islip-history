@@ -61,18 +61,39 @@ export function isPanelSlug(value: string): value is PanelSlug {
 // Locale-agnostic panel paths, for the sitemap to append.
 export const exhibitPanelPaths = exhibitPanels.map((s) => `/exhibit/${s}`);
 
-// Lead image for each panel. Empty for now: every panel renders a reserved
+// Lead image for each panel. Verified public-domain images (Library of Congress,
+// National Portrait Gallery) sit here; panels without one render a reserved
 // "image coming soon" frame (see the [panel] page). To add a real image later,
-// drop the file in /public/exhibit and add one entry here — no layout changes:
-//   "washingtons-visit": {
-//     src: "/exhibit/washingtons-visit.jpg",
-//     alt: "Sagtikos Manor on Montauk Highway, West Bay Shore.",
-//     credit: "Photograph, Public domain.",
-//   },
+// drop the file in /public/exhibit and add one entry here — no layout changes.
 export interface PanelImage {
   src: string;
   alt: string;
   credit?: string;
 }
 
-export const panelImages: Partial<Record<PanelSlug, PanelImage>> = {};
+export const panelImages: Partial<Record<PanelSlug, PanelImage>> = {
+  "the-promise": {
+    src: "/exhibit/the-promise.jpg",
+    alt: "The 1823 William Stone engraved facsimile of the 1776 United States Declaration of Independence, showing its text and signatures.",
+    credit:
+      "The Declaration of Independence, 1823 William J. Stone facsimile of the 1776 original. Public domain.",
+  },
+  "before-the-town": {
+    src: "/exhibit/before-the-town.jpg",
+    alt: "A 1779 map of the colonial Province of New York, including all of Long Island, showing counties, manors, patents, townships, and private land grants.",
+    credit:
+      "A chorographical map of the Province of New-York, Claude Joseph Sauthier and William Faden, 1779. Library of Congress. Public domain.",
+  },
+  "revolution-comes-to-islip": {
+    src: "/exhibit/revolution-comes-to-islip.jpg",
+    alt: "A 1776 survey map of the Province of New York, including all of Long Island, the region that came under British occupation during the Revolution.",
+    credit:
+      "A map of the Province of New-York, Sauthier and Ratzer / William Faden, 1776. Library of Congress. Public domain.",
+  },
+  "washingtons-visit": {
+    src: "/exhibit/washingtons-visit.jpg",
+    alt: "Gilbert Stuart's 1796 full-length Lansdowne portrait of President George Washington.",
+    credit:
+      "George Washington (Lansdowne portrait) by Gilbert Stuart, 1796. National Portrait Gallery. Public domain.",
+  },
+};

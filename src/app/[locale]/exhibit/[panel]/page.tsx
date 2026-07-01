@@ -125,7 +125,8 @@ export default async function PanelPage({ params }: PanelParams) {
           credit={panelImages[panel]?.credit}
           caption={copy.summary}
           label={dict.common.imageComingSoon}
-          aspect="wide"
+          aspect="photo"
+          contain
           priority
         />
 
