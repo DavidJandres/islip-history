@@ -25,8 +25,10 @@
   "translationPendingTitle": "Spanish in progress",
   "translationPending": "This panel's English text is drafted; the Spanish translation is being prepared. You can read the drafted English version in the meantime.",
   "readInEnglish": "Read in English",
+  "inBriefLabel": "In brief",
   "panels": {
     "the-promise": {
+      "inBrief": "This exhibit asks a big question: what did the promise of freedom in 1776 really mean, and who was included in it? We follow that question through one town, Islip, on Long Island.",
       "title": "The Promise",
       "summary": "What independence promised, and the question this exhibit asks.",
       "sources": [
@@ -39,6 +41,7 @@
       ]
     },
     "before-the-town": {
+      "inBrief": "Islip did not begin on a single day. It grew from Native land, to a colonial land purchase in 1683, to a local government in 1710. Its story started long before it was called a town.",
       "title": "Before the Town",
       "summary": "Why Islip has no single founding date.",
       "sources": [
@@ -53,6 +56,7 @@
       ]
     },
     "revolution-comes-to-islip": {
+      "inBrief": "When the American Revolution reached Long Island, it came right into Islip's homes and farms. Isaac Thompson of Sagtikos Manor had to protect his family while the British occupied the area for six years.",
       "title": "Revolution Comes to Islip",
       "summary": "How the Revolution entered Islip's homes and farms.",
       "sources": [
@@ -68,6 +72,7 @@
       ]
     },
     "washingtons-visit": {
+      "inBrief": "In 1790, President George Washington stopped for one night at Sagtikos Manor during a tour of Long Island. He came not as a general, but as the leader of a brand-new country.",
       "title": "Washington's Visit",
       "summary": "A president's 1790 stop, and what local tradition tells.",
       "sources": [
@@ -82,6 +87,7 @@
       ]
     },
     "an-unfinished-promise": {
+      "inBrief": "The Revolution spoke of liberty, but not everyone was free. Women, Black people, and Native people were left out, and enslaved people worked at Sagtikos Manor. The promise of independence was real, but it was not yet shared by all.",
       "title": "An Unfinished Promise",
       "summary": "Liberty's language, and the people it did not yet reach.",
       "sources": [
@@ -99,6 +105,7 @@
       ]
     },
     "many-roots-one-town": {
+      "inBrief": "After the Revolution, Islip kept growing as new families and communities made it their home. The Jewish community of Islip is one strong example of how the town's story kept widening to include more people.",
       "title": "Many Roots, One Town",
       "summary": "The communities that kept widening who belongs.",
       "sources": [
@@ -113,6 +120,7 @@
       ]
     },
     "the-promise-continues": {
+      "inBrief": "History is not only the past. Today, people choose what to save, question, and share. This project is part of that work: keeping Islip's story open to everyone.",
       "title": "The Promise Continues",
       "summary": "Why this history is still being written.",
       "sources": [

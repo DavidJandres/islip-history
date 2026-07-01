@@ -25,8 +25,10 @@
   "translationPendingTitle": "Español en preparación",
   "translationPending": "El texto en inglés de este panel ya está redactado; la traducción al español se está preparando. Mientras tanto, puedes leer la versión en inglés.",
   "readInEnglish": "Leer en inglés",
+  "inBriefLabel": "En resumen",
   "panels": {
     "the-promise": {
+      "inBrief": "Esta exhibición hace una gran pregunta: ¿qué significó de verdad la promesa de libertad de 1776, y a quiénes incluyó? Seguimos esa pregunta en un solo pueblo, Islip, en Long Island.",
       "title": "La promesa",
       "summary": "Lo que prometió la independencia y la pregunta que plantea esta exposición.",
       "sources": [
@@ -37,6 +39,7 @@
       ]
     },
     "before-the-town": {
+      "inBrief": "Islip no comenzó en un solo día. Creció desde tierra indígena, a una compra de tierras en 1683, y a un gobierno local en 1710. Su historia empezó mucho antes de llamarse pueblo.",
       "title": "Antes del pueblo",
       "summary": "Por qué Islip no tiene una única fecha de fundación.",
       "sources": [
@@ -47,6 +50,7 @@
       ]
     },
     "revolution-comes-to-islip": {
+      "inBrief": "Cuando la Revolución llegó a Long Island, entró en las casas y granjas de Islip. Isaac Thompson, de la Mansión Sagtikos, tuvo que proteger a su familia mientras los británicos ocuparon la zona durante seis años.",
       "title": "La Revolución llega a Islip",
       "summary": "Cómo la Revolución entró en los hogares y las granjas de Islip.",
       "sources": [
@@ -59,6 +63,7 @@
       ]
     },
     "washingtons-visit": {
+      "inBrief": "En 1790, el presidente George Washington pasó una noche en la Mansión Sagtikos durante un recorrido por Long Island. Llegó no como general, sino como líder de un país nuevo.",
       "title": "La visita de Washington",
       "summary": "Una parada presidencial en 1790 y lo que cuenta la tradición local.",
       "sources": [
@@ -70,6 +75,7 @@
       ]
     },
     "an-unfinished-promise": {
+      "inBrief": "La Revolución hablaba de libertad, pero no todos eran libres. Las mujeres, las personas negras y los pueblos indígenas quedaron fuera, y había personas esclavizadas en la Mansión Sagtikos. La promesa de independencia era real, pero aún no era para todos.",
       "title": "Una promesa incumplida",
       "summary": "El lenguaje de la libertad y las personas a las que aún no alcanzaba.",
       "sources": [
@@ -83,6 +89,7 @@
       ]
     },
     "many-roots-one-town": {
+      "inBrief": "Después de la Revolución, Islip siguió creciendo cuando nuevas familias y comunidades lo hicieron su hogar. La comunidad judía de Islip es un buen ejemplo de cómo la historia del pueblo siguió incluyendo a más personas.",
       "title": "Muchas raíces, un pueblo",
       "summary": "Las comunidades que siguieron ampliando quién pertenece.",
       "sources": [
@@ -93,6 +100,7 @@
       ]
     },
     "the-promise-continues": {
+      "inBrief": "La historia no es solo el pasado. Hoy, las personas eligen qué guardar, qué preguntar y qué compartir. Este proyecto es parte de ese trabajo: mantener abierta la historia de Islip para todos.",
       "title": "La promesa continúa",
       "summary": "Por qué esta historia todavía se está escribiendo.",
       "sources": [

@@ -94,6 +94,15 @@ export default async function PanelPage({ params }: PanelParams) {
         </Eyebrow>
         <h1 className="text-3xl sm:text-4xl">{copy.title}</h1>
 
+        {/* Plain-language summary anyone, including children, can read. The
+            fuller, careful text follows below. */}
+        <div className="mt-5 rounded-sm border-l-4 border-gold bg-gray p-4 sm:p-5">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-gold-dark">
+            {ex.inBriefLabel}
+          </p>
+          <p className="mt-1 text-lg leading-relaxed text-ink">{copy.inBrief}</p>
+        </div>
+
         {untranslated ? (
           <Notice intent="editorial" title={ex.translationPendingTitle} className="mt-6">
             <strong className="font-semibold">{ex.translationPendingTitle}.</strong>{" "}
