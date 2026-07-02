@@ -57,6 +57,16 @@ function wrapRange(node: Text, start: number, end: number): HTMLElement {
   return mark;
 }
 
+function scrollToMark(el: HTMLElement, smooth: boolean) {
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  el.scrollIntoView({ block: "center", behavior: smooth && !reduced ? "smooth" : "auto" });
+}
+
+function markInViewport(el: HTMLElement): boolean {
+  const r = el.getBoundingClientRect();
+  return r.top >= 0 && r.bottom <= window.innerHeight;
+}
+
 function highlightAndScroll(query: string, hash: string): boolean {
   const anchorEl = hash ? document.getElementById(hash) : null;
   if (hash && !anchorEl) return false; // anchor not in DOM yet — retry
@@ -109,8 +119,7 @@ function highlightAndScroll(query: string, hash: string): boolean {
     if (el instanceof HTMLDetailsElement) el.open = true;
   }
 
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  primary.scrollIntoView({ block: "center", behavior: reduced ? "auto" : "smooth" });
+  scrollToMark(primary, true);
   return true;
 }
 
@@ -130,7 +139,23 @@ export function SearchJump() {
     const attempt = () => {
       if (done) return;
       const hash = decodeURIComponent(window.location.hash.replace(/^#/, ""));
-      if (highlightAndScroll(query, hash)) done = true;
+      if (highlightAndScroll(query, hash)) {
+        done = true;
+        // Framework scroll management (initial-load restoration, hydration
+        // layout shifts) can cancel or undo the first smooth scroll. Verify a
+        // few times after settling and re-scroll instantly if the primary
+        // match is not actually on screen.
+        for (const ms of [700, 1500, 2600]) {
+          timers.push(
+            setTimeout(() => {
+              const primary = document.querySelector<HTMLElement>(
+                'mark[data-search-mark="primary"]',
+              );
+              if (primary && !markInViewport(primary)) scrollToMark(primary, false);
+            }, ms),
+          );
+        }
+      }
     };
     const raf = requestAnimationFrame(attempt);
     for (const ms of RETRY_MS.slice(1)) timers.push(setTimeout(attempt, ms));
