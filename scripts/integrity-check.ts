@@ -12,7 +12,8 @@ import { people } from "../src/lib/people";
 import { timeline } from "../src/lib/timeline";
 import { primarySources, sourceThemes } from "../src/lib/primary-sources";
 import { essays, essayCategories } from "../src/lib/essays";
-import { exhibitPanels, panelRelated } from "../src/lib/exhibit";
+import { exhibitPanels, panelRelated, panelImages } from "../src/lib/exhibit";
+import { bibliographyGroups, bibliographyFlat } from "../src/lib/bibliography";
 
 let failures = 0;
 const fail = (msg: string) => {
@@ -116,7 +117,51 @@ for (const panel of exhibitPanels) {
 }
 ok(`panelRelated: ${related} links, all resolve`);
 
-// ---------- 7. New content is findable in search ----------
+// ---------- 7. Bibliography: alphabetical order + coverage ----------
+{
+  const sortKey = (s: string) => s.replace(/^[“”"'‘’]+/, "").toLowerCase();
+  for (const g of bibliographyGroups) {
+    for (let i = 1; i < g.items.length; i++) {
+      if (sortKey(g.items[i]) < sortKey(g.items[i - 1])) {
+        fail(`bibliography group "${g.id}": item ${i} out of alphabetical order (${g.items[i].slice(0, 50)}…)`);
+      }
+    }
+  }
+  // Every load-bearing source or image cited in site content must be
+  // represented in the bibliography (matched by a distinctive substring).
+  const mustHave = [
+    "Starace", "Conklin, Nathaniel", "Munkenbeck", "Onderdonk", "Finnegan",
+    "Sebor", "Street, Charles R.", "Lossing", "Colonial Laws of New York",
+    "Vermaelen", "Metcalf", "Antonio, Michele", "St. John", "Field Guide",
+    "Verga", "Islip Precinct Articles of Association", "Sauthier",
+    "Stone, William J.", "Stuart, Gilbert", "Henry Clinton", "Quahog",
+    "Weed, Parsons",
+  ];
+  const flat = bibliographyFlat.join("\n");
+  for (const key of mustHave) {
+    if (!flat.includes(key)) fail(`bibliography: no entry matching "${key}"`);
+  }
+  ok(`bibliography: ${bibliographyFlat.length} entries alphabetized, ${mustHave.length} load-bearing sources covered`);
+}
+
+// ---------- 8. Images: every real image ships alt text and a credit ----------
+{
+  for (const [slug, img] of Object.entries(panelImages)) {
+    if (!img) continue;
+    if (!img.alt || img.alt.length < 20) fail(`panelImages.${slug}: alt text missing or too vague`);
+    if (!img.credit || !/public domain|courtesy/i.test(img.credit))
+      fail(`panelImages.${slug}: credit missing or lacks a rights basis`);
+  }
+  for (const p of people) {
+    if (p.portrait) {
+      if (!p.portrait.alt || p.portrait.alt.length < 15) fail(`people.${p.slug}: portrait alt too vague`);
+      if (!p.portrait.credit) fail(`people.${p.slug}: portrait credit missing`);
+    }
+  }
+  ok("images: all exhibit + people images carry specific alt text and credits");
+}
+
+// ---------- 9. New content is findable in search ----------
 const index = createIndex(buildCorpus("en"));
 const expectTop: Array<[string, string]> = [
   ["town gun", "primary-town-minutes-1775-1776"],
