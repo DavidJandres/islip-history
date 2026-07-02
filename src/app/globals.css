@@ -85,6 +85,20 @@
     color: var(--color-blue);
     text-underline-offset: 0.18em;
   }
+
+  /* Words highlighted on arrival from a search result (SearchJump). Ink on
+     gold-light is comfortably past AA contrast; the primary match — the one
+     scrolled into view — gets a ring so the eye lands on the exact word. */
+  mark[data-search-mark] {
+    background-color: var(--color-gold-light);
+    color: var(--color-ink);
+    border-radius: var(--radius-sm);
+    padding-inline: 1px;
+  }
+  mark[data-search-mark="primary"] {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 1px;
+  }
 }
 
 @layer utilities {

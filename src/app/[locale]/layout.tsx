@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { Merriweather, Source_Sans_3 } from "next/font/google";
 import { locales, isLocale } from "@/i18n/config";
@@ -10,6 +11,7 @@ import { TopBar } from "@/components/layout/top-bar";
 import { SiteHeader } from "@/components/layout/site-header";
 import { PrimaryNav } from "@/components/layout/primary-nav";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { SearchJump } from "@/components/search/search-jump";
 import "../globals.css";
 
 // Self-hosted at build time. Only the weights actually used are requested.
@@ -93,6 +95,11 @@ export default async function LocaleLayout({
           </main>
           <SiteFooter locale={locale} dict={dict} />
         </div>
+        {/* Highlights + scrolls to searched words when a page is opened from a
+            search result (?q=…). Suspense: it reads useSearchParams. */}
+        <Suspense fallback={null}>
+          <SearchJump />
+        </Suspense>
       </body>
     </html>
   );

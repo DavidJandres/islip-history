@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test": "tsx scripts/search-test.ts && tsx scripts/search-real-test.ts && tsx scripts/integrity-check.ts",
+    "test": "tsx scripts/search-test.ts && tsx scripts/search-real-test.ts && tsx scripts/search-target-test.ts && tsx scripts/integrity-check.ts",
     "check:flash": "tsx scripts/flash-check.ts"
   },
   "dependencies": {

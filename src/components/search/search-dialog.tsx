@@ -234,6 +234,7 @@ export function SearchDialog({
                 <SearchResultItem
                   key={result.doc.id}
                   result={result}
+                  query={trimmed}
                   asOption
                   optionId={optionId(i)}
                   active={i === active}

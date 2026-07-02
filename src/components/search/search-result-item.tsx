@@ -3,18 +3,23 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Highlight } from "./highlight";
+import { buildTargetHref } from "@/lib/search/target";
 import type { SearchResult } from "@/lib/search/types";
 
 // One result row. In the dialog it behaves as an ARIA option (keyboard
-// navigable); on the results page it is a plain link inside a list.
+// navigable); on the results page it is a plain link inside a list. When the
+// live query is passed, the link carries it as ?q= so the destination page can
+// highlight the matched words and scroll the best one into view (SearchJump).
 export function SearchResultItem({
   result,
+  query,
   active = false,
   optionId,
   asOption = false,
   onSelect,
 }: {
   result: SearchResult;
+  query?: string;
   active?: boolean;
   optionId?: string;
   asOption?: boolean;
@@ -23,7 +28,7 @@ export function SearchResultItem({
   const { doc, titleRanges, snippet } = result;
   return (
     <Link
-      href={doc.href}
+      href={query ? buildTargetHref(doc.href, query) : doc.href}
       id={optionId}
       role={asOption ? "option" : undefined}
       aria-selected={asOption ? active : undefined}

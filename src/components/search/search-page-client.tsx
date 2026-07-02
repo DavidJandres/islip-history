@@ -126,7 +126,7 @@ export function SearchPageClient({
           <ul className="mt-4 space-y-2">
             {results.map((result) => (
               <li key={result.doc.id}>
-                <SearchResultItem result={result} />
+                <SearchResultItem result={result} query={trimmed} />
               </li>
             ))}
           </ul>
