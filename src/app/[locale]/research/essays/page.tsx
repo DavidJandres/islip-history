@@ -1,7 +1,7 @@
 import { localizedPath } from "@/i18n/config";
 import { loadLocale, type LocaleParams } from "@/i18n/page";
 import { buildMetadata } from "@/lib/metadata";
-import { essays, essayCategories } from "@/lib/essays";
+import { localizedEssays, essayCategories } from "@/lib/essays";
 import { Section } from "@/components/ui/section";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
@@ -43,7 +43,7 @@ export default async function EssaysPage({ params }: LocaleParams) {
 
       <div className="mt-10 space-y-12">
         {essayCategories.map((category) => {
-          const items = essays.filter((s) => s.category === category);
+          const items = localizedEssays(locale).filter((s) => s.category === category);
           if (items.length === 0) return null;
           return (
             <section key={category} aria-labelledby={`cat-${category}`}>

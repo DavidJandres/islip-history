@@ -1,7 +1,7 @@
 import { localizedPath } from "@/i18n/config";
 import { loadLocale, type LocaleParams } from "@/i18n/page";
 import { buildMetadata } from "@/lib/metadata";
-import { primarySources, sourceThemes } from "@/lib/primary-sources";
+import { localizedPrimarySources, sourceThemes } from "@/lib/primary-sources";
 import { Section } from "@/components/ui/section";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { Notice } from "@/components/ui/notice";
@@ -52,7 +52,7 @@ export default async function PrimarySourcesPage({ params }: LocaleParams) {
 
       <div className="mt-10 space-y-12">
         {sourceThemes.map((theme) => {
-          const items = primarySources.filter((s) => s.theme === theme);
+          const items = localizedPrimarySources(locale).filter((s) => s.theme === theme);
           if (items.length === 0) return null;
           return (
             <section key={theme} aria-labelledby={`theme-${theme}`}>

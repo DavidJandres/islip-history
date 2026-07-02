@@ -15,6 +15,10 @@ import { essays, essayCategories } from "../src/lib/essays";
 import { exhibitPanels, panelRelated, panelImages } from "../src/lib/exhibit";
 import { bibliographyGroups, bibliographyFlat } from "../src/lib/bibliography";
 import { collectionGroups } from "../src/lib/collections";
+import { timelineEs } from "../src/lib/timeline-es";
+import { peopleEs } from "../src/lib/people-es";
+import { primarySourcesEs } from "../src/lib/primary-sources-es";
+import { essaysEs } from "../src/lib/essays-es";
 
 let failures = 0;
 const fail = (msg: string) => {
@@ -181,7 +185,42 @@ ok(`panelRelated: ${related} links, all resolve`);
   ok("images: all exhibit + people images carry specific alt text and credits");
 }
 
-// ---------- 9. New content is findable in search ----------
+// ---------- 9. Spanish coverage: every entry has a complete overlay ----------
+{
+  for (const e of timeline) {
+    const t = timelineEs[e.id];
+    if (!t) fail(`es coverage: timeline "${e.id}" has no Spanish overlay`);
+    else if (t.body.length !== e.body.length)
+      fail(`es coverage: timeline "${e.id}" body has ${t.body.length} paragraphs, English has ${e.body.length}`);
+  }
+  for (const p of people) {
+    const t = peopleEs[p.slug];
+    if (!t) fail(`es coverage: person "${p.slug}" has no Spanish overlay`);
+    else if (t.bio.length !== p.bio.length)
+      fail(`es coverage: person "${p.slug}" bio has ${t.bio.length} paragraphs, English has ${p.bio.length}`);
+  }
+  for (const s of primarySources) {
+    const t = primarySourcesEs[s.id];
+    if (!t) fail(`es coverage: source "${s.id}" has no Spanish overlay`);
+    else {
+      if (t.excerptLabels.length !== s.excerpts.length)
+        fail(`es coverage: source "${s.id}" excerptLabels length ${t.excerptLabels.length} != excerpts ${s.excerpts.length}`);
+      s.excerpts.forEach((ex, i) => {
+        if (!!ex.label !== !!t.excerptLabels[i])
+          fail(`es coverage: source "${s.id}" excerpt ${i} label presence mismatch`);
+      });
+      if (!!s.date !== !!t.date) fail(`es coverage: source "${s.id}" date presence mismatch`);
+    }
+  }
+  for (const e of essays) {
+    if (!essaysEs[e.id]) fail(`es coverage: essay "${e.id}" has no Spanish overlay`);
+  }
+  ok(
+    `es coverage: ${Object.keys(timelineEs).length} timeline + ${Object.keys(peopleEs).length} people + ${Object.keys(primarySourcesEs).length} sources + ${Object.keys(essaysEs).length} essays overlays complete`,
+  );
+}
+
+// ---------- 10. New content is findable in search ----------
 const index = createIndex(buildCorpus("en"));
 const expectTop: Array<[string, string]> = [
   ["town gun", "primary-town-minutes-1775-1776"],

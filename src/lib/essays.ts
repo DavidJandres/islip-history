@@ -4,6 +4,9 @@
 // a source note, not reproduced in full. Tagged by theme so the thematic pages
 // (Occupation, Flags, Militia, Research Questions) can reuse them.
 
+import type { Locale } from "@/i18n/config";
+import { essaysEs } from "./essays-es";
+
 export interface Essay {
   id: string;
   category: string;
@@ -463,6 +466,25 @@ export const essays: Essay[] = [
       "George J. Munkenbeck, First Addendum to Town of Islip Revolutionary War Resource Guide, Office of the Town Historian, March 10, 2026.",
   },
 ];
+
+// ---------- Localization ----------
+// English above is canonical. Spanish overlays (essays-es.ts) translate the
+// display title, summary, and why-it-matters; excerpts stay in English (they
+// quote the scholarship verbatim) and the citation keeps the original title.
+
+export function localizedEssays(locale: Locale): Essay[] {
+  if (locale === "en") return essays;
+  return essays.map((e) => {
+    const t = essaysEs[e.id];
+    if (!t) return e;
+    return {
+      ...e,
+      title: t.title,
+      summary: t.summary,
+      whyItMatters: t.whyItMatters ?? e.whyItMatters,
+    };
+  });
+}
 
 // Flat text for the search index.
 export const essaysSearchText: string = essays

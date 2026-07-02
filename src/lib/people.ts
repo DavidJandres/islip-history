@@ -9,6 +9,9 @@
 // "do not invent facts" rule — so null renders a dignified monogram plate
 // labelled "No known likeness". Only add an image with a real credit.
 
+import type { Locale } from "@/i18n/config";
+import { peopleEs } from "./people-es";
+
 export const peopleSections = [
   "origins",
   "revolution",
@@ -382,12 +385,24 @@ export const people: Person[] = [
 
 export const peopleSlugs = people.map((p) => p.slug);
 
-export function getPerson(slug: string): Person | undefined {
-  return people.find((p) => p.slug === slug);
+// ---------- Localization ----------
+// English above is canonical; Spanish overlays (people-es.ts) replace the
+// display fields per person. Names, portraits, and citations stay as-is.
+
+export function localizedPeople(locale: Locale): Person[] {
+  if (locale === "en") return people;
+  return people.map((p) => {
+    const t = peopleEs[p.slug];
+    return t ? { ...p, ...t } : p;
+  });
 }
 
-export function peopleInSection(section: PeopleSection): Person[] {
-  return people.filter((p) => p.section === section);
+export function getPerson(slug: string, locale: Locale = "en"): Person | undefined {
+  return localizedPeople(locale).find((p) => p.slug === slug);
+}
+
+export function peopleInSection(section: PeopleSection, locale: Locale = "en"): Person[] {
+  return localizedPeople(locale).filter((p) => p.section === section);
 }
 
 export const peoplePaths = people.map((p) => `/people/${p.slug}`);

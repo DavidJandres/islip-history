@@ -55,7 +55,7 @@ export default async function PeoplePage({ params }: LocaleParams) {
           roster always renders below; these are in-page anchors, not filters. */}
       <nav aria-label={p.browseByCategory} className="mt-8 flex flex-wrap gap-2">
         {peopleSections.map((section) => {
-          const count = peopleInSection(section).length;
+          const count = peopleInSection(section, locale).length;
           if (count === 0) return null;
           return (
             <a
@@ -74,7 +74,7 @@ export default async function PeoplePage({ params }: LocaleParams) {
 
       <div className="mt-8 space-y-12">
         {peopleSections.map((section) => {
-          const members = peopleInSection(section);
+          const members = peopleInSection(section, locale);
           if (members.length === 0) return null;
           return (
             <section key={section} aria-labelledby={`section-${section}`}>

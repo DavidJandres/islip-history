@@ -74,7 +74,7 @@ export default async function KidsTimelinePage({ params }: LocaleParams) {
 
       <div className="mt-8 space-y-12">
         {timelineEras.map((era) => {
-          const entries = timelineInEra(era);
+          const entries = timelineInEra(era, locale);
           if (entries.length === 0) return null;
           return (
             <section key={era} aria-labelledby={`kids-era-${era}`}>

@@ -64,6 +64,7 @@ export default async function FlagsPage({ params }: LocaleParams) {
       </div>
 
       <ThemeCollection
+        locale={locale}
         tag="flags"
         sourcesHeading={dict.thematic.sourcesHeading}
         essaysHeading={dict.thematic.essaysHeading}

@@ -19,8 +19,9 @@ export function generateStaticParams() {
 
 async function resolve(params: PersonParams["params"]) {
   const { locale, person: slug } = await params;
-  const person = getPerson(slug);
-  if (!isLocale(locale) || !person) notFound();
+  if (!isLocale(locale)) notFound();
+  const person = getPerson(slug, locale);
+  if (!person) notFound();
   return { locale: locale as Locale, person, dict: getDictionary(locale) };
 }
 

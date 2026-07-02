@@ -54,6 +54,7 @@ export default async function MilitiaPage({ params }: LocaleParams) {
       </div>
 
       <ThemeCollection
+        locale={locale}
         tag="militia"
         sourcesHeading={dict.thematic.sourcesHeading}
         essaysHeading={dict.thematic.essaysHeading}

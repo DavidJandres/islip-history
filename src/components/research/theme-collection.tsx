@@ -1,8 +1,9 @@
-import { primarySources } from "@/lib/primary-sources";
-import { essays } from "@/lib/essays";
+import { localizedPrimarySources } from "@/lib/primary-sources";
+import { localizedEssays } from "@/lib/essays";
 import { SourceCard } from "./source-card";
 import { EssayCard } from "./essay-card";
 import type { SourceStatus } from "@/lib/primary-sources";
+import type { Locale } from "@/i18n/config";
 
 // The shared body of a thematic page: the primary sources and essays tagged with
 // `tag`, rendered as cards under localized section headings. Each thematic page
@@ -10,12 +11,14 @@ import type { SourceStatus } from "@/lib/primary-sources";
 
 export function ThemeCollection({
   tag,
+  locale = "en",
   sourcesHeading,
   essaysHeading,
   sourceLabels,
   essayLabels,
 }: {
   tag: string;
+  locale?: Locale;
   sourcesHeading: string;
   essaysHeading: string;
   sourceLabels: {
@@ -25,8 +28,8 @@ export function ThemeCollection({
   };
   essayLabels: { keyExcerpts: string; whyMatters: string };
 }) {
-  const sources = primarySources.filter((s) => s.tags?.includes(tag));
-  const themeEssays = essays.filter((e) => e.tags?.includes(tag));
+  const sources = localizedPrimarySources(locale).filter((s) => s.tags?.includes(tag));
+  const themeEssays = localizedEssays(locale).filter((e) => e.tags?.includes(tag));
 
   return (
     <>

@@ -38,6 +38,7 @@ export default async function OccupationPage({ params }: LocaleParams) {
       </div>
 
       <ThemeCollection
+        locale={locale}
         tag="occupation"
         sourcesHeading={dict.thematic.sourcesHeading}
         essaysHeading={dict.thematic.essaysHeading}

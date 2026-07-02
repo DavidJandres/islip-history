@@ -6,6 +6,9 @@
 // available transcription. `theme` sets the group on the Primary Sources page;
 // `tags` let a document also appear on a thematic page.
 
+import type { Locale } from "@/i18n/config";
+import { primarySourcesEs } from "./primary-sources-es";
+
 export type SourceStatus = "verified" | "draft" | "review" | "pending";
 
 export interface SourceExcerpt {
@@ -625,6 +628,31 @@ export const primarySources: PrimarySource[] = [
       "Reginald Metcalf Sr., “Reading of the Declaration of Independence and Creation of the Huntington Liberty Flag,” Town of Huntington Historian's Office, excerpted in Town of Islip Revolutionary War Resource Guide.",
   },
 ];
+
+// ---------- Localization ----------
+// English above is canonical. Spanish overlays (primary-sources-es.ts)
+// translate the editorial frame — title, type, date wording, context,
+// why-it-matters, excerpt labels — while the document excerpts themselves stay
+// in their original language, as transcriptions should.
+
+export function localizedPrimarySources(locale: Locale): PrimarySource[] {
+  if (locale === "en") return primarySources;
+  return primarySources.map((s) => {
+    const t = primarySourcesEs[s.id];
+    if (!t) return s;
+    return {
+      ...s,
+      title: t.title,
+      type: t.type,
+      date: t.date ?? s.date,
+      context: t.context,
+      whyItMatters: t.whyItMatters ?? s.whyItMatters,
+      excerpts: s.excerpts.map((ex, i) =>
+        t.excerptLabels[i] ? { ...ex, label: t.excerptLabels[i]! } : ex,
+      ),
+    };
+  });
+}
 
 // Flat text for the search index.
 export const primarySourcesSearchText: string = primarySources

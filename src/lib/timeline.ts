@@ -1,7 +1,10 @@
-// The working timeline. Like people.ts, entries are structured English data;
-// the Spanish site shows them in English with a notice until translated, while
-// UI chrome and era titles are translated (dictionaries/<locale>/timeline.json).
+// The working timeline. Entries are structured English data (canonical), with
+// full Spanish display overlays in timeline-es.ts merged by localizedTimeline.
+// UI chrome and era titles live in dictionaries/<locale>/timeline.json.
 // The list is deliberately incomplete and grows as sources are digitized.
+
+import type { Locale } from "@/i18n/config";
+import { timelineEs } from "./timeline-es";
 
 export const timelineEras = [
   "before",
@@ -682,6 +685,18 @@ export const timeline: TimelineEntry[] = [
   },
 ];
 
-export function timelineInEra(era: TimelineEra): TimelineEntry[] {
-  return timeline.filter((e) => e.era === era);
+// ---------- Localization ----------
+// English above is canonical; Spanish overlays (timeline-es.ts) replace the
+// display fields per entry. Citations in `sources` stay untranslated.
+
+export function localizedTimeline(locale: Locale): TimelineEntry[] {
+  if (locale === "en") return timeline;
+  return timeline.map((e) => {
+    const t = timelineEs[e.id];
+    return t ? { ...e, ...t } : e;
+  });
+}
+
+export function timelineInEra(era: TimelineEra, locale: Locale = "en"): TimelineEntry[] {
+  return localizedTimeline(locale).filter((e) => e.era === era);
 }

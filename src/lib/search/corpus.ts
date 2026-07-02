@@ -1,20 +1,20 @@
 // Assembles the searchable corpus for a locale from the same data the pages
-// render, so the index can never drift from the site. Titles, subtitles, and
-// section labels are localized; long-form bodies for the exhibit are taken from
-// the English copy (the Spanish bodies are still being translated), so a
-// Spanish visitor can still find a panel by its content and follow the
-// "read in English" link. People and timeline prose is English for now by the
-// same rule. This module is isomorphic (no server-only APIs) so it can be
-// lazily imported into a client chunk.
+// render, so the index can never drift from the site. Everything is localized
+// through the same accessors the pages use (localizedPeople/Timeline/
+// PrimarySources/Essays and the translated exhibit bodies), so the Spanish
+// index searches Spanish text; document excerpts and citations remain in their
+// original language on both indexes, as on the pages. This module is
+// isomorphic (no server-only APIs) so it can be lazily imported into a client
+// chunk.
 
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedPath, type Locale } from "@/i18n/config";
-import { people } from "@/lib/people";
-import { timeline } from "@/lib/timeline";
+import { localizedPeople } from "@/lib/people";
+import { localizedTimeline } from "@/lib/timeline";
 import { exhibitPanels, panelNumber, panelStatus, panelBodyTranslated } from "@/lib/exhibit";
 import { bibliographyFlat } from "@/lib/bibliography";
-import { primarySources } from "@/lib/primary-sources";
-import { essays } from "@/lib/essays";
+import { localizedPrimarySources } from "@/lib/primary-sources";
+import { localizedEssays } from "@/lib/essays";
 import type { SearchDoc } from "./types";
 
 const join = (parts: Array<string | undefined | null>) =>
@@ -28,7 +28,7 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
   const docs: SearchDoc[] = [];
 
   // People — each has its own page.
-  for (const p of people) {
+  for (const p of localizedPeople(locale)) {
     docs.push({
       id: `person-${p.slug}`,
       type: "person",
@@ -43,7 +43,7 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
   }
 
   // Timeline — a single page; deep-link to each entry's anchor.
-  for (const e of timeline) {
+  for (const e of localizedTimeline(locale)) {
     docs.push({
       id: `timeline-${e.id}`,
       type: "timeline",
@@ -223,7 +223,7 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
 
   // Primary-source documents, each deep-linked to its card on the Primary
   // Sources page so a match lands the reader on the exact document.
-  for (const s of primarySources) {
+  for (const s of localizedPrimarySources(locale)) {
     docs.push({
       id: `primary-${s.id}`,
       type: "page",
@@ -238,7 +238,7 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
   }
 
   // Essays, each deep-linked to its card on the Essays page.
-  for (const e of essays) {
+  for (const e of localizedEssays(locale)) {
     docs.push({
       id: `essay-${e.id}`,
       type: "page",
