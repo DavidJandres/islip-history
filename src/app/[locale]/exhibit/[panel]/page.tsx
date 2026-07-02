@@ -7,6 +7,7 @@ import { exhibitPanelJsonLd, breadcrumbJsonLd } from "@/lib/structured-data";
 import {
   exhibitPanels,
   panelStatus,
+  panelBodyTranslated,
   panelNumber,
   panelNeighbors,
   panelCount,
@@ -59,7 +60,7 @@ export default async function PanelPage({ params }: PanelParams) {
   // The English copy is the source of truth; other locales trail it. When a
   // non-default locale hasn't been translated yet, say so plainly rather than
   // showing a "draft under review" note over placeholder text.
-  const untranslated = locale !== defaultLocale && status === "draft";
+  const untranslated = locale !== defaultLocale && !panelBodyTranslated[panel];
 
   const jsonLd = [
     exhibitPanelJsonLd(locale, {

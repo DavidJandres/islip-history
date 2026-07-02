@@ -39,6 +39,20 @@ export const panelStatus: Record<PanelSlug, "draft" | "sourcing"> = {
   "the-promise-continues": "draft",
 };
 
+// Whether each panel's SPANISH body is a real translation (true) or still the
+// translation-pending placeholder (false). Deliberately separate from
+// panelStatus, which tracks factual review of the English source text. The
+// panel page shows the "Spanish in progress" notice only while this is false.
+export const panelBodyTranslated: Record<PanelSlug, boolean> = {
+  "the-promise": true,
+  "before-the-town": true,
+  "revolution-comes-to-islip": true,
+  "washingtons-visit": true,
+  "an-unfinished-promise": true,
+  "many-roots-one-town": true,
+  "the-promise-continues": true,
+};
+
 export function panelNumber(slug: PanelSlug): number {
   return exhibitPanels.indexOf(slug) + 1; // 1-based, for "Panel 4 of 7"
 }

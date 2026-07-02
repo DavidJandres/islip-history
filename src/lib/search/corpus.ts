@@ -11,7 +11,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedPath, type Locale } from "@/i18n/config";
 import { people } from "@/lib/people";
 import { timeline } from "@/lib/timeline";
-import { exhibitPanels, panelNumber, panelStatus } from "@/lib/exhibit";
+import { exhibitPanels, panelNumber, panelStatus, panelBodyTranslated } from "@/lib/exhibit";
 import { bibliographyFlat } from "@/lib/bibliography";
 import { primarySources } from "@/lib/primary-sources";
 import { essays } from "@/lib/essays";
@@ -57,11 +57,14 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
     });
   }
 
-  // Exhibit panels — localized title/summary, English body for search recall.
+  // Exhibit panels — localized title/summary. The body indexed is the locale's
+  // own translation once it exists (panelBodyTranslated), else the English
+  // body so a Spanish visitor can still find a panel by its content.
   for (const slug of exhibitPanels) {
     const panel = dict.exhibit.panels[slug];
     const enPanel = en.exhibit.panels[slug];
     const bodyReady = panelStatus[slug] === "draft";
+    const localizedBody = panelBodyTranslated[slug] ? panel.body : enPanel.body;
     docs.push({
       id: `exhibit-${slug}`,
       type: "exhibit",
@@ -69,7 +72,7 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
       title: panel.title,
       subtitle: `${dict.exhibit.panelWord} ${panelNumber(slug)}`,
       href: href(`/exhibit/${slug}`),
-      body: bodyReady ? enPanel.body.join(" ") : "",
+      body: bodyReady ? localizedBody.join(" ") : "",
       keywords: panel.summary,
       sources: panel.sources.join(" "),
     });
