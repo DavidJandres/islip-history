@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test": "tsx scripts/search-test.ts && tsx scripts/search-real-test.ts"
+    "test": "tsx scripts/search-test.ts && tsx scripts/search-real-test.ts && tsx scripts/integrity-check.ts",
+    "check:flash": "tsx scripts/flash-check.ts"
   },
   "dependencies": {
     "@upstash/redis": "^1.34.3",
