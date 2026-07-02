@@ -47,9 +47,22 @@ export function buildMetadata({
       siteName: brand,
       type: "website",
       locale: locale === "es" ? "es_419" : "en_US",
+      // 1200x630 brand card (public/og.png): town seal, brand, bilingual
+      // tagline on the paper background. metadataBase makes the URL absolute.
+      images: [
+        {
+          url: "/og.png",
+          width: 1200,
+          height: 630,
+          alt: "The Islip Promise: the Town of Islip seal beside the project name and the tagline 'Islip history, the Revolution, and a community archive'.",
+        },
+      ],
     },
-    // summary, not summary_large_image: we don't ship an OG image yet, so don't
-    // advertise one. Revisit when a 1200x630 card exists.
-    twitter: { card: "summary", title: fullTitle, description },
+    twitter: {
+      card: "summary_large_image",
+      title: fullTitle,
+      description,
+      images: ["/og.png"],
+    },
   };
 }
