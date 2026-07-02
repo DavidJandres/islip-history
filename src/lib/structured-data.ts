@@ -14,24 +14,30 @@ function abs(locale: Locale, path: string): string {
 }
 
 // The Project as an Organization, and the WebSite that points back to it by
-// @id. A SearchAction is included now that on-site search is live, so engines
-// can expose a sitelinks search box that lands on /[locale]/search?q=…
-export function siteJsonLd(siteName: string, locale: Locale) {
+// @id. The public brand ("The Islip Promise") is the primary name — it is what
+// search engines show as the site name — while the formal project name stays
+// as alternateName. A SearchAction is included now that on-site search is
+// live, so engines can expose a sitelinks search box.
+export function siteJsonLd(siteName: string, locale: Locale, description?: string) {
   return [
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "@id": `${url}#organization`,
-      name: siteName,
+      name: siteConfig.publicName,
+      alternateName: siteName,
       url,
+      ...(description ? { description } : {}),
       logo: { "@type": "ImageObject", url: `${url}/logos/town-of-islip-seal.png` },
     },
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "@id": `${url}#website`,
-      name: siteName,
+      name: siteConfig.publicName,
+      alternateName: siteName,
       url,
+      ...(description ? { description } : {}),
       inLanguage: [...locales],
       publisher: { "@id": `${url}#organization` },
       potentialAction: {

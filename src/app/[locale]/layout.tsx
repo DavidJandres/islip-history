@@ -76,7 +76,11 @@ export default async function LocaleLayout({
       <body style={{ backgroundColor: "#faf8f5" }}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd(dict.common.siteName, locale)) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              siteJsonLd(dict.common.siteName, locale, dict.common.seoHomeDescription),
+            ),
+          }}
         />
         <div className="flex min-h-screen flex-col">
           <SkipLink label={dict.common.skipToContent} />

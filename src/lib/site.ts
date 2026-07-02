@@ -12,6 +12,10 @@ import { peopleSections } from "./people";
 function resolveSiteUrl(): string {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL;
   if (explicit) return explicit.replace(/\/$/, "");
+  // Production is pinned to the real domain so the sitemap, canonicals,
+  // hreflang, Open Graph, and JSON-LD can never emit *.vercel.app URLs —
+  // Search Console treats those as outside the property.
+  if (process.env.VERCEL_ENV === "production") return "https://theislippromise.org";
   const prod = process.env.VERCEL_PROJECT_PRODUCTION_URL;
   if (prod) return `https://${prod}`;
   const preview = process.env.VERCEL_URL;
@@ -21,6 +25,11 @@ function resolveSiteUrl(): string {
 
 export const siteConfig = {
   url: resolveSiteUrl(),
+  // The public brand for search results, social cards, and the web manifest.
+  // The formal project name ("Town of Islip History Project" / its Spanish
+  // form) remains the on-page heading and the schema.org alternateName.
+  publicName: "The Islip Promise",
+  shortName: "Islip Promise",
 } as const;
 
 export interface NavItem {

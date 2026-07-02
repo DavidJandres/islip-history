@@ -13,7 +13,8 @@ export async function generateMetadata({ params }: LocaleParams) {
   const { locale, dict } = await loadLocale(params);
   return buildMetadata({
     locale,
-    description: dict.home.lede[0],
+    absoluteTitle: dict.common.seoHomeTitle,
+    description: dict.common.seoHomeDescription,
     siteName: dict.common.siteName,
   });
 }
