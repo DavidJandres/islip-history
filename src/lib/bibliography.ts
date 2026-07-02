@@ -135,6 +135,7 @@ export const bibliographyGroups: BibGroup[] = [
       "Sauthier, Claude Joseph, Bernard Ratzer, and William Faden. A Map of the Province of New-York. 1776. Library of Congress. Public domain. Lead image, “Revolution Comes to Islip.”",
       "Stone, William J. Declaration of Independence (engraved facsimile of the 1776 original). 1823. Public domain. Lead image of the exhibit panel “The Promise.”",
       "Stuart, Gilbert. George Washington (Lansdowne portrait). 1796. National Portrait Gallery, Smithsonian Institution. Public domain. Lead image, “Washington's Visit,” and People page portrait.",
+      "Team photographs on the Fellowship page appear courtesy of the project team members.",
       "Town of Islip seal, designed by Abraham Gardiner Thompson, 1883. Courtesy of the Town of Islip. People page image and site identity.",
       "United States Postal Service. Cold Blast Furnace at Hopewell Furnace, Pennsylvania. Photograph referenced in Town Historian material on bog iron and iron processing.",
     ],

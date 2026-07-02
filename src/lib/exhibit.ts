@@ -69,6 +69,10 @@ export interface PanelImage {
   src: string;
   alt: string;
   credit?: string;
+  // A plain-text summary of what the image/map actually shows, rendered as the
+  // visible figcaption. For information-bearing maps this is the WCAG "text
+  // alternative nearby": a reader who cannot see the map still gets its point.
+  caption?: string;
 }
 
 export const panelImages: Partial<Record<PanelSlug, PanelImage>> = {
@@ -77,24 +81,32 @@ export const panelImages: Partial<Record<PanelSlug, PanelImage>> = {
     alt: "The 1823 William Stone engraved facsimile of the 1776 United States Declaration of Independence, showing its text and signatures.",
     credit:
       "The Declaration of Independence, 1823 William J. Stone facsimile of the 1776 original. Public domain.",
+    caption:
+      "The Declaration of Independence as engraved by William J. Stone in 1823, the best-known image of the 1776 text and its signatures.",
   },
   "before-the-town": {
     src: "/exhibit/before-the-town.jpg",
     alt: "A 1779 map of the colonial Province of New York, including all of Long Island, showing counties, manors, patents, townships, and private land grants.",
     credit:
       "A chorographical map of the Province of New-York, Claude Joseph Sauthier and William Faden, 1779. Library of Congress. Public domain.",
+    caption:
+      "This 1779 map shows the colonial Province of New York, with all of Long Island. Islip lies on the south shore of Suffolk County, between the Great South Bay and the island's wooded interior, divided into large private landholdings rather than villages.",
   },
   "revolution-comes-to-islip": {
     src: "/exhibit/revolution-comes-to-islip.jpg",
     alt: "A 1776 survey map of the Province of New York, including all of Long Island, the region that came under British occupation during the Revolution.",
     credit:
       "A map of the Province of New-York, Sauthier and Ratzer / William Faden, 1776. Library of Congress. Public domain.",
+    caption:
+      "This 1776 survey map shows Long Island as the war began. After the fighting at Brooklyn in August 1776, British forces controlled everything on this map east of the city, including Islip.",
   },
   "washingtons-visit": {
     src: "/exhibit/washingtons-visit.jpg",
     alt: "Gilbert Stuart's 1796 full-length Lansdowne portrait of President George Washington.",
     credit:
       "George Washington (Lansdowne portrait) by Gilbert Stuart, 1796. National Portrait Gallery. Public domain.",
+    caption:
+      "Gilbert Stuart's 1796 portrait of President George Washington, painted six years after his Long Island tour.",
   },
 };
 

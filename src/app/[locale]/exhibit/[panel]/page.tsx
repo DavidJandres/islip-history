@@ -133,7 +133,7 @@ export default async function PanelPage({ params }: PanelParams) {
           src={panelImages[panel]?.src}
           alt={panelImages[panel]?.alt}
           credit={panelImages[panel]?.credit}
-          caption={copy.summary}
+          caption={panelImages[panel]?.caption ?? copy.summary}
           label={dict.common.imageComingSoon}
           aspect="photo"
           contain
