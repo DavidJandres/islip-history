@@ -15,9 +15,14 @@ interface PageMetaInput {
 
 // Builds title, canonical, and hreflang alternates (including x-default) for a
 // page, so translations aren't treated as duplicates and search engines serve
-// the right language. Titles and og:site_name carry the public brand
-// (siteConfig.publicName); the formal project name arrives as `siteName` and
-// remains in the JSON-LD as the alternate name.
+// the right language.
+//
+// Two names, two jobs — this is what a Google result shows:
+//   • The bold SITE-NAME line = the formal project name (`siteName`), carried
+//     by og:site_name here and by WebSite/Organization `name` in the JSON-LD.
+//   • The clickable TITLE = "The Islip Promise | <page>" (brand leads), so the
+//     public brand reads in every result while the site name stays the formal
+//     project name.
 export function buildMetadata({
   locale,
   title,
@@ -28,7 +33,7 @@ export function buildMetadata({
 }: PageMetaInput): Metadata {
   const brand = siteConfig.publicName;
   const fullTitle =
-    absoluteTitle ?? (title ? `${title} · ${brand}` : `${brand} | ${siteName}`);
+    absoluteTitle ?? `${brand} | ${title ?? siteName}`;
   const url = (loc: Locale) =>
     new URL(localizedPath(loc, path), siteConfig.url).toString();
 
@@ -44,7 +49,9 @@ export function buildMetadata({
       title: fullTitle,
       description,
       url: url(locale),
-      siteName: brand,
+      // The formal name is the site-name line in search/social; the brand
+      // leads the title above.
+      siteName,
       type: "website",
       locale: locale === "es" ? "es_419" : "en_US",
       // 1200x630 brand card (public/og.png): town seal, brand, bilingual
