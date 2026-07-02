@@ -17,6 +17,7 @@ import enThematic from "./dictionaries/en/thematic.json";
 import enExhibit from "./dictionaries/en/exhibit.json";
 import enPeople from "./dictionaries/en/people.json";
 import enTimeline from "./dictionaries/en/timeline.json";
+import enCollections from "./dictionaries/en/collections.json";
 
 import esCommon from "./dictionaries/es/common.json";
 import esNav from "./dictionaries/es/nav.json";
@@ -35,6 +36,7 @@ import esThematic from "./dictionaries/es/thematic.json";
 import esExhibit from "./dictionaries/es/exhibit.json";
 import esPeople from "./dictionaries/es/people.json";
 import esTimeline from "./dictionaries/es/timeline.json";
+import esCollections from "./dictionaries/es/collections.json";
 
 // Copy lives in one JSON file per section (dictionaries/<locale>/<section>.json)
 // so pages don't share one giant file that's painful to edit and quick to
@@ -59,6 +61,7 @@ const en = {
   exhibit: enExhibit,
   people: enPeople,
   timeline: enTimeline,
+  collections: enCollections,
 };
 
 export type Dictionary = typeof en;
@@ -81,6 +84,7 @@ const es: Dictionary = {
   exhibit: esExhibit,
   people: esPeople,
   timeline: esTimeline,
+  collections: esCollections,
 };
 
 const dictionaries: Record<Locale, Dictionary> = { en, es };

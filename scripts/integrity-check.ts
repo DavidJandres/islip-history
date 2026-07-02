@@ -14,6 +14,7 @@ import { primarySources, sourceThemes } from "../src/lib/primary-sources";
 import { essays, essayCategories } from "../src/lib/essays";
 import { exhibitPanels, panelRelated, panelImages } from "../src/lib/exhibit";
 import { bibliographyGroups, bibliographyFlat } from "../src/lib/bibliography";
+import { collectionGroups } from "../src/lib/collections";
 
 let failures = 0;
 const fail = (msg: string) => {
@@ -116,6 +117,25 @@ for (const panel of exhibitPanels) {
   }
 }
 ok(`panelRelated: ${related} links, all resolve`);
+
+// ---------- 6b. Collections mash links + localized group labels ----------
+{
+  let count = 0;
+  for (const group of collectionGroups) {
+    for (const link of group.links) {
+      count++;
+      checkHref(link.href, `collections(${group.key})`);
+    }
+    for (const locale of ["en", "es"] as const) {
+      const groups = getDictionary(locale).collections.groups as Record<
+        string,
+        { title: string; blurb: string }
+      >;
+      if (!groups[group.key]?.title) fail(`collections: ${locale} label missing for "${group.key}"`);
+    }
+  }
+  ok(`collections: ${count} links resolve, all groups labeled in en + es`);
+}
 
 // ---------- 7. Bibliography: alphabetical order + coverage ----------
 {

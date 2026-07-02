@@ -1,0 +1,49 @@
+{
+  "breadcrumb": "Collections",
+  "eyebrow": "Explore the archive",
+  "title": "Collections",
+  "intro": [
+    "This page gathers the project's material by theme, in one place: town records, Revolution and occupation, Sagtikos Manor, maps, people, daily life, schools and congregations, race and belonging, and flags.",
+    "Each entry links to where the material already lives — a source, an essay, a timeline moment, or a person's page — so you can start from a topic instead of a page name."
+  ],
+  "provisionalTitle": "A working page",
+  "provisionalNote": "This is an early gathering place, not a finished catalog. Groupings will be refined, and new collections will appear as more of the archive is digitized and reviewed.",
+  "groups": {
+    "townRecords": {
+      "title": "Town Records",
+      "blurb": "The town's first minute book: annual meetings, poor relief, bay rules, wartime pages, and the 1784 turn to the State of New York."
+    },
+    "revolution": {
+      "title": "Revolution & Occupation",
+      "blurb": "How the Revolution reached Islip: the 1775 pledge, the militia, six years of occupation, raids, and survival."
+    },
+    "sagtikos": {
+      "title": "Sagtikos Manor & the Thompsons",
+      "blurb": "One house at the center of the story: family, offices, occupation, labor, and a presidential visit."
+    },
+    "mapsPlaces": {
+      "title": "Maps & Places",
+      "blurb": "The town's shape on paper and on the ground: province maps, necks and creeks, the South Country Road, and the bay."
+    },
+    "people": {
+      "title": "People",
+      "blurb": "The lives the archive can name so far, from Winnaquaheagh to Samuel Sitko."
+    },
+    "dailyLife": {
+      "title": "Daily Life",
+      "blurb": "Hogs and fences, fishing rules, songs, sickness, and neighborly care — the everyday world behind the big events."
+    },
+    "schoolsChurches": {
+      "title": "Schools, Churches & Community",
+      "blurb": "Schoolhouses and commissioners, congregations, and the institutions communities built to belong."
+    },
+    "raceStatus": {
+      "title": "Race, Status & Households",
+      "blurb": "Who actually lived in early Islip: the 1798 count of households, named lives in the records, and the questions that remain."
+    },
+    "flagsSymbols": {
+      "title": "Flags & Symbols",
+      "blurb": "What flew over Islip, what its militia likely marched under, and the seal the town still uses."
+    }
+  }
+}

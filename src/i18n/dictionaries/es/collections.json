@@ -1,0 +1,49 @@
+{
+  "breadcrumb": "Colecciones",
+  "eyebrow": "Explorar el archivo",
+  "title": "Colecciones",
+  "intro": [
+    "Esta página reúne el material del proyecto por tema, en un solo lugar: registros del pueblo, Revolución y ocupación, la Mansión Sagtikos, mapas, personas, vida diaria, escuelas y congregaciones, raza y pertenencia, y banderas.",
+    "Cada entrada lleva a donde el material ya vive — una fuente, un ensayo, un momento de la cronología o la página de una persona — para que puedas empezar por un tema y no por el nombre de una página."
+  ],
+  "provisionalTitle": "Una página en construcción",
+  "provisionalNote": "Este es un punto de partida temprano, no un catálogo terminado. Los grupos se irán afinando y aparecerán nuevas colecciones a medida que se digitalice y revise más material del archivo.",
+  "groups": {
+    "townRecords": {
+      "title": "Registros del pueblo",
+      "blurb": "El primer libro de actas del pueblo: reuniones anuales, ayuda a los pobres, reglas de la bahía, páginas de guerra y el cambio de 1784 al Estado de Nueva York."
+    },
+    "revolution": {
+      "title": "Revolución y ocupación",
+      "blurb": "Cómo llegó la Revolución a Islip: la promesa de 1775, la milicia, seis años de ocupación, asaltos y supervivencia."
+    },
+    "sagtikos": {
+      "title": "La Mansión Sagtikos y los Thompson",
+      "blurb": "Una casa en el centro de la historia: familia, cargos públicos, ocupación, trabajo y una visita presidencial."
+    },
+    "mapsPlaces": {
+      "title": "Mapas y lugares",
+      "blurb": "La forma del pueblo en el papel y en el terreno: mapas de la provincia, franjas de tierra y arroyos, el camino South Country y la bahía."
+    },
+    "people": {
+      "title": "Personas",
+      "blurb": "Las vidas que el archivo puede nombrar hasta ahora, desde Winnaquaheagh hasta Samuel Sitko."
+    },
+    "dailyLife": {
+      "title": "Vida diaria",
+      "blurb": "Cerdos y cercas, reglas de pesca, canciones, enfermedades y el cuidado entre vecinos: el mundo de todos los días detrás de los grandes hechos."
+    },
+    "schoolsChurches": {
+      "title": "Escuelas, iglesias y comunidad",
+      "blurb": "Escuelas y comisionados, congregaciones y las instituciones que las comunidades crearon para pertenecer."
+    },
+    "raceStatus": {
+      "title": "Raza, condición y hogares",
+      "blurb": "Quiénes vivían de verdad en el Islip temprano: el conteo de hogares de 1798, vidas con nombre en los registros y las preguntas que quedan."
+    },
+    "flagsSymbols": {
+      "title": "Banderas y símbolos",
+      "blurb": "Qué banderas ondearon sobre Islip, bajo cuál marchó probablemente su milicia y el sello que el pueblo todavía usa."
+    }
+  }
+}

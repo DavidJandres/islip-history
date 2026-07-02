@@ -100,7 +100,15 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
       path: "/timeline/kids",
     },
     { key: "explore", title: nav.explore, body: sum.explore, path: "/explore" },
-    { key: "collections", title: nav.collections, body: sum.collections, path: "/explore/collections" },
+    {
+      key: "collections",
+      title: dict.collections.title,
+      body: [
+        ...dict.collections.intro,
+        ...Object.values(dict.collections.groups).map((g) => `${g.title} ${g.blurb}`),
+      ].join(" "),
+      path: "/explore/collections",
+    },
     { key: "maps", title: nav.maps, body: sum.maps, path: "/explore/maps" },
     { key: "photographs", title: nav.photographs, body: sum.photographs, path: "/explore/photographs" },
     { key: "primarySources", title: nav.primarySources, body: sum.primarySources, path: "/explore/primary-sources" },
