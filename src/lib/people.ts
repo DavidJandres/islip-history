@@ -67,6 +67,7 @@ export const people: Person[] = [
     portrait: null,
     bio: [
       'William Nicoll made the first purchase of land that became Islip Grange on November 29, 1683. Annotations to the 1798 Conklin letter describe this as the "first deeded land" and the birth of what Nicoll named "Islip Grange," covering land associated with today\'s East Islip, Great River, Islip Terrace, and surrounding areas. The Royal Governor confirmed the purchase with a royal patent on December 5, 1684.',
+      "The founder himself apparently held no Islip town office; annotations to the town's first minute book suggest his influence worked instead through his provincial offices, including Speaker of the General Assembly. The family name, though, runs through the minute book for generations: a William Nicoll served as precinct supervisor for most years from 1747 to 1775, and another held the office again in the 1790s.",
     ],
     whyMatters:
       "Nicoll is central to the colonial origin of Islip Grange and to the legal land story that eventually developed into the Town of Islip.",
@@ -77,6 +78,7 @@ export const people: Person[] = [
     sources: [
       'Nathaniel Conklin, "Description of the Town of Islip in Suffolk County," 1798 (annotated, Town of Islip Historian\'s Office).',
       'George J. Munkenbeck, "The Origins of the Town of Islip."',
+      "Islip town minutes and annotations, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982).",
     ],
   },
   {
@@ -149,6 +151,7 @@ export const people: Person[] = [
     bio: [
       'Isaac Thompson is one of the most important people in this story. The Town Historian\'s essay calls him "A Man on a Tightrope" \u2014 someone who held Crown, local political, and judicial offices while also taking patriot risks during the Revolutionary era. The source argues that Thompson was not simply a witness to history but someone who "made history," taking a stand that placed his life and family in danger.',
       "Thompson signed the Islip Precinct Articles of Association after a May 10, 1775 meeting of freeholders and residents called to discuss support for the Continental Congress. Signing placed Thompson, his family, and his property in jeopardy, because he was also a Crown magistrate and precinct official.",
+      "The town's own minute book traces his public service year by year. He first appears in 1768 as an overseer of the poor, was elected an overseer of the highways in April 1775 alongside Benajah Strong, and in April 1776 was elected supervisor. He was re-elected at every wartime meeting, even as the minutes, as legal records in occupied territory, were dated by the reign of King George III, and he was still supervisor in April 1784 when the record first counted the years from American independence. His last election as supervisor came in April 1785.",
       "His story must also hold the harder history of slavery and labor at Sagtikos Manor. Drawing on Christopher Verga's work, the uploaded material states that during Thompson's ownership much of the work on the farm and in the home was performed by enslaved or indentured people. It notes that Thompson owned, on average, four enslaved people in the decades around 1790, 1800, and 1810 \u2014 and that this fuller story must be part of the 250th research.",
     ],
     whyMatters:
@@ -161,6 +164,7 @@ export const people: Person[] = [
       'George J. Munkenbeck, "Isaac Thompson \u2014 A Man on a Tightrope."',
       'Town of Islip Historian\'s Office, "A 250th Story."',
       "George J. Munkenbeck, \u201cIsaac Thompson \u2014 A Man on a Tightrope,\u201d drawing on Christopher Verga's research on slavery in Suffolk County.",
+      "Islip town minutes, 1768\u20131785, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720\u20131861 (Town of Islip, 1982).",
     ],
   },
   {
@@ -190,8 +194,8 @@ export const people: Person[] = [
     portrait: null,
     bio: [
       "Benajah Strong was a farmer, patriot, and public official whose life connected Islip's militia, its town government, and the Thompson family of Sagtikos Manor. Born about 1748, in May 1772 he married Hannah Thompson, a sister of Isaac Thompson, which also tied him to the Woodhull family.",
-      "In February 1776, when Islip Precinct sought commissions for its own militia company, the residents chose Benajah Strong as their captain. A well-known supporter of the patriot cause, he was among those who fled to Connecticut when the British occupied Suffolk County, and he took part in several raids and missions. The British considered him a “notorious rebel.”",
-      "After the war, Strong returned to public life. In April 1787 he was the last person elected Supervisor of the Precinct of Islip, and when the State of New York recognized Islip as a Town in 1788 he continued in town office, serving several terms as Town Clerk and once more as Supervisor in 1790.",
+      "The town minutes put Strong inside local government just before the war: at the annual meeting of April 1775 he was elected an overseer of the highways alongside Isaac Thompson, weeks before Islip signed the Articles of Association. In February 1776, when Islip Precinct sought commissions for its own militia company, the residents chose Benajah Strong as their captain. A well-known supporter of the patriot cause, he was among those who fled to Connecticut when the British occupied Suffolk County, and he took part in several raids and missions. The British considered him a “notorious rebel.”",
+      "After the war, Strong returned to public life. In April 1787 he was the last person elected Supervisor of the Precinct of Islip, and when the State of New York recognized Islip as a Town in 1788 he continued in town office: the minute book records him as Town Clerk from 1789 through 1795, and in 1795 the meeting voted to hold the next annual town meeting at his house.",
     ],
     whyMatters:
       "Benajah Strong shows that Islip's Revolution was carried by more than one family. As militia captain, refugee, raider, and the last precinct supervisor, he links the town's military organization, its wartime exile, and its transition from precinct to town.",
@@ -199,7 +203,10 @@ export const people: Person[] = [
       "His career bridges the Revolution and the founding of Islip's town government. Marking and remembering figures like Strong is part of the Town's ongoing 250th research.",
     cardText:
       "Militia captain, wartime refugee, and the last Supervisor of Islip Precinct. Brother-in-law of Isaac Thompson, he links Islip's patriot militia to the founding of its town government.",
-    sources: ['George J. Munkenbeck, "Islip Town Supervisor Captain Benajah Strong."'],
+    sources: [
+      'George J. Munkenbeck, "Islip Town Supervisor Captain Benajah Strong."',
+      "Islip town minutes, 1775–1795, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982).",
+    ],
   },
   {
     slug: "george-washington",
@@ -278,6 +285,7 @@ export const people: Person[] = [
     portrait: null,
     bio: [
       "Nathaniel Conklin served the Town of Islip in several positions over 33 years, sometimes holding more than one at a time. He was Supervisor for four years and also held roles including Fence Viewer, Commissioner of Schools, Commissioner of Highways, Overseer of Highways, a member of a commission to negotiate with Huntington over bay rights and islands, and a member of a committee to hire out grass on Captree Island.",
+      "The town's first minute book shows the arc of that service: an overseer of the roads by 1793, a fence viewer, one of the town's first three commissioners of schools in 1796, and supervisor in 1797 and again from 1799 to 1801. He was supervisor when he wrote the January 1798 description, and school money he helped oversee appears in the meeting's orders of 1799.",
       'His 1798 "Description of the Town of Islip" was written to defend Islip\'s land claims and gives a rare view of the town near the end of the eighteenth century. The annotated publication notes that the letter was found in the New York State Archives and later transcribed and interpreted by Christopher Albergo and George Munkenbeck.',
     ],
     whyMatters:
@@ -288,6 +296,7 @@ export const people: Person[] = [
       "Nathaniel Conklin's 1798 description of Islip is one of the clearest surviving views of the town near the founding era. His public service and records connect today's residents to an Islip long gone.",
     sources: [
       'Nathaniel Conklin, "Description of the Town of Islip in Suffolk County," January 11, 1798; transcribed and annotated by Christopher Albergo and George J. Munkenbeck, Town of Islip Historian\'s Office.',
+      "Islip town minutes, 1793–1801, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982).",
     ],
   },
   {
