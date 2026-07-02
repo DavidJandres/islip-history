@@ -93,6 +93,12 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
       body: dict.timeline.intro.join(" "),
       path: "/timeline",
     },
+    {
+      key: "timelineKids",
+      title: dict.timeline.kids.title,
+      body: [...dict.timeline.kids.intro, dict.timeline.kids.honestyNote].join(" "),
+      path: "/timeline/kids",
+    },
     { key: "explore", title: nav.explore, body: sum.explore, path: "/explore" },
     { key: "collections", title: nav.collections, body: sum.collections, path: "/explore/collections" },
     { key: "maps", title: nav.maps, body: sum.maps, path: "/explore/maps" },

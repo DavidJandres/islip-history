@@ -164,12 +164,47 @@ function DesktopItem({
   const active = isActive(pathname, href);
   const entries = dropdownEntries(item, locale, labels, summaries, sectionLabels);
 
+  // State-driven flyout instead of CSS-only :hover/:focus-within, so that
+  // (a) aria-expanded reports the real state to screen readers,
+  // (b) Escape dismisses hover- or focus-triggered content without moving the
+  //     pointer or focus (WCAG 2.1 AA, 1.4.13), and
+  // (c) hovering, tabbing to the item, and tabbing through the flyout links
+  //     all behave identically. Focus leaving the item closes it again.
+  const [open, setOpen] = useState(false);
+  const parentLinkRef = useRef<HTMLAnchorElement>(null);
+  const hasFlyout = entries.length > 0;
+
+  const onKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape" && open) {
+      e.preventDefault();
+      e.stopPropagation();
+      setOpen(false);
+      parentLinkRef.current?.focus();
+    }
+  };
+
   return (
-    <li className="group relative">
+    <li
+      className="relative"
+      onMouseEnter={hasFlyout ? () => setOpen(true) : undefined}
+      onMouseLeave={hasFlyout ? () => setOpen(false) : undefined}
+      onFocus={hasFlyout ? () => setOpen(true) : undefined}
+      onBlur={
+        hasFlyout
+          ? (e) => {
+              // Close only when focus fully leaves the item and its flyout.
+              if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOpen(false);
+            }
+          : undefined
+      }
+      onKeyDown={hasFlyout ? onKeyDown : undefined}
+    >
       <Link
+        ref={parentLinkRef}
         href={href}
         aria-current={active ? "page" : undefined}
-        aria-haspopup={entries.length > 0 || undefined}
+        aria-haspopup={hasFlyout ? "true" : undefined}
+        aria-expanded={hasFlyout ? open : undefined}
         className={cn(
           "flex items-center gap-1 border-b-2 px-4 py-4 text-sm font-semibold transition-colors",
           active
@@ -178,35 +213,48 @@ function DesktopItem({
         )}
       >
         {labels[item.key]}
-        {entries.length > 0 && (
+        {hasFlyout && (
           <ChevronDown
             aria-hidden
-            className="h-3.5 w-3.5 text-muted transition-transform group-hover:rotate-180"
+            className={cn(
+              "h-3.5 w-3.5 text-muted transition-transform",
+              open && "rotate-180",
+            )}
           />
         )}
       </Link>
 
-      {entries.length > 0 && (
+      {hasFlyout && (
         <div
-          className="invisible absolute left-0 top-full z-40 w-72 -translate-y-1 rounded-sm
-            border border-line bg-white p-2 opacity-0 transition-all duration-150
-            group-hover:visible group-hover:translate-y-0 group-hover:opacity-100
-            group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100"
+          className={cn(
+            "absolute left-0 top-full z-40 w-72 rounded-sm border border-line bg-white p-2 transition-all duration-150",
+            open
+              ? "visible translate-y-0 opacity-100"
+              : "invisible -translate-y-1 opacity-0",
+          )}
         >
-          {entries.map((entry) => (
-            <Link
-              key={entry.href}
-              href={entry.href}
-              className="block rounded-sm px-3 py-2 hover:bg-gray"
-            >
-              <span className="text-sm font-semibold text-blue">{entry.label}</span>
-              {entry.summary && (
-                <span className="mt-0.5 block text-xs leading-snug text-muted">
-                  {entry.summary}
-                </span>
-              )}
-            </Link>
-          ))}
+          {entries.map((entry) => {
+            const entryActive = pathname === entry.href;
+            return (
+              <Link
+                key={entry.href}
+                href={entry.href}
+                aria-current={entryActive ? "page" : undefined}
+                tabIndex={open ? undefined : -1}
+                className={cn(
+                  "block rounded-sm px-3 py-2 hover:bg-gray",
+                  entryActive && "border-l-2 border-gold bg-gray",
+                )}
+              >
+                <span className="text-sm font-semibold text-blue">{entry.label}</span>
+                {entry.summary && (
+                  <span className="mt-0.5 block text-xs leading-snug text-muted">
+                    {entry.summary}
+                  </span>
+                )}
+              </Link>
+            );
+          })}
         </div>
       )}
     </li>
@@ -243,16 +291,23 @@ function MobileItem({
       </Link>
       {entries.length > 0 && (
         <ul className="-mt-1 mb-2 ml-3 space-y-1 border-l border-line pl-3">
-          {entries.map((entry) => (
-            <li key={entry.href}>
-              <Link
-                href={entry.href}
-                className="block py-1.5 text-sm text-muted hover:text-blue"
-              >
-                {entry.label}
-              </Link>
-            </li>
-          ))}
+          {entries.map((entry) => {
+            const entryActive = pathname === entry.href;
+            return (
+              <li key={entry.href}>
+                <Link
+                  href={entry.href}
+                  aria-current={entryActive ? "page" : undefined}
+                  className={cn(
+                    "block py-1.5 text-sm hover:text-blue",
+                    entryActive ? "font-semibold text-blue" : "text-muted",
+                  )}
+                >
+                  {entry.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       )}
     </li>

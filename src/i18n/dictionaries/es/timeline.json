@@ -17,5 +17,18 @@
     "today": "Historia pública hoy"
   },
   "whyTodayLabel": "Por qué importa hoy",
-  "sourcesLabel": "Fuentes"
+  "sourcesLabel": "Fuentes",
+  "kids": {
+    "breadcrumb": "Cronología para niños",
+    "eyebrow": "La historia de Islip, contada de forma sencilla",
+    "title": "Cronología para niños",
+    "intro": [
+      "Esta es la versión corta de la historia de Islip, contada con palabras sencillas para niños, familias y cualquier persona que quiera un recorrido rápido.",
+      "Cada momento tiene un enlace a la cronología completa, donde puedes leer la historia más larga y ver las fuentes."
+    ],
+    "honestyNote": "Solo contamos lo que los registros antiguos muestran de verdad. Cuando nadie sabe algo con seguridad, lo decimos.",
+    "fullStoryLabel": "Leer la historia completa",
+    "mainTimelineCta": "¿Quieres más detalle? Lee la cronología principal",
+    "kidsCta": "¿Quieres la versión corta? Prueba la cronología para niños"
+  }
 }

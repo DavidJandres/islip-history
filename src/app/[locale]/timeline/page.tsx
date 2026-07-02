@@ -47,6 +47,14 @@ export default async function TimelinePage({ params }: LocaleParams) {
             {t.translationNote}
           </Notice>
         )}
+        <p className="mt-5">
+          <a
+            href={localizedPath(locale, "/timeline/kids")}
+            className="text-sm font-semibold text-blue hover:underline"
+          >
+            {t.kids.kidsCta} →
+          </a>
+        </p>
       </div>
 
       <Rule className="mt-12" />

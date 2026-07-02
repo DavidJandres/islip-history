@@ -17,5 +17,18 @@
     "today": "Public History Today"
   },
   "whyTodayLabel": "Why it matters today",
-  "sourcesLabel": "Sources"
+  "sourcesLabel": "Sources",
+  "kids": {
+    "breadcrumb": "Child-Friendly Timeline",
+    "eyebrow": "Islip's story, told simply",
+    "title": "Child-Friendly Timeline",
+    "intro": [
+      "This is the short version of Islip's story, told in plain words for children, families, and anyone who wants the quick tour.",
+      "Every moment here links to the full timeline, where you can read the longer story and see the sources."
+    ],
+    "honestyNote": "We only tell what the old records really show. When nobody knows something for sure, we say so.",
+    "fullStoryLabel": "Read the full story",
+    "mainTimelineCta": "Want more detail? Read the main timeline",
+    "kidsCta": "Want the short version? Try the child-friendly timeline"
+  }
 }

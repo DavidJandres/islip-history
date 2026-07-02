@@ -47,7 +47,14 @@ export const primaryNav: NavItem[] = [
     ],
   },
   { key: "people", href: "/people", sectionKeys: peopleSections },
-  { key: "timeline", href: "/timeline" },
+  {
+    key: "timeline",
+    href: "/timeline",
+    children: [
+      { key: "timelineMain", href: "/timeline" },
+      { key: "timelineKids", href: "/timeline/kids" },
+    ],
+  },
   {
     key: "research",
     href: "/research",
@@ -101,6 +108,7 @@ export const footerNav: FooterGroup[] = [
       { key: "questions", href: "/research/questions" },
       { key: "sources", href: "/research/sources" },
       { key: "timeline", href: "/timeline" },
+      { key: "timelineKids", href: "/timeline/kids" },
       { key: "people", href: "/people" },
     ],
   },
