@@ -73,12 +73,21 @@
     text-wrap: balance;
   }
 
-  /* One focus ring for the whole site. Gold reads on both paper and the dark
-     blue surfaces, so components don't (and shouldn't) redefine it. */
+  /* One focus ring for the whole site. Gold-dark clears the 3:1 non-text
+     contrast requirement (WCAG 1.4.11) on the light surfaces (5.2:1 on paper,
+     4.96:1 on gray) where plain gold measured only ~2.9:1. On the dark blue
+     surfaces (footer, top bar) the ring switches to gold-light, which is the
+     token already vouched for on those backgrounds. */
   :focus-visible {
-    outline: 3px solid var(--color-gold);
+    outline: 3px solid var(--color-gold-dark);
     outline-offset: 2px;
     border-radius: var(--radius-sm);
+  }
+
+  footer :focus-visible,
+  .bg-blue :focus-visible,
+  .bg-blue-dark :focus-visible {
+    outline-color: var(--color-gold-light);
   }
 
   a {

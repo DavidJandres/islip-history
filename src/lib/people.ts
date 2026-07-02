@@ -219,8 +219,9 @@ export const people: Person[] = [
     section: "revolution",
     portrait: {
       src: "/people/george-washington.jpg",
-      alt: "Portrait of George Washington by Gilbert Stuart, 1796",
-      credit: "Gilbert Stuart, 1796 (public domain), via Wikimedia Commons.",
+      alt: "George Washington in Gilbert Stuart's unfinished 1796 Athenaeum portrait: head and shoulders, the rest of the canvas left bare",
+      credit:
+        "George Washington (The Athenaeum Portrait), Gilbert Stuart, 1796, unfinished. Jointly owned by the Museum of Fine Arts, Boston, and the National Portrait Gallery, Smithsonian Institution. Public domain, via Wikimedia Commons.",
     },
     bio: [
       'Washington\'s 1790 Long Island tour connects Islip\'s Revolutionary landscape to the new republic. The annotated 1798 Conklin publication quotes Washington\'s diary from April 21\u201322, 1790, including a visit to "Squire Thompson\'s" house and his departure from "Mr. Thompson\'s" the next morning. The notes identify that house as Sagtikos Manor, still standing on Montauk Highway.',
@@ -244,9 +245,9 @@ export const people: Person[] = [
     section: "revolution",
     portrait: {
       src: "/people/henry-clinton.jpg",
-      alt: "Period engraved portrait of General Sir Henry Clinton",
+      alt: "Engraved bust portrait of General Sir Henry Clinton in uniform, a nineteenth-century engraving by Alexander Hay Ritchie after a period likeness",
       credit:
-        "Period engraving (public domain), New York Public Library via Wikimedia Commons.",
+        "Sir Henry Clinton, engraving by Alexander Hay Ritchie, nineteenth century. New York Public Library, via Wikimedia Commons. Public domain. Catalog record: status pending — verify before final publication.",
     },
     bio: [
       'Town Historian material says visitors to Sagtikos Manor are told that British General Henry Clinton was there "from time to time" during the occupation of Long Island. Another section notes that his exact stays require further research in his papers, and that while troops used the estate when in the area, calling them permanently stationed there may be too strong.',
@@ -308,11 +309,12 @@ export const people: Person[] = [
     role: "Physician and designer of the Town Seal",
     dates: "1810\u20131887",
     section: "government",
-    portrait: {
-      src: "/logos/town-of-islip-seal.png",
-      alt: "The Town of Islip seal \u2014 an 'eye' and a 'slip' of a plant \u2014 designed by Abraham Gardiner Thompson in 1883",
-      credit: "Town of Islip seal, designed by A. G. Thompson (1883).",
-    },
+    // No authenticated likeness of A. G. Thompson is verified. The Town Seal
+    // he designed previously sat here, but a seal is not a portrait, and in
+    // the index card frame it read as one; the honest monogram plate renders
+    // instead. The seal itself still appears site-wide (header, footer) and
+    // his design of it is told in the bio and the 1883 timeline entry.
+    portrait: null,
     bio: [
       "Abraham Gardiner Thompson was born in Islip Town on August 10, 1810, into an influential local family. He studied medicine, traveled to Paris for further surgical training, practiced medicine, served two terms in the New York State Assembly, was active in the Episcopal Church, and donated land connected to St. Mark's Church in Islip.",
       'His most lasting contribution to everyday life came in 1883, when Town Clerk Seth Clock asked him to design a seal for the Town of Islip. Town Historian material explains that the seal was not abstract symbolism but a rebus \u2014 showing Islip as an "eye" and a "slip" of a plant \u2014 recalling the English village connected to the Nicoll family and the town\'s unusual origin story.',

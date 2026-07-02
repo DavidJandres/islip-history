@@ -43,22 +43,25 @@ export default async function FlagsPage({ params }: LocaleParams) {
           {t.galleryHeading}
         </h2>
         <div className="mt-5 grid gap-6 sm:grid-cols-3">
+          {/* Plain divs, not <figure>: ImageSlot renders its own figure, and
+              nesting figures muddles the semantics. When real flag images are
+              added, pass name/note through ImageSlot's caption/credit props. */}
           {t.gallery.map((flag) => (
-            <figure key={flag.name}>
+            <div key={flag.name}>
               <ImageSlot
                 label={dict.common.imageComingSoon}
                 aspect="wide"
                 contain
               />
-              <figcaption className="mt-2">
+              <p className="mt-2">
                 <span className="block font-heading text-sm font-bold text-blue">
                   {flag.name}
                 </span>
                 <span className="mt-1 block text-xs leading-snug text-muted">
                   {flag.note}
                 </span>
-              </figcaption>
-            </figure>
+              </p>
+            </div>
           ))}
         </div>
       </div>

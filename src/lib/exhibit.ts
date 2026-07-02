@@ -82,45 +82,65 @@ export const exhibitPanelPaths = exhibitPanels.map((s) => `/exhibit/${s}`);
 export interface PanelImage {
   src: string;
   alt: string;
+  // Spanish alt for the /es panel pages, so screen-reader users get the image
+  // description in the page's own language.
+  altEs?: string;
   credit?: string;
   // A plain-text summary of what the image/map actually shows, rendered as the
   // visible figcaption. For information-bearing maps this is the WCAG "text
   // alternative nearby": a reader who cannot see the map still gets its point.
   caption?: string;
+  captionEs?: string;
 }
 
 export const panelImages: Partial<Record<PanelSlug, PanelImage>> = {
   "the-promise": {
     src: "/exhibit/the-promise.jpg",
     alt: "The 1823 William Stone engraved facsimile of the 1776 United States Declaration of Independence, showing its text and signatures.",
+    altEs:
+      "El facsímil grabado por William Stone en 1823 de la Declaración de Independencia de los Estados Unidos de 1776, con su texto y sus firmas.",
     credit:
-      "The Declaration of Independence, 1823 William J. Stone facsimile of the 1776 original. Public domain.",
+      "The Declaration of Independence, 1823 William J. Stone facsimile of the 1776 original. Public domain (1823 engraving). Source of this scan: status pending — verify before final publication.",
     caption:
       "The Declaration of Independence as engraved by William J. Stone in 1823, the best-known image of the 1776 text and its signatures.",
+    captionEs:
+      "La Declaración de Independencia tal como la grabó William J. Stone en 1823, la imagen más conocida del texto de 1776 y sus firmas.",
   },
   "before-the-town": {
     src: "/exhibit/before-the-town.jpg",
     alt: "A 1779 map of the colonial Province of New York, including all of Long Island, showing counties, manors, patents, townships, and private land grants.",
+    altEs:
+      "Un mapa de 1779 de la provincia colonial de Nueva York, con todo Long Island, que muestra condados, señoríos, patentes, municipios y concesiones privadas de tierra.",
     credit:
       "A chorographical map of the Province of New-York, Claude Joseph Sauthier and William Faden, 1779. Library of Congress. Public domain.",
     caption:
       "This 1779 map shows the colonial Province of New York, with all of Long Island. Islip lies on the south shore of Suffolk County, between the Great South Bay and the island's wooded interior, divided into large private landholdings rather than villages.",
+    captionEs:
+      "Este mapa de 1779 muestra la provincia colonial de Nueva York, con todo Long Island. Islip está en la costa sur del condado de Suffolk, entre la Great South Bay y el interior boscoso de la isla, dividido en grandes propiedades privadas y no en aldeas.",
   },
   "revolution-comes-to-islip": {
     src: "/exhibit/revolution-comes-to-islip.jpg",
     alt: "A 1776 survey map of the Province of New York, including all of Long Island, the region that came under British occupation during the Revolution.",
+    altEs:
+      "Un mapa topográfico de 1776 de la provincia de Nueva York, con todo Long Island, la región que quedó bajo ocupación británica durante la Revolución.",
     credit:
       "A map of the Province of New-York, Sauthier and Ratzer / William Faden, 1776. Library of Congress. Public domain.",
     caption:
       "This 1776 survey map shows Long Island as the war began. After the fighting at Brooklyn in August 1776, British forces controlled everything on this map east of the city, including Islip.",
+    captionEs:
+      "Este mapa de 1776 muestra Long Island al comenzar la guerra. Después de los combates de Brooklyn en agosto de 1776, las fuerzas británicas controlaban todo lo que aparece en este mapa al este de la ciudad, incluido Islip.",
   },
   "washingtons-visit": {
     src: "/exhibit/washingtons-visit.jpg",
     alt: "Gilbert Stuart's 1796 full-length Lansdowne portrait of President George Washington.",
+    altEs:
+      "El retrato Lansdowne de cuerpo entero del presidente George Washington, pintado por Gilbert Stuart en 1796.",
     credit:
       "George Washington (Lansdowne portrait) by Gilbert Stuart, 1796. National Portrait Gallery. Public domain.",
     caption:
       "Gilbert Stuart's 1796 portrait of President George Washington, painted six years after his Long Island tour.",
+    captionEs:
+      "El retrato del presidente George Washington pintado por Gilbert Stuart en 1796, seis años después de su recorrido por Long Island.",
   },
 };
 

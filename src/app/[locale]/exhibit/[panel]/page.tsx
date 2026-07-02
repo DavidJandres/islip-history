@@ -129,18 +129,36 @@ export default async function PanelPage({ params }: PanelParams) {
         )}
 
         {/* Lead image frame. Renders a real image once one is added to
-            panelImages (lib/exhibit.ts); until then, a reserved placeholder. */}
-        <ImageSlot
-          src={panelImages[panel]?.src}
-          alt={panelImages[panel]?.alt}
-          credit={panelImages[panel]?.credit}
-          caption={panelImages[panel]?.caption ?? copy.summary}
-          label={dict.common.imageComingSoon}
-          aspect="photo"
-          contain
-          priority
-          className="my-8"
-        />
+            panelImages (lib/exhibit.ts); until then, a reserved placeholder.
+            The explicit branch (rather than optional chaining) is what lets
+            ImageSlot's types REQUIRE alt text whenever a real src is given. */}
+        {(() => {
+          const img = panelImages[panel];
+          return img ? (
+            <ImageSlot
+              src={img.src}
+              alt={locale === "es" && img.altEs ? img.altEs : img.alt}
+              credit={img.credit}
+              caption={
+                (locale === "es" && img.captionEs ? img.captionEs : img.caption) ??
+                copy.summary
+              }
+              label={dict.common.imageComingSoon}
+              aspect="photo"
+              contain
+              priority
+              className="my-8"
+            />
+          ) : (
+            <ImageSlot
+              caption={copy.summary}
+              label={dict.common.imageComingSoon}
+              aspect="photo"
+              contain
+              className="my-8"
+            />
+          );
+        })()}
 
         {/* Larger body type than a standard article: this exhibit is written to
             be read by children as well as adults. */}

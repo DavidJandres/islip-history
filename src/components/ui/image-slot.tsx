@@ -15,6 +15,27 @@ const ASPECT = {
   square: "aspect-square",
 } as const;
 
+interface CommonProps {
+  credit?: string; // shown italic in the caption when an image is present
+  caption?: string; // describes the (intended) image; shown in both states
+  label: string; // localized "Image coming soon", shown in the empty state
+  aspect?: keyof typeof ASPECT;
+  sizes?: string;
+  priority?: boolean;
+  // Show the whole image, letterboxed on the frame, instead of cropping to fill.
+  // Right for maps, documents, and portraits where cropping loses content.
+  contain?: boolean;
+  className?: string;
+}
+
+// Discriminated props: providing a real image REQUIRES alt text (every image
+// in these frames is informational — maps, documents, portraits), so a future
+// data entry can't silently ship an exhibit image marked decorative. Pass
+// alt="" only as a deliberate choice at a call site that renders adjacent text.
+type ImageSlotProps =
+  | (CommonProps & { src: string; alt: string })
+  | (CommonProps & { src?: undefined; alt?: undefined });
+
 export function ImageSlot({
   src,
   alt,
@@ -26,20 +47,7 @@ export function ImageSlot({
   priority = false,
   contain = false,
   className,
-}: {
-  src?: string;
-  alt?: string;
-  credit?: string; // shown italic in the caption when an image is present
-  caption?: string; // describes the (intended) image; shown in both states
-  label: string; // localized "Image coming soon", shown in the empty state
-  aspect?: keyof typeof ASPECT;
-  sizes?: string;
-  priority?: boolean;
-  // Show the whole image, letterboxed on the frame, instead of cropping to fill.
-  // Right for maps, documents, and portraits where cropping loses content.
-  contain?: boolean;
-  className?: string;
-}) {
+}: ImageSlotProps) {
   return (
     <figure className={className}>
       <div
@@ -56,7 +64,7 @@ export function ImageSlot({
         {src ? (
           <Image
             src={src}
-            alt={alt ?? ""}
+            alt={alt}
             fill
             sizes={sizes}
             priority={priority}
@@ -67,13 +75,15 @@ export function ImageSlot({
             <ImageIcon aria-hidden className="h-8 w-8 text-muted opacity-60" />
             <span className="text-sm font-semibold text-muted">{label}</span>
             {caption && (
-              <span className="max-w-xs text-xs leading-snug text-muted/80">{caption}</span>
+              /* Full-opacity muted: the /80 tint fell below AA contrast (4.2:1)
+                 for this 12px text on the gray frame. */
+              <span className="max-w-xs text-xs leading-snug text-muted">{caption}</span>
             )}
           </div>
         )}
       </div>
       {src && (caption || credit) && (
-        <figcaption className="mt-2 text-xs leading-snug text-muted">
+        <figcaption className="mt-2 text-sm leading-snug text-muted">
           {caption}
           {caption && credit ? " " : ""}
           {credit && <span className="italic">{credit}</span>}

@@ -40,9 +40,13 @@ export function Portrait({
     return (
       <figure className={className}>
         <div className={cn(frame, "relative")}>
+          {/* At card size (people index) the image sits inside a link whose
+              text is the person's name, so the full descriptive alt would be
+              read twice; treat it as decorative there. The standalone lg
+              rendering on the person page keeps the full alt + credit. */}
           <Image
             src={portrait.src}
-            alt={portrait.alt}
+            alt={size === "sm" ? "" : portrait.alt}
             fill
             sizes="(min-width: 640px) 11rem, 5rem"
             className="object-contain"
@@ -57,8 +61,12 @@ export function Portrait({
     );
   }
 
+  const labeled = size === "lg" && Boolean(noLikenessLabel);
   return (
-    <figure className={className}>
+    // Without its label the monogram plate holds no accessible content, so
+    // hide the whole figure from assistive tech (the person's name is the
+    // adjacent link/heading text); the labeled lg plate stays exposed.
+    <figure className={className} aria-hidden={labeled ? undefined : true}>
       <div className={cn(frame, "flex items-center justify-center")}>
         <span
           aria-hidden
@@ -67,7 +75,7 @@ export function Portrait({
           {initials(name)}
         </span>
       </div>
-      {size === "lg" && noLikenessLabel && (
+      {labeled && (
         <figcaption className="mt-2 text-xs font-semibold uppercase tracking-[0.12em] text-muted">
           {noLikenessLabel}
         </figcaption>
