@@ -37,9 +37,12 @@ export const metadata: Metadata = {
 };
 
 // Light-only site: emit <meta name="color-scheme" content="light"> so the very
-// first paint isn't dark on dark-mode devices.
+// first paint isn't dark on dark-mode devices, and <meta name="theme-color">
+// so mobile browser chrome (address bar, overscroll glow) matches the paper
+// background instead of defaulting to the OS dark theme.
 export const viewport: Viewport = {
   colorScheme: "light",
+  themeColor: "#faf8f5",
 };
 
 // The whole site lives under /[locale], so this is the root layout: it renders
@@ -66,7 +69,9 @@ export default async function LocaleLayout({
       style={{ colorScheme: "light", backgroundColor: "#faf8f5" }}
       className={`${merriweather.variable} ${sourceSans.variable}`}
     >
-      <body>
+      {/* Body carries the same inline background as <html>: belt-and-braces so
+          no frame can paint dark even if a UA treats the body canvas separately. */}
+      <body style={{ backgroundColor: "#faf8f5" }}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd(dict.common.siteName, locale)) }}
