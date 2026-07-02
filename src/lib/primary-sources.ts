@@ -31,6 +31,7 @@ export interface PrimarySource {
 // localized in dictionaries/<locale>/primary-sources.json (`themes`).
 export const sourceThemes = [
   "founding",
+  "records",
   "revolution",
   "militia",
   "occupation",
@@ -84,6 +85,243 @@ export const primarySources: PrimarySource[] = [
       "This makes Isaac Thompson more than a mansion owner or Washington host. He was part of Islip's working government before, during, and after the Revolution, which made his patriot sympathies riskier during occupation.",
     citation:
       "Precinct of Islip minutes, excerpts discussed in George J. Munkenbeck, “Isaac Thompson: A Man on a Tightrope,” in Town of Islip Revolutionary War Resource Guide.",
+  },
+
+  // ---------------- Town Records & Early Descriptions ----------------
+  // Curated from the town's first minute book (Starace transcription, digitized
+  // by the Office of the Town Historian) and Nathaniel Conklin's 1798
+  // description. Bracketed words normalize obvious slips in the transcription.
+  {
+    id: "town-minutes-annual-meetings",
+    theme: "records",
+    tags: ["government"],
+    title: "The Annual Town Meeting: Local Government at Work",
+    date: "1739–1800",
+    type: "Town minutes",
+    status: "verified",
+    context:
+      "Every year on the first Tuesday of April, the freeholders and inhabitants of Islip met and elected the officers who ran the town: a supervisor, a clerk, assessors, a collector, a constable, overseers of the poor, overseers of the highways, and fence viewers. The first minute book records this meeting year after year, through peace, war, and occupation. The 1739 entry below is typical, and the meetings themselves were held in neighbors' houses, set for two o'clock in the afternoon.",
+    excerpts: [
+      {
+        label: "The officers chosen in April 1739",
+        text: "George Phillips Supervisor & Clark, Thomas Willits & George Phillips Assessors, John Arthur Constable & Collector, Ananias Carle & James Sextone Overseers to take care of ye Pore of ye Town for ye year ensuing.",
+      },
+      {
+        label: "Meeting times and places (1780 and 1795)",
+        text: "It is agreed upon that our Town meetings for the future Shall begin at Two O Clock. [1780]\n\nTown Meeting to be held the next year at the House of Benajah Strong's the 1st Tuesday of April at 2 °clock on s.d day. [1795]",
+      },
+    ],
+    whyItMatters:
+      "The annual meeting is one of Islip's oldest institutions. These entries show self-government as a working routine, with ordinary neighbors taking yearly turns as supervisor, clerk, assessor, constable, overseer, and fence viewer, decades before American independence made self-government a national idea.",
+    citation:
+      "Islip town minutes, 1739–1800, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982); digitized by the Office of the Town Historian, Town of Islip.",
+  },
+  {
+    id: "town-minutes-poor-relief",
+    theme: "records",
+    tags: ["government"],
+    title: "Caring for the Poor in the Town Minutes",
+    date: "1739–1787",
+    type: "Town minutes",
+    status: "verified",
+    context:
+      "Long before public welfare systems, the town itself was responsible for its poorest residents, and overseers of the poor were elected every April. The minutes show what that duty looked like in practice: weekly board for Hannah Hulse, nursing for “Old Joseph” in sickness, town grain for a woman the clerk called “Indian hannah,” and, in the middle of the occupation, a formal plan to raise poor-relief money (1782) and to support Johanna Hutton and her child (1783).",
+    excerpts: [
+      {
+        label: "Hannah Hulse, 1739",
+        text: "It was agreed at ye Town Meeting by Aning Moubray to keep Hannah Hulse ye year ensuing at one Shilling and ten pence three farthings Per week as many weeks as he keeps her if she should live within ye year.",
+      },
+      {
+        label: "Joseph Nicolls, 1740",
+        text: "Joseph Nicolls Mallator [mulatto] agreed to keep Hannah Hulse for 2 shillings per week so long as ye overseers shall see fit.",
+      },
+      {
+        label: "Nursing care, 1750",
+        text: "Paid to John Moubray for his Mother's nursing Old Joseph in his sickness out of the Towns money the Sum of Thirteen Shillings and Six Pence.",
+      },
+      {
+        label: "Johanna Hutton and her child, 1783",
+        text: "It is Voted by the majority of the town that Johanah Hutton & Her Child for to begin at the west End of the town[.] & Each family to ceape [keep] ther in perposhion [proportion] as they are Rated.",
+      },
+      {
+        label: "Grain for Indian Hannah, 1787",
+        text: "Paid to Garet Monfort one of the towns men two Pounds of the towns money on account of findin[g] grain for Indian hannah.",
+      },
+    ],
+    whyItMatters:
+      "These entries put individual people, including people of color, into Islip's civic record decades before any census counted them. They also show the town treating care for the poor as ordinary public business that kept working through the war: in 1782 the meeting agreed that the overseers of the poor, with one justice, would set and collect the money needed, and in 1783 it arranged support for Johanna Hutton and her child family by family. Accounts beside the 1782 minutes record payments to “Joanna Hudson,” apparently the same woman under a different spelling.",
+    citation:
+      "Islip town minutes, 1739–1787, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982); digitized by the Office of the Town Historian, Town of Islip.",
+  },
+  {
+    id: "town-minutes-fishing-1765",
+    theme: "records",
+    tags: ["government"],
+    title: "Protecting the Bay: The 1765 Fishing Rule",
+    date: "April 1765",
+    type: "Town minutes",
+    status: "verified",
+    context:
+      "The Great South Bay fed Islip's families and its economy, and the town treated access to it as town business. In 1765 the annual meeting voted that any inhabitant who gave an outsider leave to fish in the bay or creeks would forfeit forty shillings, and the fine went to the poor. The rule was renewed in 1766 with a legal way to recover the fine, and the instinct lasted: in 1815 the town voted that non-residents could not carry clams, fish, horsefeet [horseshoe crabs], or fowl out of the town.",
+    excerpts: [
+      {
+        label: "The 1765 vote",
+        text: "It is also concluded upon by the majority of Voats that i[f] any one of the Inhabitants of the precinct of Islip Shall Give Leave to any furniener [foreigner] to fish in the bay or also in the Creek that He Shall forfit the Sum of forty shillings to the overseers of the poor for the use of the poor of the Said town.",
+      },
+      {
+        label: "The same instinct in 1815",
+        text: "Voted, that any person not being a resident in the town of Islip Shall not Catch or Carry out of the town any fish under the penalty of ten dollars for every offence.",
+      },
+    ],
+    whyItMatters:
+      "Bay access was town politics from the beginning. This is an early piece of local economic and environmental regulation, and the fine's destination, “the use of the poor,” ties the bay's bounty directly to the town's care for its neediest residents.",
+    citation:
+      "Islip town minutes, 1765, 1766, and 1815, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982); digitized by the Office of the Town Historian, Town of Islip.",
+  },
+  {
+    id: "town-minutes-1775-1776",
+    theme: "records",
+    tags: ["government"],
+    title: "Town Offices on the Eve of Revolution, and a Town Gun",
+    date: "April 1775 – April 1776",
+    type: "Town minutes",
+    status: "verified",
+    context:
+      "The town's own minute book records the Revolution arriving inside ordinary local government. At the annual meeting in April 1775, weeks before Islip signed the Articles of Association, Benajah Strong and Isaac Thompson were elected overseers of the highways, and Thompson was also an overseer of the poor. Within a year the same two men had organized Islip's militia company, with Strong as captain. At the April 1776 meeting, Isaac Thompson was elected supervisor for the first time, replacing William Nicoll, and the clerk recorded the purchase of a gun as town property.",
+    excerpts: [
+      {
+        label: "April 1775: town offices",
+        text: "Overseers of the Poor: Jacob Willets Senior, Obediah Green, Isaac Thomson. Overseers of the Highway: James Morris Junior, William Smith Junior, Benajah Strong, Isaac Thomson.",
+      },
+      {
+        label: "April 1776: a new supervisor",
+        text: "Jacob Willets Clerk. Isaac Thompson Supervisor. Platt Smith Constable and Collector.",
+      },
+      {
+        label: "The town gun",
+        text: "A Gun and the accutriments paid for at Said Town Meeting which are the property of the towns.",
+      },
+    ],
+    whyItMatters:
+      "The minutes do not say why the town bought the gun, and this project does not claim it was for the militia. What the record does show is a town whose elected leaders, Thompson and Strong, were the same men organizing Islip's part in the Revolution, and a town meeting in April 1776 paying for a gun and recording it as public property. The date is suggestive; the purpose remains an open research question.",
+    citation:
+      "Islip town minutes, April 1775 and April 1776, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982); digitized by the Office of the Town Historian, Town of Islip.",
+  },
+  {
+    id: "town-minutes-wartime",
+    theme: "records",
+    tags: ["occupation"],
+    title: "Wartime Town Meetings Under the King's Name",
+    date: "1777–1783",
+    type: "Town minutes",
+    status: "verified",
+    context:
+      "British and Loyalist forces occupied Long Island from September 1776 until late 1783, and Islip's minute book shows the town holding its annual meeting every April through all of it. The meetings elected the usual officers, continued the usual hog and boar rules, and kept the accounts. As legal records made under Crown authority, they dated each wartime meeting by the reign of King George III. Isaac Thompson, who had signed the Articles of Association in 1775, was re-elected supervisor at every one of these meetings.",
+    excerpts: [
+      {
+        label: "April 1777",
+        text: "At a Town Meeting of Said Presinct held the first Tuesday of April in the Seventeenth year of his present Majesties Reign George the Third King of Great Britain &:C: It was therein Declared by the Majority of Votes approved of as followeth… Isaac Thompson Supervisor.",
+      },
+      {
+        label: "April 1783, the last meeting dated by the Crown",
+        text: "At a town meeting of the precinct held the first tuesday in April In the three and twentieth year of the Reign of his Majesty King George the third King of great Britain & c…",
+      },
+    ],
+    whyItMatters:
+      "The King's name in these headings is not proof that Islip's people were Loyalists. It is the official wording required of legal records in occupied territory, and it is evidence of how complicated the transition to independence really was: a town could keep governing itself, care for its poor, and re-elect a supervisor who had signed a patriot pledge, all under a dateline that still said “his Majesty King George the third.”",
+    citation:
+      "Islip town minutes, 1777–1783, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982); digitized by the Office of the Town Historian, Town of Islip.",
+  },
+  {
+    id: "town-minutes-1784",
+    theme: "records",
+    tags: ["government"],
+    title: "1784: Dating the Town's Records by American Independence",
+    date: "April 1784",
+    type: "Town minutes",
+    status: "verified",
+    context:
+      "The British evacuated New York in November 1783. When Islip's annual meeting gathered the following April, the clerk opened the record with entirely new words: not the reign of a king, but the authority of the people of the State of New York and the year of American independence. Isaac Thompson, supervisor through every year of the war, was re-elected under the new heading.",
+    excerpts: [
+      {
+        label: "The April 1784 heading",
+        text: "At a town meting of the precenct held the first tuesday in April by the Authority of the good People of the State of new york and in the Eighth year of the American Independence…",
+      },
+      {
+        label: "April 1785",
+        text: "At a town meting of the precinct held the first tuesday in Apri[l] by the Authority of the People of the State of New York and in the Ninth year of the American Independancey…",
+      },
+    ],
+    whyItMatters:
+      "This heading is the Revolution's paper trail in Islip: the moment the town's own records stopped counting years by George III and started counting them from 1776. Nothing else about the meeting changed, the same offices, the same hog act, the same accounts, and that is exactly the point. Independence arrived in Islip's records not as a battle but as a change in whose name the town governed itself.",
+    citation:
+      "Islip town minutes, April 1784 and April 1785, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982); digitized by the Office of the Town Historian, Town of Islip.",
+  },
+  {
+    id: "town-minutes-schools-1796",
+    theme: "records",
+    tags: ["government"],
+    title: "School Commissioners Appear in the Town Records",
+    date: "1796–1799",
+    type: "Town minutes",
+    status: "verified",
+    context:
+      "In April 1796 the annual meeting elected commissioners of the schools for the first time in the minute book: Richard Udall, Nathaniel Conklin, and Nehemiah Higbie. New York State had passed an act to encourage common schools in 1795, and Islip's records show the town taking part the following spring: commissioners elected in 1796 and again in 1797, and in 1799 an order about school money collected in 1797 and 1798. Conklin's own 1798 description fills in the picture with five small schoolhouses, teachers hired by the quarter, and 11,814 days of instruction in a single year.",
+    excerpts: [
+      {
+        label: "April 1796",
+        text: "Commisioners of the Schools: Richard Udall, Nathaniel Conklin, Nehemiah Higbie.",
+      },
+      {
+        label: "April 1799",
+        text: "The Commissioners of Schools & Collector are ordered to pay the monies collected in the Town for the use of Schools in the years 1797 & 1798 into the hands of the Town Treasurer.",
+      },
+    ],
+    whyItMatters:
+      "Public education enters Islip's records here, handled at the same annual meeting that elected fence viewers and continued the hog act. It also connects two of the project's sources: Nathaniel Conklin, one of the town's first school commissioners, is the same man who wrote the 1798 description of the town.",
+    citation:
+      "Islip town minutes, 1796–1799, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982); digitized by the Office of the Town Historian, Town of Islip.",
+  },
+  {
+    id: "conklin-description-1798",
+    theme: "records",
+    tags: ["government"],
+    title: "Nathaniel Conklin's Description of the Town of Islip",
+    date: "January 11, 1798",
+    type: "Letter / official description",
+    status: "verified",
+    context:
+      "Supervisor Nathaniel Conklin wrote this description to defend Islip's boundaries in a dispute with Huntington, but he gave far more than a boundary argument: a full portrait of the town fifteen years after the Revolution. He described the farms and “necks” divided by creeks, the houses strung along the South Country Road facing the bay, the pine plains covering about four fifths of the town, the bay's oysters, clams, and waterfowl, the crops and cattle, the churches, schoolhouses, mills, and taverns, and who lived in the town's roughly 120 houses.",
+    excerpts: [
+      {
+        label: "The shape of the town",
+        text: "the lands and meadows are divided in farms or necks (as they are called) by Creeks and Brooks mostly about half of a mile apart… the houses and other buildings are mostly set on the North side of the said road facing the Road, the Bay, and the Ocean.",
+      },
+      {
+        label: "Fire Island Inlet and the privateers of 1776",
+        text: "in the late war in the year 1776 there were three American privateers lay within this Inlet, and went out, as opportunity offered; and captured a number of British Vessels, and brought them through this Inlet into the Bay; among which was a Transport ship of about three hundred Tons burthen.",
+      },
+      {
+        label: "The bay's bounty",
+        text: "In this bay and within the limits of this Town are some Oysters, plenty of Clams; and in the season for them plenty of wild Geese, Brant, and Ducks, of almost every kind, and Snipes also Fish of various kinds, the most esteemed of which is the Sheepshead and many of them are sent to the New York market.",
+      },
+      {
+        label: "Who lived in Islip",
+        text: "There are in this Town about one hundred and twenty dweling [dwelling] houses twenty-five of which Indians, Mustees and free Negros live in.",
+      },
+      {
+        label: "Churches and schools",
+        text: "there are five Small houses built for Schoolhouses in this town, but the Schoolmasters, are commonly hired by the quarter of the year… from the first of March 1796 to first of March 1797 there were twelve masters had been imployed [employed] in teaching schools in this Town and number of the days instructed were eleven thousand eight hundred and fourteen.",
+      },
+      {
+        label: "The poor and the taverns",
+        text: "At present there is not any poor person that is supported at the expense of this Town… for several years past… the money received for granting permit[s] to retail Spiritual Liquors has been sufficient to Support the Poor of this Town… there are five Taverns in this Town and all on the South Country Road.",
+      },
+    ],
+    whyItMatters:
+      "This is the fullest picture the project has found of what Islip actually was in the first generation after independence: a farming and bay town of about 120 households, roughly one in five of them home to Native, mixed-ancestry, and free Black residents (“Mustee” is a period word for people of mixed ancestry, commonly Native American and African). It anchors the exhibit's hardest question in a primary source: who lived in the town the Revolution had promised to make free?",
+    citation:
+      "Nathaniel Conklin, “Description of the Town of Islip in Suffolk County,” January 11, 1798; transcribed and annotated by Christopher Albergo and George J. Munkenbeck, Office of the Town Historian, Town of Islip.",
   },
 
   // ---------------- Revolution & Loyalty ----------------

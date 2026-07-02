@@ -129,6 +129,20 @@ export const timeline: TimelineEntry[] = [
     sources: ['George J. Munkenbeck, "The Origins of the Town of Islip."'],
   },
   {
+    id: "1739-annual-meeting",
+    date: "April 1739",
+    title: "The annual town meeting at work",
+    era: "colonial",
+    body: [
+      "The minutes for April 1739 show Islip's precinct government in full routine: George Phillips elected supervisor and clerk, plus assessors, a constable and collector, and overseers “to take care of ye Pore of ye Town.” At the same meeting, Anning Moubray agreed to board Hannah Hulse, a poor resident, at a set weekly rate. Year after year, the first Tuesday of April brought the same civic rhythm: elections, accounts, road work, fence viewers, and rules for hogs and boars running on the commons.",
+    ],
+    whyToday:
+      "Decades before independence, Islip already governed itself through an annual meeting of neighbors. Self-government was a local habit before it became a national idea.",
+    sources: [
+      "Islip town minutes, April 1739, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982).",
+    ],
+  },
+  {
     id: "1758-jonathan-thompson",
     date: "1758",
     title: "Jonathan Thompson purchases Sagtikos Manor",
@@ -139,6 +153,20 @@ export const timeline: TimelineEntry[] = [
     whyToday:
       "This purchase sets up Sagtikos as a major Revolutionary site in Islip memory.",
     sources: ['George J. Munkenbeck, "Isaac Thompson \u2014 A Man on a Tightrope."'],
+  },
+  {
+    id: "1765-fishing-rule",
+    date: "April 1765",
+    title: "The town regulates fishing in the bay",
+    era: "colonial",
+    body: [
+      "The annual meeting voted that any inhabitant who gave an outsider leave to fish in the bay or creeks would forfeit forty shillings \u201cto the overseers of the poor for the use of the poor of the Said town.\u201d The rule was continued in 1766 with a legal way to recover the fine, and the same instinct lasted: in 1815 the town voted that non-residents could not carry clams, fish, or fowl out of the town.",
+    ],
+    whyToday:
+      "Bay access was town politics from the start. One vote ties together Islip's economy, its environment, and its care for its poorest residents.",
+    sources: [
+      "Islip town minutes, 1765, 1766, and 1815, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720\u20131861 (Town of Islip, 1982).",
+    ],
   },
   {
     id: "1765-st-johns",
@@ -158,11 +186,14 @@ export const timeline: TimelineEntry[] = [
     title: "Islip's last peacetime annual meeting",
     era: "revolution",
     body: [
-      "At the annual meeting of Islip Precinct on April 4, 1775, the minutes record routine local business: town offices, the problem of feral hogs, and the precinct's accounts. There is no sign of the crisis about to arrive.",
+      "At the annual meeting of Islip Precinct on April 4, 1775, the minutes record routine local business: William Nicoll re-elected supervisor, the usual hog rules continued, and the precinct's accounts settled. Among the officers chosen were Benajah Strong and Isaac Thompson as overseers of the highways, with Thompson also serving as an overseer of the poor. There is no sign of the crisis about to arrive; within a year, these same two men would organize Islip's militia company.",
     ],
     whyToday:
       "It shows ordinary people living normal lives just before history overtook them, a reminder that upheaval can arrive without warning.",
-    sources: ['George J. Munkenbeck, "In the Good Old Colony Day: When We Were Under the King."'],
+    sources: [
+      'George J. Munkenbeck, "In the Good Old Colony Day: When We Were Under the King."',
+      "Islip town minutes, April 1775, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982).",
+    ],
   },
   {
     id: "1775-lexington",
@@ -213,6 +244,35 @@ export const timeline: TimelineEntry[] = [
     sources: ['Isaac Thompson to the Provincial Congress, February 9, 1776, in George J. Munkenbeck, "Isaac Thompson — A Man on a Tightrope."'],
   },
   {
+    id: "1776-thompson-supervisor",
+    date: "April 1776",
+    title: "Isaac Thompson becomes supervisor",
+    era: "revolution",
+    body: [
+      "At the annual meeting in April 1776, the minutes record “Isaac Thompson Supervisor” for the first time, ending William Nicoll's long run in the office. Thompson, who had signed the Articles of Association and asked the Provincial Congress for a militia company, would be re-elected every year through the occupation; his last election as supervisor came in April 1785.",
+    ],
+    whyToday:
+      "The man walking the Revolution's tightrope in Islip was not an outsider. He was the town's elected leader, chosen by his neighbors in the very spring the war was closing in.",
+    sources: [
+      "Islip town minutes, April 1776, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982).",
+      'George J. Munkenbeck, "Isaac Thompson — A Man on a Tightrope."',
+    ],
+  },
+  {
+    id: "1776-town-gun",
+    date: "April 1776",
+    title: "“A Gun and the accutriments,” town property",
+    era: "revolution",
+    body: [
+      "On the page following the April 1776 meeting, the clerk recorded that “A Gun and the accutriments” were “paid for at Said Town Meeting which are the property of the towns.” The minutes do not say what the gun was for. The date is suggestive, two months after Islip requested its militia commissions and three months before independence, but the record itself is a single sentence, and this project does not claim more than it says.",
+    ],
+    whyToday:
+      "One line in a ledger can carry a whole moment: a small town buying a gun with public money in the spring of 1776. What it meant is a research question the digitized records now let anyone ask.",
+    sources: [
+      "Islip town minutes, April 1776, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982).",
+    ],
+  },
+  {
     id: "1776-declaration-huntington",
     date: "July 22, 1776",
     title: "The Declaration read at Huntington",
@@ -249,6 +309,20 @@ export const timeline: TimelineEntry[] = [
     sources: ['George J. Munkenbeck, "What was life like in Islip and the surrounding areas during the occupation?"'],
   },
   {
+    id: "1776-privateers-inlet",
+    date: "1776",
+    title: "American privateers at Fire Island Inlet",
+    era: "revolution",
+    body: [
+      "Writing in 1798, Supervisor Nathaniel Conklin recalled that “in the late war in the year 1776 there were three American privateers lay within this Inlet,” going out as opportunity offered, capturing British vessels, and bringing them through the inlet into the bay, among them a transport ship of about three hundred tons. His memory, written twenty-two years later, is the main evidence for this activity at Islip's inlet.",
+    ],
+    whyToday:
+      "The Revolution at sea touched Islip directly: its own inlet sheltered American raiders. It also shows how much local history survives only because someone later wrote it down.",
+    sources: [
+      'Nathaniel Conklin, "Description of the Town of Islip in Suffolk County," January 11, 1798 (annotated, Town of Islip Historian\'s Office).',
+    ],
+  },
+  {
     id: "1776-1783-occupation",
     date: "1776\u20131783",
     title: "British occupation affects Islip",
@@ -271,6 +345,20 @@ export const timeline: TimelineEntry[] = [
     whyToday:
       "This shows the Revolution through family life, not only military or political events.",
     sources: ['George J. Munkenbeck, "Isaac Thompson \u2014 A Man on a Tightrope."'],
+  },
+  {
+    id: "1777-1783-wartime-meetings",
+    date: "1777\u20131783",
+    title: "Town meetings continue under the King's name",
+    era: "revolution",
+    body: [
+      "Through every year of the British occupation, Islip held its annual April meeting, elected its officers, and kept its accounts. As legal records under Crown authority, the minutes dated each wartime meeting by the reign of King George III, through \u201cthe three and twentieth year\u201d in April 1783. That wording was the required official formula of an occupied place, not proof that Islip's people were Loyalists: the same meetings kept re-electing Isaac Thompson, who had signed the patriot Articles of Association, as supervisor.",
+    ],
+    whyToday:
+      "The Revolution was not a clean break. Islip's own records show a community holding itself together under occupation, governing under one authority's forms while many of its people hoped for another.",
+    sources: [
+      "Islip town minutes, 1777\u20131783, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720\u20131861 (Town of Islip, 1982).",
+    ],
   },
   {
     id: "1778-suspected",
@@ -309,6 +397,20 @@ export const timeline: TimelineEntry[] = [
     sources: ["New York State Senate and Assembly resolution, June 28, 1781; Henry Onderdonk Jr., Revolutionary Incidents of Suffolk and Kings Counties."],
   },
   {
+    id: "1782-1783-hutton",
+    date: "1782–1783",
+    title: "Poor relief in wartime: Johanna Hutton and her child",
+    era: "revolution",
+    body: [
+      "In the middle of the occupation, the town formalized its care for the poor. In 1782 the meeting agreed that the overseers of the poor, with one justice, would set and collect the money needed for poor relief. In 1783 it voted that Johanna Hutton and her child would be supported by the town's families in turn, in proportion to their tax ratings, beginning at the west end of town. The accounts also record payments to “Joanna Hudson,” apparently the same woman under a different spelling.",
+    ],
+    whyToday:
+      "War did not pause ordinary hardship. A mother and child supported household by household shows both the roughness and the reality of an eighteenth-century safety net, and that it kept working through occupation.",
+    sources: [
+      "Islip town minutes, 1782–1783, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982).",
+    ],
+  },
+  {
     id: "1783-evacuation",
     date: "November 23, 1783",
     title: "The British evacuate; Islip rejoins the state",
@@ -333,6 +435,20 @@ export const timeline: TimelineEntry[] = [
     sources: ["St. John's Episcopal Church booklet (parish history)."],
   },
   {
+    id: "1784-state-authority",
+    date: "April 1784",
+    title: "First town meeting under the State of New York",
+    era: "revolution",
+    body: [
+      "The first April after the British evacuated New York, Islip's annual meeting opened with new words: held “by the Authority of the good People of the State of new york and in the Eighth year of the American Independence.” The offices, the hog act, and the accounts continued as before, and Isaac Thompson was re-elected supervisor, but the town now counted its years from 1776.",
+    ],
+    whyToday:
+      "This heading is the Revolution's arrival in Islip's own handwriting: the moment the town's records stopped belonging to a king and started belonging to a state built on independence.",
+    sources: [
+      "Islip town minutes, April 1784, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982).",
+    ],
+  },
+  {
     id: "1790-washington",
     date: "April 21\u201322, 1790",
     title: "Washington's Long Island tour and Sagtikos Manor",
@@ -347,15 +463,30 @@ export const timeline: TimelineEntry[] = [
     ],
   },
   {
+    id: "1796-school-commissioners",
+    date: "April 1796",
+    title: "School commissioners elected",
+    era: "revolution",
+    body: [
+      "The annual meeting elected commissioners of the schools for the first time in the minute book: Richard Udall, Nathaniel Conklin, and Nehemiah Higbie, after New York State passed an act to encourage common schools in 1795. Conklin's 1798 description fills in the picture: five small schoolhouses, teachers hired by the quarter, and, in one year, twelve schoolmasters and 11,814 days of instruction. In 1799 the meeting ordered the school money collected in 1797 and 1798 paid into the town treasury.",
+    ],
+    whyToday:
+      "Public education in Islip begins in these records, handled at the same meeting that elected fence viewers. Schools started here as a neighborly, local responsibility.",
+    sources: [
+      "Islip town minutes, 1796–1799, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982).",
+      'Nathaniel Conklin, "Description of the Town of Islip in Suffolk County," January 11, 1798 (annotated, Town of Islip Historian\'s Office).',
+    ],
+  },
+  {
     id: "1798-conklin",
     date: "January 11, 1798",
     title: "Nathaniel Conklin describes Islip",
     era: "revolution",
     body: [
-      "Supervisor Nathaniel Conklin wrote a description of the Town of Islip on January 11, 1798. The publication explains that the letter was written to defend Islip's land claims and provides a glimpse of an Islip long lost.",
+      "Supervisor Nathaniel Conklin wrote a description of the Town of Islip on January 11, 1798, to defend the town's bounds in a dispute with Huntington. Along the way he described the whole town: farms and “necks” divided by creeks, houses along the South Country Road facing the bay, the pine plains covering about four fifths of the land, the bay's oysters and clams, crops and cattle, churches, five schoolhouses, two grist mills, six sawmills, five taverns, one physician, and about 120 dwelling houses, twenty-five of them lived in by “Indians, Mustees and free Negros.”",
     ],
     whyToday:
-      "This shows how archives preserve the town's land, population, economy, and civic structure.",
+      "This is the fullest portrait of Islip in the first generation after independence that the project has found, and the anchor for asking who the town's promise actually included.",
     sources: [
       'Nathaniel Conklin, "Description of the Town of Islip in Suffolk County," January 11, 1798 (annotated, Town of Islip Historian\'s Office).',
     ],

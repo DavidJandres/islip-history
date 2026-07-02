@@ -113,12 +113,14 @@ export const panelRelated: Partial<Record<PanelSlug, RelatedLink[]>> = {
   ],
   "before-the-town": [
     { label: "The 1710 Precinct act", href: "/explore/primary-sources#source-islip-precinct-1710" },
+    { label: "The annual town meeting", href: "/explore/primary-sources#source-town-minutes-annual-meetings" },
     { label: "William Nicoll", href: "/people/william-nicoll" },
     { label: "Winnaquaheagh", href: "/people/winnaquaheagh" },
   ],
   "revolution-comes-to-islip": [
     { label: "The Islip Militia", href: "/research/militia" },
     { label: "The Articles of Association", href: "/explore/primary-sources#source-articles-of-association-1775" },
+    { label: "The 1776 town gun", href: "/explore/primary-sources#source-town-minutes-1775-1776" },
     { label: "Benajah Strong", href: "/people/benajah-strong" },
     { label: "Flags & symbols", href: "/research/flags" },
   ],
@@ -129,14 +131,19 @@ export const panelRelated: Partial<Record<PanelSlug, RelatedLink[]>> = {
   ],
   "an-unfinished-promise": [
     { label: "Life Under Occupation", href: "/research/occupation" },
+    { label: "Wartime town meetings", href: "/explore/primary-sources#source-town-minutes-wartime" },
+    { label: "Poor relief in the minutes", href: "/explore/primary-sources#source-town-minutes-poor-relief" },
     { label: "Enslaved labor at Sagtikos", href: "/research/essays#essay-sagtikos-enslaved-labor" },
     { label: "Isaac Thompson", href: "/people/isaac-thompson" },
   ],
   "many-roots-one-town": [
+    { label: "The 1798 description", href: "/explore/primary-sources#source-conklin-description-1798" },
+    { label: "Who lived in Islip in 1798?", href: "/research/essays#essay-who-lived-in-islip-1798" },
     { label: "Samuel Sitko", href: "/people/samuel-sitko" },
     { label: "The timeline", href: "/timeline" },
   ],
   "the-promise-continues": [
+    { label: "The town's first minute book", href: "/explore/primary-sources#source-town-minutes-annual-meetings" },
     { label: "Research questions", href: "/research/questions" },
     { label: "Bibliography & sources", href: "/research/sources" },
     { label: "The fellowship", href: "/about/fellowship" },

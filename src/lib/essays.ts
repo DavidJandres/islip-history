@@ -24,6 +24,7 @@ export const essayCategories = [
   "music",
   "flags",
   "patriots",
+  "records",
   "method",
 ] as const;
 
@@ -339,6 +340,92 @@ export const essays: Essay[] = [
       "Useful for building a broader Long Island Revolutionary map around Islip; it strengthens regional context without replacing the Islip story.",
     citation:
       "George J. Munkenbeck, “The Manor of St. George,” in Town of Islip Revolutionary War Resource Guide, Part Six.",
+  },
+
+  // ---------------- Town Records & Daily Life ----------------
+  // Project-written interpretive notes on the two newly digitized sources: the
+  // town's first minute book (Starace transcription) and Conklin's 1798
+  // description. Excerpts quote the primary documents themselves.
+  {
+    id: "town-kept-meeting",
+    category: "records",
+    tags: ["occupation"],
+    title: "A Town That Kept Meeting: Islip's Local Government Through War",
+    author: "The Islip History Project",
+    summary:
+      "Islip's first minute book records the annual town meeting returning April after April, from the 1720s through the Revolution and beyond. Through six years of British occupation the town kept electing its officers, keeping its accounts, and caring for its poor. The wartime pages look almost unchanged from the peacetime ones, and that quiet continuity is itself the story: the same Isaac Thompson who signed the patriot Articles of Association was re-elected supervisor at meetings legally dated by the reign of King George III, until the April 1784 heading finally counted the years from American independence instead.",
+    excerpts: [
+      "At a Town Meeting of Said Presinct held the first Tuesday of April in the Seventeenth year of his present Majesties Reign George the Third King of Great Britain &:C:… Isaac Thompson Supervisor. [April 1777]",
+      "At a town meting of the precenct held the first tuesday in April by the Authority of the good People of the State of new york and in the Eighth year of the American Independence… [April 1784]",
+    ],
+    whyItMatters:
+      "Occupation did not dissolve Islip's self-government; it forced it into a strange double life, with patriot-leaning officers governing under the Crown's legal formulas. The minute book turns the abstract idea of a “transition to independence” into something you can watch happen on the page.",
+    citation:
+      "Islip town minutes, 1775–1785, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982); digitized by the Office of the Town Historian, Town of Islip.",
+  },
+  {
+    id: "minutes-daily-life",
+    category: "records",
+    title: "What the Town Minutes Reveal About Daily Life",
+    author: "The Islip History Project",
+    summary:
+      "Most of the minute book is not about famous events. It is about hogs that had to be yoked and ringed, boars that could not run loose in spring, fences that had to be viewed, ear marks recorded so neighbors knew whose cattle were whose, roads laid out, accounts settled to the penny, and neighbors paid to board and nurse the town's poor. Read together, these entries recover the texture of daily life in a small farming and bay town across more than a century.",
+    excerpts: [
+      "further it is agreed upon by the Authority aforesaid that if any Damage is Done by un Ringed hogs the owner by [of] Said hogs Shall pay the full Damage Judged by and [any] two Indifferent men. [April 1776]",
+      "It was agreed at ye Town Meeting by Aning Moubray to keep Hannah Hulse ye year ensuing at one Shilling and ten pence three farthings Per week as many weeks as he keeps her if she should live within ye year. [April 1739]",
+    ],
+    whyItMatters:
+      "History is not only laws and battles. These pages show what government meant to ordinary people: protecting crops from livestock, keeping roads passable, marking cattle, and looking after neighbors. The book even preserves a 1737 public apology for a “Scandalus Report” raised against a neighbor. This is the everyday world the Revolution would interrupt.",
+    citation:
+      "Islip town minutes and ear-mark register, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720–1861 (Town of Islip, 1982); digitized by the Office of the Town Historian, Town of Islip.",
+  },
+  {
+    id: "conklin-1798-islip",
+    category: "records",
+    title: "The 1798 Description: Islip After the Revolution",
+    author: "The Islip History Project",
+    summary:
+      "Nathaniel Conklin wrote to defend Islip's boundaries, but his January 1798 letter became a portrait of the whole town: farms and necks about half a mile apart, houses facing the bay along the South Country Road, pine plains covering four fifths of the land, American privateers remembered at Fire Island Inlet, corn and cattle, five taverns, five schoolhouses, two grist mills, six sawmills, and one physician with, he said, very little to do in so healthy a town. Fifteen years after occupation ended, the Islip he describes is orderly, productive, and still small: about 120 dwelling houses.",
+    excerpts: [
+      "the lands and meadows are divided in farms or necks (as they are called) by Creeks and Brooks mostly about half of a mile apart…",
+      "in the late war in the year 1776 there were three American privateers lay within this Inlet, and went out, as opportunity offered; and captured a number of British Vessels…",
+    ],
+    whyItMatters:
+      "The description shows the Revolution's afterlife in daily detail. The war appears only as memory, three privateers recalled at the inlet, while the letter's real business, defending the town's bounds under a 1788 state law, shows the new state framework quietly replacing the colonial one.",
+    citation:
+      "Nathaniel Conklin, “Description of the Town of Islip in Suffolk County,” January 11, 1798; transcribed and annotated by Christopher Albergo and George J. Munkenbeck, Office of the Town Historian, Town of Islip.",
+  },
+  {
+    id: "who-lived-in-islip-1798",
+    category: "records",
+    title: "Who Lived in Islip? Race, Status, and Households in the 1798 Description",
+    author: "The Islip History Project",
+    summary:
+      "One sentence in Conklin's description changes the picture of early Islip: of about 120 dwelling houses, twenty-five were lived in by “Indians, Mustees and free Negros.” That is roughly one of every five households. “Mustee” is a period term for people of mixed ancestry, commonly Native American and African. The town minutes tell the same story in individual lives: in 1740 Joseph Nicolls, whom the clerk recorded as “Mallator,” meaning mulatto, agreed with the town to board a poor neighbor for two shillings a week, and in 1787 the town bought grain for a woman the clerk called “Indian hannah.” Early Islip was never simply a white settler town.",
+    excerpts: [
+      "There are in this Town about one hundred and twenty dweling [dwelling] houses twenty-five of which Indians, Mustees and free Negros live in.",
+      "Paid to Garet Monfort one of the towns men two Pounds of the towns money on account of findin[g] grain for Indian hannah. [1787]",
+    ],
+    whyItMatters:
+      "The record shows presence, not full lives: these households appear in a boundary letter and in poor-relief accounts, usually without full names. Saying plainly that about a fifth of the town's households were Native, mixed-ancestry, or free Black families corrects the older, simpler narrative, and the missing names set the next research agenda.",
+    citation:
+      "Nathaniel Conklin, “Description of the Town of Islip in Suffolk County,” January 11, 1798 (transcribed and annotated by Christopher Albergo and George J. Munkenbeck); Islip town minutes, 1740 and 1787, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings… (Town of Islip, 1982).",
+  },
+  {
+    id: "bay-road-farm",
+    category: "records",
+    title: "Bay, Road, and Farm: How Geography Shaped Early Islip",
+    author: "The Islip History Project",
+    summary:
+      "Conklin's description explains the town's shape. Creeks and brooks divided the south shore into “necks” of farmland about half a mile wide; the South Country Road ran about a mile from the bay, stringing the houses into a line facing the water; salt and sedge meadows fed the cattle that were the farmers' “main dependance”; and the bay sent clams, eels, and sheepshead to the New York market. Behind it all lay the brush and pine plains, about four fifths of the town's land, which Conklin predicted would one day be “very useful and valuable.” The town minutes show the same geography as politics: from 1765 on, Islip regulated who could fish its bay, with fines going to the poor.",
+    excerpts: [
+      "the main dependance [dependence] of the farmers in this Town is on their Stocks of Cattle; which the large Tracts of Salt, and Sedge meadows ennables [enables] them to keep…",
+      "It is also concluded upon by the majority of Voats that i[f] any one of the Inhabitants of the precinct of Islip Shall Give Leave to any furniener [foreigner] to fish in the bay or also in the Creek that He Shall forfit the Sum of forty shillings to the overseers of the poor… [1765]",
+    ],
+    whyItMatters:
+      "Geography explains why Islip looked the way it did: why houses lined one road, why cattle mattered more than wheat, why bay access was town law, and why so much of the town stayed wooded for so long. Conklin even predicted the future value of the pine plains, the land we now call the Pine Barrens.",
+    citation:
+      "Nathaniel Conklin, “Description of the Town of Islip in Suffolk County,” January 11, 1798 (transcribed and annotated by Christopher Albergo and George J. Munkenbeck); Islip town minutes, 1765, in Carl A. Starace, ed., Book One of the Minutes of Town Meetings… (Town of Islip, 1982).",
   },
 
   // ---------------- Research Methods & Source Gaps ----------------
