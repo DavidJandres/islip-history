@@ -34,6 +34,34 @@
       "name": "Michael Leroy Oberg, Ph.D.",
       "role": "Project Director · SUNY Geneseo",
       "bio": "Michael Oberg is Distinguished Professor of History at SUNY Geneseo and directs the Gardiner Foundation Semiquincentennial Student Fellowship Project. A scholar of Native American and early American history and the author of numerous books, he leads the multi-campus program that places student fellows with the communities whose histories they research."
+    },
+    {
+      "id": "albergo",
+      "name": "Christopher Albergo",
+      "role": "Assistant Town Historian, Town of Islip",
+      "bio": "Christopher Albergo is Assistant Town Historian in the Office of the Town of Islip Historian. He helped transcribe and annotate primary sources for this project, including Nathaniel Conklin's 1798 description of the Town of Islip, and supports the office's ongoing research and public history."
+    }
+  ],
+  "contributorsTitle": "Contributors and researchers",
+  "contributorsIntro": "Historians, researchers, and apprentices whose work this project draws on and builds with.",
+  "contributors": [
+    {
+      "id": "sebor",
+      "name": "Mollie Sebor",
+      "role": "History Research Assistant, Town of Islip",
+      "bio": "Mollie Sebor served for five years as a History Research Intern and then History Research Assistant in the Office of the Town of Islip Historian. Her research recovered the little-known history of the Jewish community of Islip Town, published as the booklet “The Story of the Jewish Community of Islip Town,” a Girl Scout Gold Award project that this exhibit draws on for its account of the families, congregations, and Holocaust survivors who made a home in Islip, among them Samuel Sitko. She has carried that work to synagogues, Jewish centers, and libraries across Long Island and been featured in Newsday. A graduate of Suffolk County Community College, she went on to study at SUNY Geneseo."
+    },
+    {
+      "id": "brewster-walker",
+      "name": "Sandi Brewster-Walker",
+      "role": "Historian and genealogist · Montaukett Indian Nation",
+      "bio": "Sandi Brewster-Walker is an independent historian, genealogist, and writer, and an enrolled citizen of the Montaukett Indian Nation, for which she serves as a Tribal Historic Preservation Officer. For more than forty years she has researched the Indigenous communities and people of color of Long Island and the original thirteen colonies, from first European contact into the twentieth century. She is the author of the forthcoming Gone Whaling: Long Island Seamen of Color (The History Press) and writes widely on local Indigenous history, and she serves on the steering committee for a new minor in Native American and Indigenous Studies at Stony Brook University. Her work informs the project's attention to the Native, mixed-ancestry, and free Black families who are part of Islip's story."
+    },
+    {
+      "id": "zarcone",
+      "name": "Kia Zarcone",
+      "role": "History Research Apprentice (volunteer), Town of Islip",
+      "bio": "Kia Zarcone is a History Research Apprentice volunteer in the Office of the Town of Islip Historian, contributing to the project's ongoing research. A fuller biography will follow."
     }
   ],
   "ackTitle": "Acknowledgment",

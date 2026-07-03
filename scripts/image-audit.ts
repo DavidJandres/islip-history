@@ -94,14 +94,21 @@ ok(`${informational.length} informational images carry specific alt text`);
 for (const p of partners) {
   if (!p.name || p.name.length < 4) fail(`partners: logo ${p.logo} lacks an informative name/alt`);
 }
-// Team photos: alt comes from the member's name in both locales.
+// Fellowship people (team + contributors): a photo is optional (a monogram
+// plate renders without one), but everyone needs a name, and every teamPhotos
+// key must map to a real member — no orphan photo files posing as someone.
 for (const locale of ["en", "es"] as const) {
-  for (const m of getDictionary(locale).aboutFellowship.team) {
-    if (!m.name?.trim()) fail(`team(${locale}): member ${m.id} has no name for photo alt`);
-    if (!(m.id in teamPhotos)) fail(`team(${locale}): member ${m.id} has no photo mapping`);
+  const f = getDictionary(locale).aboutFellowship;
+  const members = [...f.team, ...f.contributors];
+  for (const m of members) {
+    if (!m.name?.trim()) fail(`fellowship(${locale}): member ${m.id} has no name`);
+  }
+  const ids = new Set(members.map((m) => m.id));
+  for (const id of Object.keys(teamPhotos)) {
+    if (!ids.has(id)) fail(`teamPhotos: "${id}" maps to no fellowship member`);
   }
 }
-ok("logos and team photos have informative accessible names");
+ok("logos, team photos, and contributor names all resolve");
 
 // ---------- 4. Credits + rights basis ----------
 const RIGHTS = /(public domain|courtesy|status pending)/i;

@@ -34,6 +34,34 @@
       "name": "Dr. Michael Leroy Oberg",
       "role": "Director del proyecto · SUNY Geneseo",
       "bio": "Michael Oberg es Profesor Distinguido de Historia en SUNY Geneseo y dirige el Proyecto de Becas Estudiantiles del 250.º Aniversario de la Fundación Gardiner. Especialista en historia de los pueblos nativos y de la temprana América, y autor de numerosos libros, encabeza el programa multicampus que vincula a los becarios estudiantiles con las comunidades cuya historia investigan."
+    },
+    {
+      "id": "albergo",
+      "name": "Christopher Albergo",
+      "role": "Historiador Asistente del Pueblo de Islip",
+      "bio": "Christopher Albergo es Historiador Asistente en la Oficina del Historiador del Pueblo de Islip. Ayudó a transcribir y anotar fuentes primarias para este proyecto, entre ellas la descripción del Pueblo de Islip escrita por Nathaniel Conklin en 1798, y apoya la investigación y el trabajo de historia pública de la oficina."
+    }
+  ],
+  "contributorsTitle": "Colaboradores e investigadores",
+  "contributorsIntro": "Historiadores, investigadores y aprendices en cuyo trabajo se apoya este proyecto y con quienes se construye.",
+  "contributors": [
+    {
+      "id": "sebor",
+      "name": "Mollie Sebor",
+      "role": "Asistente de Investigación Histórica, Pueblo de Islip",
+      "bio": "Mollie Sebor trabajó durante cinco años como pasante y luego como Asistente de Investigación Histórica en la Oficina del Historiador del Pueblo de Islip. Su investigación rescató la poco conocida historia de la comunidad judía del Pueblo de Islip, publicada en el folleto “The Story of the Jewish Community of Islip Town”, un proyecto Gold Award de las Girl Scouts en el que esta exhibición se apoya para contar la historia de las familias, las congregaciones y los sobrevivientes del Holocausto que hicieron su hogar en Islip, entre ellos Samuel Sitko. Ha llevado ese trabajo a sinagogas, centros judíos y bibliotecas de todo Long Island, y fue destacada en el periódico Newsday. Graduada del Suffolk County Community College, continuó sus estudios en SUNY Geneseo."
+    },
+    {
+      "id": "brewster-walker",
+      "name": "Sandi Brewster-Walker",
+      "role": "Historiadora y genealogista · Nación India Montaukett",
+      "bio": "Sandi Brewster-Walker es historiadora independiente, genealogista y escritora, y ciudadana inscrita de la Nación India Montaukett, para la que se desempeña como Oficial de Preservación Histórica Tribal. Durante más de cuarenta años ha investigado las comunidades indígenas y de personas de color de Long Island y de las trece colonias originales, desde el primer contacto europeo hasta el siglo XX. Es autora del libro de próxima publicación Gone Whaling: Long Island Seamen of Color (The History Press) y escribe con frecuencia sobre la historia indígena local, y forma parte del comité directivo de una nueva especialización en Estudios de los Pueblos Nativos e Indígenas de la Universidad Stony Brook. Su trabajo nutre la atención del proyecto hacia las familias nativas, de ascendencia mixta y negras libres que forman parte de la historia de Islip."
+    },
+    {
+      "id": "zarcone",
+      "name": "Kia Zarcone",
+      "role": "Aprendiz de Investigación Histórica (voluntariado), Pueblo de Islip",
+      "bio": "Kia Zarcone colabora de forma voluntaria como aprendiz de investigación histórica en la Oficina del Historiador del Pueblo de Islip y contribuye a la investigación en curso del proyecto. Más adelante se añadirá una biografía más completa."
     }
   ],
   "ackTitle": "Agradecimiento",

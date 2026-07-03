@@ -207,16 +207,21 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
     });
   }
 
-  // Fellowship team and researchers, searchable by name, role, and bio so a
-  // query like "Munkenbeck" or "Oberg" lands on the fellowship page.
-  for (const member of dict.aboutFellowship.team) {
+  // Fellowship team and contributors, searchable by name, role, and bio so a
+  // query like "Munkenbeck", "Sebor", or "Brewster-Walker" lands on the exact
+  // person's card on the fellowship page.
+  const fellowshipPeople: Array<{ member: { id: string; name: string; role: string; bio: string }; prefix: string }> = [
+    ...dict.aboutFellowship.team.map((member) => ({ member, prefix: "team" })),
+    ...dict.aboutFellowship.contributors.map((member) => ({ member, prefix: "contributor" })),
+  ];
+  for (const { member, prefix } of fellowshipPeople) {
     docs.push({
-      id: `team-${member.id}`,
+      id: `${prefix}-${member.id}`,
       type: "person",
       typeLabel: c.searchTypeTeam,
       title: member.name,
       subtitle: member.role,
-      href: href(`/about/fellowship#team-${member.id}`),
+      href: href(`/about/fellowship#${prefix}-${member.id}`),
       body: member.bio,
     });
   }

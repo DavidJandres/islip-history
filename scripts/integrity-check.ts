@@ -60,7 +60,10 @@ function anchorExists(page: string, anchor: string): boolean {
   if (page === "/research/essays")
     return anchor.startsWith("essay-") && essays.some((e) => `essay-${e.id}` === anchor);
   if (page === "/about/fellowship")
-    return dict.aboutFellowship.team.some((m) => `team-${m.id}` === anchor);
+    return (
+      dict.aboutFellowship.team.some((m) => `team-${m.id}` === anchor) ||
+      dict.aboutFellowship.contributors.some((m) => `contributor-${m.id}` === anchor)
+    );
   if (page === "/about/faq") {
     const i = Number(anchor.replace("faq-", ""));
     return anchor.startsWith("faq-") && Number.isInteger(i) && i >= 0 && i < dict.faq.items.length;

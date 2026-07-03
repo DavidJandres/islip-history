@@ -1,18 +1,6 @@
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn, initials } from "@/lib/utils";
 import type { Portrait as PortraitData } from "@/lib/people";
-
-// Initials for the monogram plate. Drops the connective "and" so a pair like
-// "York and Elizabeth" reads "YE" rather than "YA".
-function initials(name: string): string {
-  const parts = name
-    .replace(/,.*$/, "") // drop suffixes like ", M.D."
-    .split(/\s+/)
-    .filter((w) => w.length > 0 && w.toLowerCase() !== "and");
-  const first = parts[0]?.[0] ?? "";
-  const last = parts.length > 1 ? parts[parts.length - 1][0] : "";
-  return (first + last).toUpperCase();
-}
 
 // A person's portrait. Renders a verified, credited image, or an honest
 // monogram plate when no authenticated likeness exists.
