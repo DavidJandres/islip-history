@@ -151,7 +151,7 @@ ok("every map ships a text summary caption");
 
 // ---------- 6. Bibliography credit entries per real image ----------
 const flat = bibliographyFlat.join("\n");
-for (const key of ["Sauthier", "Stone, William J.", "Stuart, Gilbert", "Henry Clinton", "Town of Islip seal", "Team photographs", "Partner and institutional logos"]) {
+for (const key of ["Sauthier", "Stone, William J.", "Stuart, Gilbert", "Henry Clinton", "Town of Islip seal", "Team and contributor photographs", "Partner and institutional logos"]) {
   if (!flat.includes(key)) fail(`bibliography visual group: no entry matching "${key}"`);
 }
 ok("bibliography visual group covers every real image class");

@@ -137,7 +137,7 @@ export const bibliographyGroups: BibGroup[] = [
       "Stone, William J. Declaration of Independence (engraved facsimile of the 1776 original). 1823. Public domain (1823 engraving). Lead image of the exhibit panel “The Promise.” Source of this scan: status pending — verify before final publication.",
       "Stuart, Gilbert. George Washington (Lansdowne portrait). 1796. National Portrait Gallery, Smithsonian Institution. Public domain. Lead image, “Washington's Visit.”",
       "Stuart, Gilbert. George Washington (The Athenaeum Portrait). 1796, unfinished. Museum of Fine Arts, Boston, and National Portrait Gallery, Smithsonian Institution. Public domain. People page portrait.",
-      "Team photographs on the Fellowship page appear courtesy of the project team members.",
+      "Team and contributor photographs on the Fellowship page appear courtesy of the individuals shown.",
       "Town of Islip seal, designed by Abraham Gardiner Thompson, 1883. Courtesy of the Town of Islip. Site header and footer identity; basis of the site icons.",
       "United States Postal Service. Cold Blast Furnace at Hopewell Furnace, Pennsylvania. Photograph referenced in Town Historian material on bog iron and iron processing.",
     ],
