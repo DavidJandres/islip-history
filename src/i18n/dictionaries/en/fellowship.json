@@ -62,6 +62,12 @@
       "name": "Kia Zarcone",
       "role": "History Research Apprentice (volunteer), Town of Islip",
       "bio": "Kia Zarcone is a History Research Apprentice volunteer in the Office of the Town of Islip Historian, contributing to the project's ongoing research. A fuller biography will follow."
+    },
+    {
+      "id": "testing",
+      "name": "testing",
+      "role": "testing",
+      "bio": "testin."
     }
   ],
   "ackTitle": "Acknowledgment",
