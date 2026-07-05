@@ -1,0 +1,190 @@
+{
+  "breadcrumb": "Teaching Materials",
+  "eyebrow": "For teachers",
+  "title": "Teaching Materials",
+  "intro": [
+    "This section helps teachers bring Islip's local history into the classroom. The materials use the project's primary sources, timeline, exhibit panels, and people pages to teach the American Revolution, local government, civic life, belonging, and historical thinking."
+  ],
+  "audienceNote": "You do not need to be a local historian to use these. Every lesson and activity names the sources it draws on, links straight to them, and includes a short teacher note on what the evidence does and does not show.",
+  "cardsHeading": "Start here",
+  "cards": {
+    "lessonPlans": {
+      "title": "Lesson Plans",
+      "blurb": "Five classroom-ready lessons, from settlement and local government to occupation, belonging, and the unfinished promise of independence."
+    },
+    "primarySourceActivities": {
+      "title": "Primary Source Activities",
+      "blurb": "Seven short activities built on the town's own records, each with a real excerpt, plain context, vocabulary, and layered questions."
+    },
+    "exhibitGuide": {
+      "title": "Exhibit Guide",
+      "blurb": "A student-facing guide to the seven exhibit panels, with one question per panel and room to reflect on who was included and left out."
+    },
+    "timelineActivities": {
+      "title": "Timeline Activities",
+      "blurb": "Five activities that use the full and child-friendly timelines together to practice historical thinking."
+    },
+    "printables": {
+      "title": "Printable Materials",
+      "blurb": "Print-friendly versions of every resource, ready for the classroom. Downloadable PDF packets are in preparation."
+    },
+    "bilingual": {
+      "title": "Bilingual Classroom Materials",
+      "blurb": "Every page here exists in English and Spanish, so the same lesson can reach more of Islip's families. Full Spanish lesson content is in preparation."
+    }
+  },
+  "themesHeading": "Themes across these materials",
+  "themes": [
+    "The American Revolution",
+    "Local government",
+    "Civic participation",
+    "Occupation",
+    "Primary source analysis",
+    "Race, status, and belonging",
+    "Local identity",
+    "The unfinished promise of independence"
+  ],
+  "labels": {
+    "onThisPage": "On this page",
+    "backToTeach": "Back to Teaching Materials",
+    "relatedPages": "Related pages on this site",
+    "teacherNote": "Teacher note on caution and uncertainty",
+    "gradeBand": "Grade band",
+    "time": "Estimated time",
+    "essentialQuestion": "Essential question",
+    "learningGoals": "Learning goals",
+    "materials": "Materials needed",
+    "warmUp": "Warm-up",
+    "sourceActivity": "Source activity",
+    "discussion": "Discussion questions",
+    "writingPrompt": "Writing prompt",
+    "extension": "Extension activity",
+    "themes": "Themes",
+    "viewSource": "Open the full source",
+    "excerpt": "From the source",
+    "context": "Context",
+    "vocabulary": "Vocabulary",
+    "sourcing": "Sourcing questions",
+    "closeReading": "Close-reading questions",
+    "historicalThinking": "Historical-thinking questions",
+    "today": "Why does this matter today?",
+    "skill": "History skill",
+    "steps": "Steps",
+    "example": "Example",
+    "printThisPage": "Tip: use your browser's Print command to print this page or save it as a PDF."
+  },
+  "contentPendingTitle": "Spanish classroom materials in preparation",
+  "contentPending": "The detailed lesson and activity content in this section is being prepared in Spanish. For now it is shown in English. The full Spanish archive, including the timeline and the primary sources, is already available.",
+  "lessonPlans": {
+    "breadcrumb": "Lesson Plans",
+    "title": "Lesson Plans",
+    "intro": [
+      "Full lesson plans on the Stony Brook University Social Studies template, each pinned to one specific New York State Framework standard and grade, and timed for a 42-minute period. The Grade 7 unit carries Islip from before the Revolution through the occupation and the question of who belonged; the Grade 11 and Grade 12 lessons take the same local history into high-school document-based inquiry and civics."
+    ],
+    "stonyBrookCredit": "These lesson plans use a format adapted from the Stony Brook University Social Studies Lesson Plan Template.",
+    "stonyBrookTemplateLabel": "Stony Brook lesson plan template",
+    "standards": {
+      "heading": "Standards and alignment",
+      "blurb": "Every lesson names one New York State Social Studies Framework Key Idea, the Social Studies Practices it builds, and the New York P-12 Common Core literacy standards it meets. The full state frameworks, public documents from the New York State Education Department, are linked here for reference.",
+      "cclsNote": "Reading and writing standards are drawn from the New York State P-12 Common Core Learning Standards for Literacy in History and Social Studies.",
+      "frameworkK8": "NYS K-8 Social Studies Framework",
+      "framework912": "NYS 9-12 Social Studies Framework (with 2017 updates)",
+      "pdfLabel": "PDF",
+      "viewPdf": "Open PDF"
+    },
+    "roadmap": {
+      "heading": "More lessons to follow",
+      "intro": "This first set centers Grade 7 and Grades 11-12. As more of Islip's record is digitized, future lessons will reach more of the framework:",
+      "items": [
+        "Grade 4, New York State and Local History and Government (Key Idea 4.4): how Islip's town government works, then and now.",
+        "Grade 8, United States and New York State History II (Key Idea 8.2): immigration and the growth of Islip's communities.",
+        "Grade 11 in depth (Key Ideas 11.1 to 11.3): further document-based inquiries on the Revolution, the Constitution, and slavery.",
+        "Grade 12, Participation in Government (Key Ideas 12.G3 to 12.G4): rights, responsibilities, and civic participation today."
+      ]
+    }
+  },
+  "lessonLabels": {
+    "grade": "Grade",
+    "course": "Course",
+    "time": "Time",
+    "aim": "Lesson aim",
+    "mainIdeas": "Main ideas and student learning goals",
+    "ssSkills": "Social studies skills",
+    "ssPractices": "New York Social Studies Practices",
+    "rationale": "Rationale",
+    "comesAfter": "Comes after",
+    "focus": "This lesson focuses on",
+    "prepares": "Prepares students for",
+    "priorKnowledge": "Prior knowledge needed",
+    "likelyKnow": "Students should already know",
+    "misconceptions": "Likely misconceptions",
+    "prerequisiteSkills": "Prerequisite skills",
+    "masteryChecks": "How these prerequisites are checked",
+    "nysed": "NYSED Framework standard",
+    "ccStandards": "Common Core literacy standards",
+    "iep": "Modifications for a student with an IEP",
+    "iepStudent": "Hypothetical student",
+    "modifications": "Modifications",
+    "keyTerms": "Key terms, concepts, and individuals",
+    "lessonFlow": "Lesson flow",
+    "teacherWillDo": "What the teacher will do",
+    "studentsWillDo": "What the students will do",
+    "alignment": "How this addresses the aim",
+    "scaffolding": "Scaffolding questions",
+    "higherOrder": "Higher-order questions",
+    "segmentAssessment": "Assessment",
+    "homework": "Homework",
+    "assignment": "Assignment",
+    "requirements": "Requirements",
+    "answerKey": "Answer key (for teachers)",
+    "min": "min",
+    "openLesson": "Open the full lesson",
+    "backToLessons": "Back to Lesson Plans",
+    "standardBadge": "NYSED"
+  },
+  "primarySourceActivities": {
+    "breadcrumb": "Primary Source Activities",
+    "title": "Primary Source Activities",
+    "intro": [
+      "Seven short activities, each built on a single real document from Islip's history. Every one gives students a short excerpt, plain context, vocabulary, and questions that build from sourcing to close reading to historical thinking."
+    ]
+  },
+  "exhibitGuide": {
+    "breadcrumb": "Exhibit Guide",
+    "title": "Exhibit Guide",
+    "intro": [
+      "A student-facing guide to the seven panels of the digital exhibit. Use it as a worksheet in a computer lab, on a class visit, or as a reading guide for homework. Each question sends students into a panel to find the answer."
+    ],
+    "beforeReadingHeading": "Before you begin",
+    "panelQuestionsHeading": "One question per panel",
+    "reflectHeading": "After you read",
+    "surprisedLabel": "What surprised you?",
+    "includedLabel": "Who was included?",
+    "leftOutLabel": "Who was left out?",
+    "finalReflectionLabel": "Final reflection: the living promise",
+    "openPanel": "Open this panel"
+  },
+  "timelineActivities": {
+    "breadcrumb": "Timeline Activities",
+    "title": "Timeline Activities",
+    "intro": [
+      "Five activities that use the full timeline and the child-friendly timeline together to practice historical thinking, from chronological reasoning to asking how evidence becomes history."
+    ],
+    "useTimelinesHeading": "You will use these two pages",
+    "fullTimeline": "The full timeline",
+    "kidsTimeline": "The child-friendly timeline",
+    "skillLabel": "History skill",
+    "stepsLabel": "Steps",
+    "exampleLabel": "Example"
+  },
+  "printables": {
+    "breadcrumb": "Printable Materials",
+    "title": "Printable Materials",
+    "intro": [
+      "Every teaching resource on this site is built to print cleanly from your browser. Downloadable PDF packets are in preparation. In the meantime, open any resource below and use your browser's Print command to print it or save it as a PDF."
+    ],
+    "preparingTitle": "Downloadable PDFs are in preparation",
+    "preparing": "Formatted PDF handouts are being prepared. Until they are ready, the print-friendly web versions below carry the same content and print cleanly.",
+    "listHeading": "Print-friendly resources"
+  }
+}

@@ -65,6 +65,17 @@ export const primaryNav: NavItem[] = [
     ],
   },
   {
+    key: "teach",
+    href: "/teach",
+    children: [
+      { key: "teachLessonPlans", href: "/teach/lesson-plans" },
+      { key: "teachActivities", href: "/teach/primary-source-activities" },
+      { key: "teachExhibitGuide", href: "/teach/exhibit-guide" },
+      { key: "teachTimelineActivities", href: "/teach/timeline-activities" },
+      { key: "teachPrintables", href: "/teach/printables" },
+    ],
+  },
+  {
     key: "research",
     href: "/research",
     children: [
@@ -90,7 +101,7 @@ export const primaryNav: NavItem[] = [
 ];
 
 export interface FooterGroup {
-  headingKey: "exploreHeading" | "researchHeading" | "aboutHeading";
+  headingKey: "exploreHeading" | "researchHeading" | "teachingHeading" | "aboutHeading";
   items: { key: string; href: string }[];
 }
 
@@ -119,6 +130,16 @@ export const footerNav: FooterGroup[] = [
       { key: "timeline", href: "/timeline" },
       { key: "timelineKids", href: "/timeline/kids" },
       { key: "people", href: "/people" },
+    ],
+  },
+  {
+    headingKey: "teachingHeading",
+    items: [
+      { key: "teachLessonPlans", href: "/teach/lesson-plans" },
+      { key: "teachActivities", href: "/teach/primary-source-activities" },
+      { key: "teachExhibitGuide", href: "/teach/exhibit-guide" },
+      { key: "teachTimelineActivities", href: "/teach/timeline-activities" },
+      { key: "teachPrintables", href: "/teach/printables" },
     ],
   },
   {

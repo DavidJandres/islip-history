@@ -7,20 +7,23 @@ export interface Crumb {
 }
 
 // Home is prepended automatically; the last crumb is the current page. Hrefs
-// passed in are already locale-prefixed by the caller.
+// passed in are already locale-prefixed by the caller. `label` names the nav
+// landmark; pass a localized string so it isn't announced in English on /es.
 export function Breadcrumb({
   homeLabel,
   homeHref,
   trail,
+  label = "Breadcrumb",
 }: {
   homeLabel: string;
   homeHref: string;
   trail: Crumb[];
+  label?: string;
 }) {
   const crumbs: Crumb[] = [{ label: homeLabel, href: homeHref }, ...trail];
 
   return (
-    <nav aria-label="Breadcrumb" className="text-sm">
+    <nav aria-label={label} className="text-sm">
       <ol className="flex flex-wrap items-center gap-1.5 text-muted">
         {crumbs.map((crumb, i) => {
           const isLast = i === crumbs.length - 1;

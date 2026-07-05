@@ -41,7 +41,7 @@ function MemberCard({ member, anchor }: { member: Member; anchor: string }) {
       {photo ? (
         <Image
           src={photo}
-          alt={member.name}
+          alt=""
           width={480}
           height={600}
           sizes="(min-width: 640px) 176px, 128px"
@@ -74,6 +74,7 @@ export default async function AboutFellowshipPage({ params }: LocaleParams) {
     <Section size="narrow">
       <Breadcrumb
         homeLabel={dict.common.home}
+        label={dict.common.breadcrumbLabel}
         homeHref={localizedPath(locale, "/")}
         trail={[
           { label: dict.aboutProject.breadcrumb, href: localizedPath(locale, "/about") },

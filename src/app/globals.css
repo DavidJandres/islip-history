@@ -86,7 +86,9 @@
 
   footer :focus-visible,
   .bg-blue :focus-visible,
-  .bg-blue-dark :focus-visible {
+  .bg-blue-dark :focus-visible,
+  .bg-blue:focus-visible,
+  .bg-blue-dark:focus-visible {
     outline-color: var(--color-gold-light);
   }
 

@@ -13,6 +13,7 @@ import { timeline } from "../src/lib/timeline";
 import { primarySources, sourceThemes } from "../src/lib/primary-sources";
 import { essays, essayCategories } from "../src/lib/essays";
 import { exhibitPanels, panelRelated, panelImages } from "../src/lib/exhibit";
+import { lessonPlans, sourceActivities, timelineActivities, teachingLinks } from "../src/lib/teaching";
 import { bibliographyGroups, bibliographyFlat } from "../src/lib/bibliography";
 import { collectionGroups } from "../src/lib/collections";
 import { timelineEs } from "../src/lib/timeline-es";
@@ -48,6 +49,10 @@ function routeExists(p: string): boolean {
     const slug = p.split("/")[2];
     return routes.includes("/exhibit/[panel]") && (exhibitPanels as readonly string[]).includes(slug);
   }
+  if (/^\/teach\/lesson-plans\/[^/]+$/.test(p)) {
+    const slug = p.split("/")[3];
+    return routes.includes("/teach/lesson-plans/[lesson]") && lessonPlans.some((l) => l.id === slug);
+  }
   return false;
 }
 
@@ -68,6 +73,10 @@ function anchorExists(page: string, anchor: string): boolean {
     const i = Number(anchor.replace("faq-", ""));
     return anchor.startsWith("faq-") && Number.isInteger(i) && i >= 0 && i < dict.faq.items.length;
   }
+  if (page === "/teach/primary-source-activities")
+    return anchor.startsWith("activity-") && sourceActivities.some((a) => `activity-${a.id}` === anchor);
+  if (page === "/teach/timeline-activities")
+    return anchor.startsWith("tactivity-") && timelineActivities.some((a) => `tactivity-${a.id}` === anchor);
   return false;
 }
 
@@ -124,6 +133,10 @@ for (const panel of exhibitPanels) {
   }
 }
 ok(`panelRelated: ${related} links, all resolve`);
+
+// ---------- 6a. Teaching Materials internal links ----------
+for (const link of teachingLinks) checkHref(link.href, "teaching");
+ok(`teaching: ${teachingLinks.length} related/source links resolve`);
 
 // ---------- 6b. Collections mash links + localized group labels ----------
 {
@@ -243,6 +256,30 @@ for (const [q, want] of expectTop) {
   if (pos < 0)
     fail(`search "${q}": ${want} not in top 5 (got: ${hits.map((h) => h.doc.id).join(", ")})`);
   else ok(`search "${q}" -> ${want} (rank ${pos + 1})`);
+}
+
+// ---------- 10a. Teaching Materials are findable by teacher-style queries ----------
+// The user's target queries: teacher, lesson plan, primary source activity,
+// classroom, occupation lesson, Islip Revolution lesson, child-friendly
+// timeline, belonging. Each must surface a teaching doc (teach-*) in the top 6,
+// or the exact page where noted.
+const teachExpect: Array<[string, string]> = [
+  ["teacher classroom materials", "teach-"],
+  ["lesson plan", "teach-"],
+  ["primary source activity", "teach-"],
+  ["classroom activity", "teach-"],
+  ["occupation lesson", "teach-"],
+  ["Islip revolution lesson", "teach-"],
+  ["belonging lesson", "teach-"],
+  ["child-friendly timeline activity", "teach-"],
+  ["exhibit guide for students", "teach-exhibit-guide"],
+];
+for (const [q, want] of teachExpect) {
+  const hits = search(index, q).slice(0, 6);
+  const pos = hits.findIndex((h) => h.doc.id.startsWith(want));
+  if (pos < 0)
+    fail(`teach search "${q}": no ${want} in top 6 (got: ${hits.map((h) => h.doc.id).join(", ")})`);
+  else ok(`teach search "${q}" -> ${hits[pos].doc.id} (rank ${pos + 1})`);
 }
 
 console.log(failures === 0 ? "\nAll integrity checks passed." : `\n${failures} FAILURE(S).`);

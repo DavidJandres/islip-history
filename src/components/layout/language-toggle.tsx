@@ -33,6 +33,7 @@ export function LanguageToggle({
       type="button"
       onClick={switchLocale}
       aria-label={label}
+      lang={other}
       className="inline-flex items-center gap-1.5 rounded-sm border border-line px-3 py-2
         text-sm font-semibold text-blue transition-colors hover:border-blue hover:bg-white"
     >

@@ -27,6 +27,7 @@ export default async function FaqPage({ params }: LocaleParams) {
     <Section size="narrow">
       <Breadcrumb
         homeLabel={dict.common.home}
+        label={dict.common.breadcrumbLabel}
         homeHref={localizedPath(locale, "/")}
         trail={[
           { label: dict.aboutProject.breadcrumb, href: localizedPath(locale, "/about") },
@@ -67,6 +68,7 @@ export default async function FaqPage({ params }: LocaleParams) {
               nameLabel: faq.nameLabel,
               emailLabel: faq.emailLabel,
               questionLabel: faq.questionLabel,
+              requiredHint: faq.requiredHint,
               submit: faq.submit,
               sending: faq.sending,
               successTitle: faq.successTitle,

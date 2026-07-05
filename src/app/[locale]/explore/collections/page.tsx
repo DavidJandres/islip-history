@@ -34,6 +34,7 @@ export default async function CollectionsPage({ params }: LocaleParams) {
     <Section>
       <Breadcrumb
         homeLabel={dict.common.home}
+        label={dict.common.breadcrumbLabel}
         homeHref={localizedPath(locale, "/")}
         trail={[
           { label: dict.nav.explore, href: localizedPath(locale, "/explore") },

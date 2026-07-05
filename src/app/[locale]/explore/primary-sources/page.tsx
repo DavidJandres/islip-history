@@ -33,6 +33,7 @@ export default async function PrimarySourcesPage({ params }: LocaleParams) {
     <Section size="narrow">
       <Breadcrumb
         homeLabel={dict.common.home}
+        label={dict.common.breadcrumbLabel}
         homeHref={localizedPath(locale, "/")}
         trail={[
           { label: dict.nav.explore, href: localizedPath(locale, "/explore") },

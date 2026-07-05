@@ -1,0 +1,190 @@
+{
+  "breadcrumb": "Materiales para docentes",
+  "eyebrow": "Para docentes",
+  "title": "Materiales para docentes",
+  "intro": [
+    "Esta sección ayuda a los docentes a llevar la historia local de Islip al salón de clases. Los materiales usan las fuentes primarias, la cronología, los paneles de la exposición y las páginas de personas del proyecto para enseñar la Revolución Estadounidense, el gobierno local, la vida cívica, la pertenencia y el pensamiento histórico."
+  ],
+  "audienceNote": "No hace falta ser historiador local para usarlos. Cada lección y actividad nombra las fuentes en las que se basa, enlaza directamente a ellas e incluye una breve nota para el docente sobre lo que la evidencia muestra y lo que no.",
+  "cardsHeading": "Empieza aquí",
+  "cards": {
+    "lessonPlans": {
+      "title": "Planes de lección",
+      "blurb": "Cinco lecciones listas para el aula, desde el poblamiento y el gobierno local hasta la ocupación, la pertenencia y la promesa inconclusa de la independencia."
+    },
+    "primarySourceActivities": {
+      "title": "Actividades con fuentes primarias",
+      "blurb": "Siete actividades breves basadas en los propios registros del pueblo, cada una con un fragmento real, contexto sencillo, vocabulario y preguntas en capas."
+    },
+    "exhibitGuide": {
+      "title": "Guía de la exposición",
+      "blurb": "Una guía para estudiantes de los siete paneles de la exposición, con una pregunta por panel y espacio para reflexionar sobre quién fue incluido y quién quedó afuera."
+    },
+    "timelineActivities": {
+      "title": "Actividades con la cronología",
+      "blurb": "Cinco actividades que usan juntas la cronología completa y la cronología para niños para practicar el pensamiento histórico."
+    },
+    "printables": {
+      "title": "Materiales imprimibles",
+      "blurb": "Versiones listas para imprimir de cada recurso, pensadas para el aula. Los paquetes en PDF descargables están en preparación."
+    },
+    "bilingual": {
+      "title": "Materiales bilingües para el aula",
+      "blurb": "Cada página aquí existe en inglés y español, para que la misma lección llegue a más familias de Islip. El contenido completo de las lecciones en español está en preparación."
+    }
+  },
+  "themesHeading": "Temas en estos materiales",
+  "themes": [
+    "La Revolución Estadounidense",
+    "El gobierno local",
+    "La participación cívica",
+    "La ocupación",
+    "El análisis de fuentes primarias",
+    "Raza, condición y pertenencia",
+    "La identidad local",
+    "La promesa inconclusa de la independencia"
+  ],
+  "labels": {
+    "onThisPage": "En esta página",
+    "backToTeach": "Volver a Materiales para docentes",
+    "relatedPages": "Páginas relacionadas en este sitio",
+    "teacherNote": "Nota para el docente sobre cautela e incertidumbre",
+    "gradeBand": "Nivel escolar",
+    "time": "Tiempo estimado",
+    "essentialQuestion": "Pregunta esencial",
+    "learningGoals": "Objetivos de aprendizaje",
+    "materials": "Materiales necesarios",
+    "warmUp": "Actividad inicial",
+    "sourceActivity": "Actividad con la fuente",
+    "discussion": "Preguntas para la discusión",
+    "writingPrompt": "Consigna de escritura",
+    "extension": "Actividad de extensión",
+    "themes": "Temas",
+    "viewSource": "Abrir la fuente completa",
+    "excerpt": "De la fuente",
+    "context": "Contexto",
+    "vocabulary": "Vocabulario",
+    "sourcing": "Preguntas sobre el origen del documento",
+    "closeReading": "Preguntas de lectura atenta",
+    "historicalThinking": "Preguntas de pensamiento histórico",
+    "today": "¿Por qué importa esto hoy?",
+    "skill": "Destreza histórica",
+    "steps": "Pasos",
+    "example": "Ejemplo",
+    "printThisPage": "Consejo: usa el comando Imprimir de tu navegador para imprimir esta página o guardarla como PDF."
+  },
+  "contentPendingTitle": "Materiales de aula en español en preparación",
+  "contentPending": "El contenido detallado de las lecciones y actividades de esta sección se está preparando en español. Por ahora se muestra en inglés. El archivo completo en español, incluidas la cronología y las fuentes primarias, ya está disponible.",
+  "lessonPlans": {
+    "breadcrumb": "Planes de lección",
+    "title": "Planes de lección",
+    "intro": [
+      "Planes de lección completos con el formato de plantilla de Estudios Sociales de la Universidad Stony Brook, cada uno vinculado a un estándar y grado específico del Marco del Estado de Nueva York y calculado para un período de 42 minutos. La unidad de 7.º grado lleva a Islip desde antes de la Revolución hasta la ocupación y la pregunta de quién pertenecía; las lecciones de 11.º y 12.º grado llevan esta misma historia local al trabajo con documentos y a la educación cívica de secundaria."
+    ],
+    "stonyBrookCredit": "Estos planes de lección usan un formato adaptado de la plantilla de planes de lección de Estudios Sociales de la Universidad Stony Brook.",
+    "stonyBrookTemplateLabel": "Plantilla de planes de lección de Stony Brook",
+    "standards": {
+      "heading": "Estándares y alineación",
+      "blurb": "Cada lección nombra una Idea Clave del Marco de Estudios Sociales del Estado de Nueva York, las Prácticas de Estudios Sociales que desarrolla y los estándares de alfabetización del Common Core P-12 de Nueva York que cumple. Los marcos estatales completos, documentos públicos del Departamento de Educación del Estado de Nueva York, se enlazan aquí como referencia.",
+      "cclsNote": "Los estándares de lectura y escritura provienen de los Estándares de Aprendizaje del Common Core P-12 de Nueva York para la Alfabetización en Historia y Estudios Sociales.",
+      "frameworkK8": "Marco de Estudios Sociales de NY, K-8",
+      "framework912": "Marco de Estudios Sociales de NY, 9-12 (con actualizaciones de 2017)",
+      "pdfLabel": "PDF",
+      "viewPdf": "Abrir PDF"
+    },
+    "roadmap": {
+      "heading": "Más lecciones por venir",
+      "intro": "Este primer conjunto se centra en 7.º grado y en 11.º y 12.º grado. A medida que se digitalice más del registro de Islip, las próximas lecciones abarcarán más del marco:",
+      "items": [
+        "4.º grado, Historia y Gobierno del Estado de Nueva York y locales (Idea Clave 4.4): cómo funciona el gobierno del pueblo de Islip, antes y ahora.",
+        "8.º grado, Historia de los Estados Unidos y del Estado de Nueva York II (Idea Clave 8.2): la inmigración y el crecimiento de las comunidades de Islip.",
+        "11.º grado con más profundidad (Ideas Clave 11.1 a 11.3): más investigaciones con documentos sobre la Revolución, la Constitución y la esclavitud.",
+        "12.º grado, Participación en el Gobierno (Ideas Clave 12.G3 a 12.G4): derechos, responsabilidades y participación cívica hoy."
+      ]
+    }
+  },
+  "lessonLabels": {
+    "grade": "Grado",
+    "course": "Curso",
+    "time": "Tiempo",
+    "aim": "Objetivo de la lección",
+    "mainIdeas": "Ideas principales y objetivos de aprendizaje",
+    "ssSkills": "Destrezas de estudios sociales",
+    "ssPractices": "Prácticas de Estudios Sociales de Nueva York",
+    "rationale": "Justificación",
+    "comesAfter": "Viene después de",
+    "focus": "Esta lección se centra en",
+    "prepares": "Prepara a los estudiantes para",
+    "priorKnowledge": "Conocimientos previos necesarios",
+    "likelyKnow": "Los estudiantes ya deberían saber",
+    "misconceptions": "Ideas erróneas probables",
+    "prerequisiteSkills": "Destrezas previas necesarias",
+    "masteryChecks": "Cómo se comprueban estos requisitos",
+    "nysed": "Estándar del Marco de NYSED",
+    "ccStandards": "Estándares de alfabetización del Common Core",
+    "iep": "Adaptaciones para un estudiante con un IEP",
+    "iepStudent": "Estudiante hipotético",
+    "modifications": "Adaptaciones",
+    "keyTerms": "Términos, conceptos y personas clave",
+    "lessonFlow": "Desarrollo de la lección",
+    "teacherWillDo": "Lo que hará el docente",
+    "studentsWillDo": "Lo que harán los estudiantes",
+    "alignment": "Cómo aborda esto el objetivo",
+    "scaffolding": "Preguntas de apoyo",
+    "higherOrder": "Preguntas de orden superior",
+    "segmentAssessment": "Evaluación",
+    "homework": "Tarea",
+    "assignment": "Consigna",
+    "requirements": "Requisitos",
+    "answerKey": "Clave de respuestas (para docentes)",
+    "min": "min",
+    "openLesson": "Abrir la lección completa",
+    "backToLessons": "Volver a Planes de lección",
+    "standardBadge": "NYSED"
+  },
+  "primarySourceActivities": {
+    "breadcrumb": "Actividades con fuentes primarias",
+    "title": "Actividades con fuentes primarias",
+    "intro": [
+      "Siete actividades breves, cada una basada en un documento real de la historia de Islip. Todas dan a los estudiantes un fragmento corto, contexto sencillo, vocabulario y preguntas que van del origen del documento a la lectura atenta y al pensamiento histórico."
+    ]
+  },
+  "exhibitGuide": {
+    "breadcrumb": "Guía de la exposición",
+    "title": "Guía de la exposición",
+    "intro": [
+      "Una guía para estudiantes de los siete paneles de la exposición digital. Úsala como hoja de trabajo en la sala de computación, en una visita de clase o como guía de lectura para la tarea. Cada pregunta envía a los estudiantes a un panel para encontrar la respuesta."
+    ],
+    "beforeReadingHeading": "Antes de empezar",
+    "panelQuestionsHeading": "Una pregunta por panel",
+    "reflectHeading": "Después de leer",
+    "surprisedLabel": "¿Qué te sorprendió?",
+    "includedLabel": "¿Quién fue incluido?",
+    "leftOutLabel": "¿Quién quedó afuera?",
+    "finalReflectionLabel": "Reflexión final: la promesa viva",
+    "openPanel": "Abrir este panel"
+  },
+  "timelineActivities": {
+    "breadcrumb": "Actividades con la cronología",
+    "title": "Actividades con la cronología",
+    "intro": [
+      "Cinco actividades que usan juntas la cronología completa y la cronología para niños para practicar el pensamiento histórico, desde el razonamiento cronológico hasta preguntar cómo la evidencia se convierte en historia."
+    ],
+    "useTimelinesHeading": "Vas a usar estas dos páginas",
+    "fullTimeline": "La cronología completa",
+    "kidsTimeline": "La cronología para niños",
+    "skillLabel": "Destreza histórica",
+    "stepsLabel": "Pasos",
+    "exampleLabel": "Ejemplo"
+  },
+  "printables": {
+    "breadcrumb": "Materiales imprimibles",
+    "title": "Materiales imprimibles",
+    "intro": [
+      "Cada recurso de enseñanza de este sitio está hecho para imprimirse limpio desde tu navegador. Los paquetes en PDF descargables están en preparación. Mientras tanto, abre cualquier recurso de abajo y usa el comando Imprimir de tu navegador para imprimirlo o guardarlo como PDF."
+    ],
+    "preparingTitle": "Los PDF descargables están en preparación",
+    "preparing": "Se están preparando folletos en PDF con formato. Hasta que estén listos, las versiones web imprimibles de abajo tienen el mismo contenido y se imprimen limpias.",
+    "listHeading": "Recursos listos para imprimir"
+  }
+}

@@ -15,6 +15,7 @@ import { exhibitPanels, panelNumber, panelStatus, panelBodyTranslated } from "@/
 import { bibliographyFlat } from "@/lib/bibliography";
 import { localizedPrimarySources } from "@/lib/primary-sources";
 import { localizedEssays } from "@/lib/essays";
+import { lessonPlans, sourceActivities, exhibitGuide, timelineActivities } from "@/lib/teaching";
 import type { SearchDoc } from "./types";
 
 const join = (parts: Array<string | undefined | null>) =>
@@ -254,6 +255,118 @@ export function buildCorpus(locale: Locale): SearchDoc[] {
       body: [e.summary, e.whyItMatters, ...e.excerpts].filter(Boolean).join(" "),
     });
   }
+
+  // Teaching Materials — the /teach section. The lesson and activity prose is
+  // English (Spanish pages show it with a "materials in preparation" notice),
+  // so both indexes carry the English teaching text and a Spanish teacher can
+  // still find a resource by topic. Deep links land on each item's anchor.
+  const teach = dict.teach;
+  docs.push({
+    id: "teach-home",
+    type: "page",
+    typeLabel: c.searchTypeTeach,
+    title: teach.title,
+    subtitle: teach.eyebrow,
+    href: href("/teach"),
+    body: [
+      ...teach.intro,
+      teach.audienceNote,
+      ...Object.values(teach.cards).map((k) => `${k.title} ${k.blurb}`),
+      ...teach.themes,
+    ].join(" "),
+    keywords: "teacher teachers teaching classroom lesson plans educators for teachers curriculum",
+  });
+  for (const l of lessonPlans) {
+    const segText = l.segments.flatMap((s) => [
+      s.title,
+      ...s.teacherWillDo,
+      ...s.studentsWillDo,
+      ...(s.scaffoldingQuestions ?? []),
+      ...(s.higherOrderQuestions ?? []),
+    ]);
+    docs.push({
+      id: `teach-lesson-${l.id}`,
+      type: "page",
+      typeLabel: c.searchTypeTeach,
+      title: l.title,
+      subtitle: `${l.grade} · ${teach.lessonPlans.title}`,
+      href: href(`/teach/lesson-plans/${l.id}`),
+      // keyTerms (Isaac Thompson, Mustee, etc.) are deliberately NOT indexed
+      // here: those queries should land on the canonical person/source pages,
+      // not on a lesson plan. Lessons stay findable by their pedagogy, themes,
+      // grade, and standard.
+      body: [l.aim, ...l.mainIdeas, ...segText, l.homework.assignment, l.teacherNote].join(" "),
+      keywords: [
+        "lesson plan",
+        "teacher",
+        "classroom",
+        l.grade,
+        l.nysed.code,
+        l.nysed.title,
+        ...l.themes,
+      ].join(" "),
+    });
+  }
+  for (const a of sourceActivities) {
+    docs.push({
+      id: `teach-activity-${a.id}`,
+      type: "page",
+      typeLabel: c.searchTypeTeach,
+      title: a.title,
+      subtitle: teach.primarySourceActivities.title,
+      href: href(`/teach/primary-source-activities#activity-${a.id}`),
+      body: [
+        a.context,
+        a.excerpt,
+        ...a.vocabulary.map((v) => `${v.term} ${v.definition}`),
+        ...a.sourcingQuestions,
+        ...a.closeReadingQuestions,
+        ...a.historicalThinkingQuestions,
+        a.todayQuestion,
+        a.writingPrompt,
+      ].join(" "),
+      keywords: "primary source activity document analysis classroom teacher close reading",
+    });
+  }
+  docs.push({
+    id: "teach-exhibit-guide",
+    type: "page",
+    typeLabel: c.searchTypeTeach,
+    title: teach.exhibitGuide.title,
+    subtitle: teach.title,
+    href: href("/teach/exhibit-guide"),
+    body: [
+      exhibitGuide.beforeReading,
+      ...exhibitGuide.panels.map((pn) => `${pn.title} ${pn.question}`),
+      exhibitGuide.surprised,
+      exhibitGuide.included,
+      exhibitGuide.leftOut,
+      exhibitGuide.finalReflection,
+    ].join(" "),
+    keywords: "exhibit guide student worksheet classroom teacher panels questions",
+  });
+  for (const a of timelineActivities) {
+    docs.push({
+      id: `teach-timeline-activity-${a.id}`,
+      type: "page",
+      typeLabel: c.searchTypeTeach,
+      title: a.title,
+      subtitle: teach.timelineActivities.title,
+      href: href(`/teach/timeline-activities#tactivity-${a.id}`),
+      body: [a.skill, ...a.steps, a.example ?? ""].join(" "),
+      keywords: ["timeline activity", "historical thinking", "classroom", "teacher", a.skill].join(" "),
+    });
+  }
+  docs.push({
+    id: "teach-printables",
+    type: "page",
+    typeLabel: c.searchTypeTeach,
+    title: teach.printables.title,
+    subtitle: teach.title,
+    href: href("/teach/printables"),
+    body: [...teach.printables.intro, teach.printables.preparing].join(" "),
+    keywords: "printable printables pdf handout print classroom teacher packet child-friendly timeline",
+  });
 
   // FAQ entries, searchable by question and answer.
   dict.faq.items.forEach((item, i) => {

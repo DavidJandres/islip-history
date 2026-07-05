@@ -25,6 +25,7 @@ export default async function AboutResearchPage({ params }: LocaleParams) {
     <Section size="narrow">
       <Breadcrumb
         homeLabel={dict.common.home}
+        label={dict.common.breadcrumbLabel}
         homeHref={localizedPath(locale, "/")}
         trail={[
           { label: dict.aboutProject.breadcrumb, href: localizedPath(locale, "/about") },

@@ -29,6 +29,7 @@ export default async function PeoplePage({ params }: LocaleParams) {
     <Section>
       <Breadcrumb
         homeLabel={dict.common.home}
+        label={dict.common.breadcrumbLabel}
         homeHref={localizedPath(locale, "/")}
         trail={[{ label: p.breadcrumb }]}
       />

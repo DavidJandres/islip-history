@@ -83,6 +83,7 @@ export default async function PanelPage({ params }: PanelParams) {
       />
       <Breadcrumb
         homeLabel={dict.common.home}
+        label={dict.common.breadcrumbLabel}
         homeHref={localizedPath(locale, "/")}
         trail={[
           { label: ex.breadcrumb, href: localizedPath(locale, "/exhibit") },
@@ -208,7 +209,7 @@ export default async function PanelPage({ params }: PanelParams) {
 
       {/* Prev / next across the seven-panel sequence. */}
       <nav
-        aria-label={ex.breadcrumb}
+        aria-label={ex.panelNavLabel}
         className="mt-6 flex items-stretch justify-between gap-4"
       >
         {prev ? (

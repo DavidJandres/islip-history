@@ -30,6 +30,7 @@ export default async function ExhibitPage({ params }: LocaleParams) {
     <Section size="narrow">
       <Breadcrumb
         homeLabel={dict.common.home}
+        label={dict.common.breadcrumbLabel}
         homeHref={localizedPath(locale, "/")}
         trail={[{ label: ex.breadcrumb }]}
       />

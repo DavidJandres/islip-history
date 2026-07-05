@@ -22,7 +22,16 @@ const fail = (msg: string) => {
 const ok = (msg: string) => console.log(`[ ok ] ${msg}`);
 
 // ---------- 1. Every referenced asset exists ----------
-const referenced = new Set<string>(["/sitemap.xsl", "/og.png", "/icons/icon-192.png"]);
+const referenced = new Set<string>([
+  "/sitemap.xsl",
+  "/og.png",
+  "/icons/icon-192.png",
+  // NYSED Social Studies Frameworks (public NYSED documents) and the Stony
+  // Brook lesson-plan template, linked from the teaching Standards panel.
+  "/standards/nys-ss-framework-k-8.pdf",
+  "/standards/nys-ss-framework-9-12.pdf",
+  "/standards/stony-brook-lesson-template.pdf",
+]);
 for (const img of Object.values(panelImages)) if (img) referenced.add(img.src);
 for (const p of people) if (p.portrait) referenced.add(p.portrait.src);
 for (const src of Object.values(teamPhotos)) referenced.add(src);

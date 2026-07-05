@@ -27,6 +27,7 @@ export default async function TimelinePage({ params }: LocaleParams) {
     <Section>
       <Breadcrumb
         homeLabel={dict.common.home}
+        label={dict.common.breadcrumbLabel}
         homeHref={localizedPath(locale, "/")}
         trail={[{ label: t.breadcrumb }]}
       />

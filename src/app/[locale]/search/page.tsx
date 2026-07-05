@@ -30,6 +30,7 @@ export default async function SearchPage({ params }: LocaleParams) {
     <Section size="narrow">
       <Breadcrumb
         homeLabel={c.home}
+        label={c.breadcrumbLabel}
         homeHref={localizedPath(locale, "/")}
         trail={[{ label: c.search }]}
       />

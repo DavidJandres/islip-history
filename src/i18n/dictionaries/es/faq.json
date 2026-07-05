@@ -43,6 +43,7 @@
   "nameLabel": "Su nombre (opcional)",
   "emailLabel": "Correo electrónico",
   "questionLabel": "Su pregunta",
+  "requiredHint": "(obligatorio)",
   "submit": "Enviar pregunta",
   "sending": "Enviando…",
   "successTitle": "Gracias.",
