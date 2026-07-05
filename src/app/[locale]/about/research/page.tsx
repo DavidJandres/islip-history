@@ -61,7 +61,7 @@ export default async function AboutResearchPage({ params }: LocaleParams) {
               <span className="text-sm text-ink">
                 <span className="font-semibold">{fig.place}</span>
                 {" — "}
-                {locale === "es" ? fig.metricEs : fig.metricEn}
+                {locale === "de" ? fig.metricDe : locale === "es" ? fig.metricEs : fig.metricEn}
               </span>
               <span className="shrink-0 font-heading text-lg font-bold text-blue">~{fig.percent}%</span>
             </li>

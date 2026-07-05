@@ -8,6 +8,7 @@
 
 import type { Locale } from "@/i18n/config";
 import { primarySourcesEs } from "./primary-sources-es";
+import { primarySourcesDe } from "./primary-sources-de";
 
 export type SourceStatus = "verified" | "draft" | "review" | "pending";
 
@@ -637,8 +638,9 @@ export const primarySources: PrimarySource[] = [
 
 export function localizedPrimarySources(locale: Locale): PrimarySource[] {
   if (locale === "en") return primarySources;
+  const overlay = locale === "de" ? primarySourcesDe : primarySourcesEs;
   return primarySources.map((s) => {
-    const t = primarySourcesEs[s.id];
+    const t = overlay[s.id];
     if (!t) return s;
     return {
       ...s,

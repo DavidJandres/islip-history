@@ -1,0 +1,34 @@
+{
+  "breadcrumb": "Zeitleiste",
+  "eyebrow": "Wie sich Islip entwickelte",
+  "title": "Zeitleiste",
+  "intro": [
+    "Diese Zeitleiste begleitet die Town of Islip vom Land der indigenen Bevölkerung und den kolonialen Landrechten über die Amerikanische Revolution, die lokale Selbstverwaltung und den Aufbau von Gemeinschaften bis zur heutigen Public History.",
+    "Sie ist nicht vollständig. Es ist eine in Arbeit befindliche Zeitleiste, die auf den Quellen beruht, die derzeit für das Geschichtsprojekt der Town of Islip digitalisiert sind. Weitere Daten und Ereignisse kommen hinzu, sobald zusätzliche Dokumente, Fotografien, Karten und Vignetten aufbereitet sind."
+  ],
+  "workingNote": "Dies ist eine in Arbeit befindliche Zeitleiste. Weitere Daten und Ereignisse kommen hinzu, sobald zusätzliche Quellen digitalisiert und geprüft sind.",
+  "translationNote": "Diese Einträge werden auf Englisch angezeigt, während die deutsche Übersetzung vorbereitet wird.",
+  "eras": {
+    "before": "Vor der Town",
+    "colonial": "Koloniales Land und lokale Selbstverwaltung",
+    "revolution": "Revolution und neue Nation",
+    "civic": "Bürgerliche Identität und Institutionen",
+    "community": "Gemeinschaften und Zugehörigkeit",
+    "today": "Public History heute"
+  },
+  "whyTodayLabel": "Warum es heute wichtig ist",
+  "sourcesLabel": "Quellen",
+  "kids": {
+    "breadcrumb": "Zeitleiste für Kinder",
+    "eyebrow": "Islips Geschichte, einfach erzählt",
+    "title": "Zeitleiste für Kinder",
+    "intro": [
+      "Dies ist die kurze Fassung von Islips Geschichte, in einfachen Worten erzählt für Kinder, Familien und alle, die einen schnellen Überblick möchten.",
+      "Jeder Moment hier führt zur vollständigen Zeitleiste, wo Sie die längere Geschichte lesen und die Quellen sehen können."
+    ],
+    "honestyNote": "Wir erzählen nur, was die alten Aufzeichnungen wirklich zeigen. Wenn niemand etwas sicher weiß, sagen wir das auch.",
+    "fullStoryLabel": "Die ganze Geschichte lesen",
+    "mainTimelineCta": "Mehr erfahren? Lesen Sie die Hauptzeitleiste",
+    "kidsCta": "Lieber die Kurzfassung? Probieren Sie die Zeitleiste für Kinder"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "breadcrumb": "Kontakt",
+  "eyebrow": "Kontakt",
+  "title": "Kontakt und Mitwirken",
+  "lede": "Dieses Projekt freut sich über Fragen von Forschenden, Studierenden und Anwohnenden, über Korrekturen zu allen Inhalten des Archivs und über Angebote von Materialien zum Beitragen.",
+  "contacts": [
+    {
+      "label": "Projektanfragen",
+      "name": "David Jandres-Ceballo, Gardiner Semiquincentennial Fellow",
+      "email": "david.jandresceballo@stonybrook.edu"
+    },
+    {
+      "label": "Historiker der Town of Islip",
+      "name": "Office of the Town Historian",
+      "email": "historian@islipny.gov"
+    },
+    {
+      "label": "Wissenschaftlicher Mentor, Stony Brook University",
+      "name": "Dr. Mark M. Chambers",
+      "email": "mark.chambers@stonybrook.edu"
+    },
+    {
+      "label": "Leiter des Fellowship-Projekts, SUNY Geneseo",
+      "name": "Dr. Michael Leroy Oberg",
+      "email": "oberg@geneseo.edu"
+    }
+  ],
+  "correctionTitle": "Eine Korrektur einreichen",
+  "correctionBody": "Public History wird besser, wenn Leserinnen und Leser mithelfen. Wenn ein Datum, ein Name oder eine Angabe hier falsch oder unvollständig ist, schreiben Sie dem Projekt eine E-Mail mit der Seite und der Korrektur. Wir prüfen sie dann.",
+  "contributeTitle": "Materialien beitragen",
+  "contributeBody": "Wenn Ihre Familie oder Ihre Organisation Fotografien, Dokumente oder Erinnerungen besitzt, die mit den Gemeinschaften von Islip verbunden sind, in welcher Sprache auch immer, würden wir gerne von Ihnen hören. Bitte melden Sie sich, bevor Sie etwas senden, damit wir den Umgang damit und die Rechte besprechen können."
+}

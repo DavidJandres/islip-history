@@ -1,0 +1,25 @@
+{
+  "breadcrumb": "Primärquellen",
+  "eyebrow": "Das Archiv erkunden",
+  "title": "Primärquellen",
+  "intro": "Diese Seite versammelt die Primärquellen, die im Geschichtsprojekt der Town of Islip verwendet wurden. Zu diesen Dokumenten gehören Kolonialgesetze, staatliche Aufzeichnungen aus der Zeit der Revolution, Gemeindeprotokolle, Regierungsbeschlüsse und weitere Aufzeichnungen, die das Leben im Precinct of Islip (Verwaltungsbezirk) während der Amerikanischen Revolution verständlich machen.",
+  "note": "Einige Dokumente sind von gedruckten Quellen aus dem 18. und 19. Jahrhundert transkribiert. Schreibweise, Groß- und Kleinschreibung, Zeichensetzung und Wortwahl können die ursprüngliche Quelle oder die verfügbare Transkription widerspiegeln. Kurze Anmerkungen erklären, warum jedes Dokument für Islip von Bedeutung ist.",
+  "themes": {
+    "founding": "Gründung und lokale Selbstverwaltung",
+    "records": "Gemeindeprotokolle und frühe Beschreibungen",
+    "revolution": "Revolution und Loyalität",
+    "militia": "Miliz und militärische Organisation",
+    "occupation": "Besatzung und ziviles Leben",
+    "laws": "Gesetze, Eigentum und Strafe",
+    "newspapers": "Zeitungen und Berichte über Überfälle",
+    "context": "Regionaler Kontext"
+  },
+  "readSource": "Quellentext lesen",
+  "whyMatters": "Warum das wichtig ist",
+  "status": {
+    "verified": "Geprüft",
+    "draft": "Entwurf",
+    "review": "In Prüfung",
+    "pending": "Text ausstehend"
+  }
+}

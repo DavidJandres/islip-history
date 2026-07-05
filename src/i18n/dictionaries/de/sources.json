@@ -1,0 +1,20 @@
+{
+  "breadcrumb": "Bibliografie und Quellen",
+  "eyebrow": "Forschung",
+  "title": "Bibliografie und Quellen",
+  "intro": "Die Archive, Publikationen und Aufzeichnungen, auf die sich dieses Projekt stützt, nach Art gegliedert. Viele stammen aus dem Revolutionary War Resource Guide des Town of Islip Historian's Office und seinen Nachträgen. Diese Arbeitsliste wächst, während die Forschung weitergeht.",
+  "categories": {
+    "packets": "Quellenpakete des Town Historian",
+    "essays": "Artikel und Aufsätze des Town Historian",
+    "primary": "Primärquellen und amtliche Aufzeichnungen",
+    "revwar": "Amerikanische Revolution und der Kontext von Long Island",
+    "sagtikos": "Sagtikos Manor, Islip Grange und lokale Einrichtungen",
+    "community": "Gemeindegeschichte und Vignetten",
+    "newspapers": "Zeitungen",
+    "visual": "Visuelle und materielle Quellen",
+    "digital": "Digitale Datenbanken und Repositorien",
+    "review": "Quellen in Prüfung"
+  },
+  "reviewIntro": "Die folgenden Quellen sind verwendbar, sollten aber vor der endgültigen Veröffentlichung anhand von Titelseiten, Archivunterlagen oder verlässlicheren Quellen überprüft werden.",
+  "missingNote": "Kennen Sie eine Quelle, die wir aufnehmen sollten, oder eine Korrektur zu einer der hier genannten? Nehmen Sie bitte über die Kontaktseite Kontakt auf."
+}

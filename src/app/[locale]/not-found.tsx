@@ -21,6 +21,12 @@ const copy: Record<Locale, { title: string; body: string; home: string; about: s
     home: "Volver al inicio",
     about: "Sobre el proyecto",
   },
+  de: {
+    title: "Diese Seite wurde nicht gefunden",
+    body: "Möglicherweise ist die Adresse falsch geschrieben, oder die Seite wurde verschoben. Sie können zur Startseite zurückkehren oder mehr über das Projekt erfahren.",
+    home: "Zur Startseite",
+    about: "Über das Projekt",
+  },
 };
 
 export default function NotFound() {

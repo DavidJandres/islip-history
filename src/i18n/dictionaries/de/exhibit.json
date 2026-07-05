@@ -1,0 +1,150 @@
+{
+  "breadcrumb": "Die Ausstellung",
+  "panelNavLabel": "Navigation durch die Ausstellungstafeln",
+  "eyebrow": "Digitale Ausstellung",
+  "title": "Das Versprechen der Unabhängigkeit",
+  "lede": "250 Jahre amerikanische Unabhängigkeit, erzählt am Beispiel einer Gemeinde auf Long Island: ihr Land, ihre Menschen und ein Versprechen, das bis heute eingelöst wird. Sieben kurze Kapitel, auf Deutsch, Englisch und Spanisch.",
+  "intro": [
+    "Diese Ausstellung verfolgt das Versprechen der Unabhängigkeit durch die Town of Islip, Tafel für Tafel, vom Land aus der Zeit, als die Gemeinde noch keinen Namen hatte, bis zu der Gemeinschaft, die sie heute ist.",
+    "Lesen Sie sie am Stück durch oder öffnen Sie jede einzelne Tafel für sich. Jede hat ihre eigene Webadresse, sodass eine Tafel später auch auf einem gedruckten Schild in einer Bibliothek stehen und mit dem Handy geöffnet werden kann."
+  ],
+  "panelsHeading": "Die sieben Tafeln",
+  "panelsHint": "Lesen Sie sie der Reihe nach oder springen Sie zu einem beliebigen Kapitel.",
+  "startLabel": "Die Geschichte beginnen",
+  "continueLabel": "Weiter",
+  "panelWord": "Tafel",
+  "ofWord": "von",
+  "prevLabel": "Zurück",
+  "nextLabel": "Weiter",
+  "backToExhibit": "Alle Tafeln",
+  "startOver": "Von vorn beginnen",
+  "sourcesHeading": "Quellen",
+  "draftNoticeTitle": "Entwurf",
+  "draftNotice": "Dieser Text ist ein früher Entwurf und wird noch geprüft. Die Formulierungen können sich ändern, und einige Tafeln weisen darauf hin, wo eine Aussage auf einer Sekundärquelle oder einer lokalen Quelle beruht.",
+  "sourcingNoticeTitle": "Quellen ausstehend",
+  "sourcingNotice": "Diese Tafel wird noch geschrieben. Ihr Text ist ein Platzhalter und wartet noch auf bestätigte Quellen, deshalb sollte hier nichts zitiert oder als endgültig behandelt werden.",
+  "translationPendingTitle": "Spanisch in Arbeit",
+  "translationPending": "Der englische Text dieser Tafel ist entworfen; die spanische Übersetzung wird gerade vorbereitet. In der Zwischenzeit können Sie die entworfene englische Fassung lesen.",
+  "readInEnglish": "Auf Englisch lesen",
+  "inBriefLabel": "Kurz gefasst",
+  "exploreFurther": "Mehr entdecken",
+  "panels": {
+    "the-promise": {
+      "inBrief": "Diese Ausstellung stellt eine große Frage: Was bedeutete das Versprechen der Freiheit von 1776 wirklich, und wen schloss es ein? Wir verfolgen diese Frage anhand einer einzigen Gemeinde, Islip, auf Long Island.",
+      "title": "Das Versprechen",
+      "summary": "Was die Unabhängigkeit versprach und welche Frage diese Ausstellung stellt.",
+      "sources": [
+        "New York State 250th Commemoration Field Guide."
+      ],
+      "body": [
+        "Der 250. Jahrestag der amerikanischen Unabhängigkeit ist nicht nur eine Feier von 1776. In New York ist er auch eine Einladung, ehrlich auf die Revolution zu blicken: was sie versprach, wen sie einschloss und wen sie von ihren Idealen der Freiheit und Selbstbestimmung ausschloss. Der New York State 250th Commemoration Field Guide stellt den Jahrestag sowohl unter das Vorzeichen der Rolle New Yorks in der Revolution als auch unter das des fortdauernden Kampfes marginalisierter Gruppen, diese Ideale zu erreichen.",
+        "Diese Ausstellung beginnt mit dieser Frage und trägt sie in eine einzige Gemeinde auf Long Island. In Islip lässt sich das Versprechen der Unabhängigkeit durch Land, Recht, Besatzung, Familiengeschichten, Gemeindeprotokolle und die Lebenswege der Menschen verfolgen, die sich hier auch nach dem Krieg weiter ein Zuhause schufen. Die Frage ist nicht nur, was Unabhängigkeit 1776 bedeutete, sondern was sie seither für jede Generation bedeutet hat.",
+        "Die Geschichte wird als zwei Pfeiler erzählt, die eine Brücke verbindet. Der erste Pfeiler ist das revolutionäre Islip: das Land vor der Gemeinde, die Entstehung der lokalen Selbstverwaltung, die Entscheidung, die Articles of Association (eine gemeinsame Selbstverpflichtung) zu unterzeichnen, die eigene Milizkompanie der Gemeinde, sechs Jahre britische Besatzung, Sagtikos Manor und Washingtons Besuch im Jahr 1790. Der zweite Pfeiler ist das uneingelöste Versprechen: die Menschen, die ausgeschlossen wurden, die versklavten und die als Vertragsarbeiter gebundenen Menschen, und die Gemeinschaften, die später den Kreis derer erweiterten, die zu Islip gehören."
+      ]
+    },
+    "before-the-town": {
+      "inBrief": "Islip entstand nicht an einem einzigen Tag. Es wuchs von indigenem Land über einen kolonialen Landkauf im Jahr 1683 bis zu einer lokalen Selbstverwaltung im Jahr 1710. Seine Geschichte begann lange, bevor es eine Gemeinde genannt wurde.",
+      "title": "Vor der Gemeinde",
+      "summary": "Warum Islip kein einzelnes Gründungsdatum hat.",
+      "sources": [
+        "George J. Munkenbeck, \"The Origins of the Town of Islip.\"",
+        "Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720-1861 (Town of Islip, 1982); digitized by the Office of the Town Historian."
+      ],
+      "body": [
+        "Die Town of Islip begann nicht an einem einzelnen Gründungsdatum. Der Kauf von 1683, aus dem \"Islip Grange\" wurde, war ein Landkauf, nicht die Gründung der Gemeindeverwaltung. Die ursprüngliche Urkunde ging von Winnaquaheagh, Sachem der Ländereien im heutigen Islip Town, an William Nicoll, und sie beschrieb das Land über Flüsse, Uferlinie und Grenzlinien. Das ist eine Erinnerung daran, dass koloniale Ansprüche auf Land übertragen wurden, das bereits indigene Geschichte und Bedeutung trug.",
+        "Die lokale Selbstverwaltung kam später. Im Jahr 1710 erlaubte ein koloniales Gesetz dem Precinct of Islip (einem Verwaltungsbezirk), eigene Steuerschätzer, einen Steuereinnehmer, einen Constable und einen Supervisor zu wählen und eigene öffentliche Rechnungen zu führen. Dieses Gesetz, nicht der Kauf von 1683, ist der eigentliche Beginn der Verwaltung von Islip.",
+        "Bis 1720 zeigen die Gemeindeprotokolle, wie eng die Macht an Land gebunden war. An der ersten Wahl nahmen 28 Freeholder teil, also wahlberechtigte Männer, die Grundbesitzer waren, und vier der fünf gewählten Amtsträger trugen Familiennamen von Patentinhaberfamilien. So ist der Ursprung von Islip vielschichtig: indigenes Land, kolonialer Kauf, königliches Patent, Verwaltung des Precinct und Familienmacht. Das Versprechen der Unabhängigkeit sollte später an einem Ort ankommen, an dem Fragen von Land, Autorität und Zugehörigkeit bereits tief verwurzelt waren.",
+        "Das erste Protokollbuch der Gemeinde zeigt, was diese frühe Verwaltung tatsächlich tat. Jeden April, bei der jährlichen Gemeindeversammlung (Town Meeting), wählten die Nachbarn einen Supervisor, einen Schreiber, Steuerschätzer, einen Steuereinnehmer, einen Constable, Armenaufseher, Wegeaufseher und Zaunprüfer. Sie machten Regeln über frei herumlaufende Schweine und Eber, führten die Gemeindekasse bis auf den Penny genau und bezahlten die Versorgung armer Nachbarn, etwa von Hannah Hulse, die 1739 zu einem festen wöchentlichen Satz in Kost genommen wurde. Lange vor der Revolution war die Verwaltung der Gemeinde bereits eine gemeinsame, jährliche Gewohnheit."
+      ]
+    },
+    "revolution-comes-to-islip": {
+      "inBrief": "Als die Amerikanische Revolution Long Island erreichte, kam sie unmittelbar in die Häuser und auf die Höfe von Islip. Isaac Thompson von Sagtikos Manor musste seine Familie schützen, während die Briten die Gegend sechs Jahre lang besetzt hielten.",
+      "title": "Die Revolution kommt nach Islip",
+      "summary": "Wie die Revolution in die Häuser und auf die Höfe von Islip kam.",
+      "sources": [
+        "Town of Islip Historian's Office, \"A 250th Story.\"",
+        "George J. Munkenbeck, \"Isaac Thompson - A Man on a Tightrope.\"",
+        "Michele Antonio, \"George Washington Slept at Sagtikos Manor,\" Patch, June 26, 2010 (updated June 27, 2010). Secondary local-history source.",
+        "\"The Islip Precinct Articles of Association,\" May 10, 1775.",
+        "Robert Finnegan, \"Islip Militia: 250th Anniversary, 1776-2026,\" The Quahog, Winter 2026.",
+        "Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720-1861 (Town of Islip, 1982); digitized by the Office of the Town Historian."
+      ],
+      "body": [
+        "Als die Amerikanische Revolution Long Island erreichte, konnte sich Islip ihr nicht entziehen, und die Entscheidung kam früh. Am 10. Mai 1775, Wochen nach den Kämpfen bei Lexington und Concord, versammelten sich die Einwohner des Islip Precinct und unterzeichneten die Articles of Association, eine Selbstverpflichtung zur Unterstützung des Continental Congress. Zu unterzeichnen war gefährlich, denn es war Hochverrat gegen die Krone. Isaac Thompson von Sagtikos Manor unterzeichnete, obwohl er ein Magistrat der Krone und Supervisor des Precinct war.",
+        "Islip organisierte sich auch, um sich zu verteidigen. Eine Volkszählung vom Juni 1775 zählte 375 Einwohner und 64 Männer, die zum Milizdienst geeignet waren. Statt weiter zwischen den Kompanien von Smithtown und Huntington aufgeteilt zu bleiben, bildete der Precinct seine eigene. Im Februar 1776 schrieb Isaac Thompson an den Provincial Congress und bat um Bestallungen für die Offiziere, die die Menschen gewählt hatten, wobei er Benajah Strong als Hauptmann einer Kompanie von etwa 36 oder 37 Männern nannte.",
+        "Das eigene Protokollbuch der Gemeinde hält den Wandel von innen fest. Bei der jährlichen Versammlung im April 1775 wurden Benajah Strong und Isaac Thompson zu Wegeaufsehern gewählt, ganz gewöhnliche Gemeindeämter. Ein Jahr später, im April 1776, wählte dieselbe Versammlung Thompson zum Supervisor, und der Schreiber vermerkte, dass \"A Gun and the accutriments\" (ein Gewehr und das Zubehör) \"paid for at Said Town Meeting which are the property of the towns\" seien, also auf besagter Gemeindeversammlung bezahlt worden seien und Eigentum der Gemeinde seien. Die Protokolle sagen nie, wofür das Gewehr gedacht war. Die Gemeinde kaufte es einfach, schrieb es auf und ging ihren Geschäften nach, drei Monate bevor die Unabhängigkeit erklärt wurde.",
+        "In jenem Sommer kam der Krieg mit voller Wucht. Nachdem die Unabhängigkeitserklärung im Juli 1776 in Huntington verlesen worden war, marschierte die Miliz des Suffolk County nach Westen, wahrscheinlich unter der in Huntington gehissten Liberty-Flagge, in Richtung der Schlacht von Long Island. Die Kontinentalarmee wurde in Brooklyn geschlagen, und bis zum 1. September 1776 hatten britische und loyalistische Truppen Long Island besetzt. Islip sollte sechs Jahre lang unter der Autorität der Krone bleiben.",
+        "Die Revolution war nicht nur etwas, das in Philadelphia oder auf fernen Schlachtfeldern geschah. In Islip drang sie in Häuser, Höfe, Straßen und Familienbeziehungen ein. Die Frage war nicht nur, wer die Unabhängigkeit unterstützte, sondern wie die Menschen überlebten, als der Krieg in ihren Alltag eindrang."
+      ]
+    },
+    "washingtons-visit": {
+      "inBrief": "Im Jahr 1790 machte Präsident George Washington während einer Reise durch Long Island für eine Nacht in Sagtikos Manor Halt. Er kam nicht als General, sondern als Oberhaupt eines ganz neuen Landes.",
+      "title": "Washingtons Besuch",
+      "summary": "Der Halt eines Präsidenten im Jahr 1790 und was die lokale Überlieferung erzählt.",
+      "sources": [
+        "George J. Munkenbeck, \"Isaac Thompson - A Man on a Tightrope.\"",
+        "Michele Antonio, \"George Washington Slept at Sagtikos Manor,\" Patch, June 26, 2010 (updated June 27, 2010). Secondary local-history source."
+      ],
+      "body": [
+        "Im Jahr 1790 bereiste George Washington als erster Präsident der Vereinigten Staaten Long Island. Der Krieg war vorbei und die neue Republik hatte begonnen, doch die Landschaft, durch die er reiste, trug noch die Erinnerung an Besatzung, Loyalität, Gefahr und Überleben. Die lokale Überlieferung verortet Washington während dieser Reise für eine Nacht in Sagtikos Manor, und in der lokalen Überlieferung wird dasselbe Haus für die zeitweilige Anwesenheit des britischen Generals Henry Clinton während der Besatzung in Erinnerung gehalten, wobei seine genauen Aufenthalte weiterer Forschung bedürfen.",
+        "Die tiefere Bedeutung des Besuchs muss mit Vorsicht formuliert werden. Isaac Thompson war über die Familie mit Menschen verwandt, die mit den Nachrichtennetzwerken der Revolution in Verbindung standen, und einige moderne Darstellungen legen nahe, dass Washingtons Reise zum Teil dazu diente, jenen zu danken, die geholfen hatten. Das lässt sich nicht beweisen. Diese Ausstellung behauptet nicht als gesicherte Tatsache, dass Washington Halt machte, \"um Spionen zu danken\", oder dass Isaac Thompson mit dem Culper Spy Ring zusammenarbeitete. Das bleiben offene Forschungsfragen.",
+        "Eine sorgfältige Darstellung genügt. Vierzehn Jahre nachdem die Unabhängigkeit erklärt worden war, kehrte Washington nach Long Island zurück, nicht als General, sondern als Präsident, und sein Halt verband die revolutionäre Vergangenheit von Islip mit der neuen Nation, die darauf folgte."
+      ]
+    },
+    "an-unfinished-promise": {
+      "inBrief": "Die Revolution sprach von Freiheit, aber nicht alle waren frei. Frauen, Schwarze Menschen und indigene Menschen blieben außen vor, und in Sagtikos Manor arbeiteten versklavte Menschen. Das Versprechen der Unabhängigkeit war real, aber es galt noch nicht für alle gleichermaßen.",
+      "title": "Ein uneingelöstes Versprechen",
+      "summary": "Die Sprache der Freiheit und die Menschen, die sie noch nicht erreichte.",
+      "sources": [
+        "New York State 250th Commemoration Field Guide.",
+        "George J. Munkenbeck, \"The Origins of the Town of Islip.\"",
+        "Nathaniel Conklin, \"Description of the Town of Islip in Suffolk County,\" January 11, 1798; transcribed and annotated by the Town of Islip Historian's Office.",
+        "George J. Munkenbeck, \"Isaac Thompson - A Man on a Tightrope,\" drawing on Christopher Verga's research on slavery in Suffolk County.",
+        "New York State, Laws of the State of New York, vol. 1 (Albany, 1886): the 1778 and 1779 acts.",
+        "New York State Senate and Assembly resolution on plundering, June 28, 1781.",
+        "Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720-1861 (Town of Islip, 1982); digitized by the Office of the Town Historian."
+      ],
+      "body": [
+        "Die Revolution sprach in der Sprache der Freiheit, doch diese Freiheit erreichte nicht alle. Als Islip die Articles of Association unterzeichnete, konnte nur ein Teil der Einwohner teilnehmen. Versklavte und freie Schwarze Menschen, indigene Menschen, Frauen, Kinder und Quäker waren ausgeschlossen oder konnten nicht unterzeichnen, und die öffentliche Macht im frühen Islip lag bei einer kleinen Gruppe von Männern mit Grundbesitz.",
+        "Die Besatzung machte die Loyalität selbst gefährlich, und das Gesetz folgte nach. New York verabschiedete 1778 ein Gesetz gegen Menschen von \"equivocal and suspected\" (zweideutigem und verdächtigem) Charakter, und 1779 beschlagnahmte und verkaufte es die Güter derjenigen, die sich auf die Seite der Krone stellten. Die Einwohner von Long Island gerieten dazwischen. Eine Resolution von 1781 beklagte, dass bewaffnete Boote aus Connecticut die eigene Küste von Islip plünderten, in dem, was als Whaleboat War bekannt wurde, und dabei die besetzten Nachbarn wie feindliche Untertanen behandelten.",
+        "Islips eigenes Protokollbuch zeigt, wie verworren jene Jahre waren. Die Gemeinde versammelte sich während der gesamten Besatzung jeden April, wählte Amtsträger und versorgte ihre Armen, während sie ihre Aufzeichnungen nach der Regierungszeit von König Georg III. datierte, so wie Rechtsdokumente in besetztem Gebiet datiert werden mussten. Diese Formulierung bedeutet nicht, dass die Menschen von Islip Loyalisten waren: Dieselben Versammlungen wählten immer wieder Isaac Thompson, einen Unterzeichner der patriotischen Articles of Association, zum Supervisor. Im Jahr 1783 beschloss die Gemeinde, Johanna Hutton und ihr Kind zu unterstützen, die von Familie zu Familie in Kost gegeben wurden, im Verhältnis dazu, wie hoch jede veranlagt war. Erst im April 1784 änderte sich die Überschrift, hin zu \"the Authority of the good People of the State of new york\" (der Autorität des guten Volkes des Staates New York) und \"the Eighth year of the American Independence\" (dem achten Jahr der amerikanischen Unabhängigkeit).",
+        "Auch Sagtikos Manor gehört in diesen schwereren Teil der Geschichte. Ein großer Teil der Arbeit auf dem Hof und im Haus wurde von versklavten und als Vertragsarbeiter gebundenen Menschen geleistet. Aufzeichnungen deuten darauf hin, dass Isaac Thompson in den Jahrzehnten um 1790, 1800 und 1810 im Durchschnitt etwa vier versklavte Menschen festhielt, und die vollständigere Geschichte dieser Menschen ist Teil der laufenden Forschung zum 250. Jahrestag.",
+        "Das schwächt die Geschichte der Revolution nicht; es macht sie ehrlicher. Das Versprechen war real, aber es wurde nicht gleichermaßen geteilt. In Islip war die Unabhängigkeit, wie in der Nation, ein Anfang, kein Ende."
+      ]
+    },
+    "many-roots-one-town": {
+      "inBrief": "Nach der Revolution wuchs Islip weiter, als neue Familien und Gemeinschaften es zu ihrem Zuhause machten. Die jüdische Gemeinde von Islip ist ein starkes Beispiel dafür, wie sich die Geschichte der Gemeinde immer weiter öffnete, um mehr Menschen einzuschließen.",
+      "title": "Viele Wurzeln, eine Gemeinde",
+      "summary": "Die Gemeinschaften, die den Kreis derer, die dazugehören, immer weiter erweiterten.",
+      "sources": [
+        "Mollie Sebor, \"The Story of the Jewish Community of Islip Town\" (Girl Scout Gold Award booklet).",
+        "Nathaniel Conklin, \"Description of the Town of Islip in Suffolk County,\" January 11, 1798; transcribed and annotated by Christopher Albergo and George J. Munkenbeck, Office of the Town Historian.",
+        "Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720-1861 (Town of Islip, 1982); digitized by the Office of the Town Historian."
+      ],
+      "body": [
+        "Das Versprechen der Unabhängigkeit entfaltete sich noch lange nach der Revolution weiter, weil die Bedeutung von \"dem Volk\" immer weiter wuchs. Über Generationen hinweg traten neue Familien und Gemeinschaften in das bürgerliche, religiöse und kulturelle Leben von Islip ein und schufen Einrichtungen, die Zugehörigkeit sichtbar machten.",
+        "Die Wurzeln reichen bis zu den allerersten Aufzeichnungen der Gemeinde zurück. Im Januar 1798 zählte Supervisor Nathaniel Conklin etwa 120 Wohnhäuser in Islip und schrieb, dass fünfundzwanzig davon, ungefähr eines von fünf, Häuser waren, in denen \"Indians, Mustees and free Negros\" lebten (indigene Menschen, \"Mustees\" und \"free Negros\" sind zeitgenössische Begriffe: \"Mustee\" für Menschen gemischter Herkunft, \"free Negros\" für freie Schwarze Menschen in der Sprache der Zeit); \"Mustee\" war ein Wort jener Zeit für Menschen gemischter Herkunft, gemeinhin indigener und afrikanischer. Die Gemeindeprotokolle erzählen dieselbe Geschichte anhand einzelner Lebenswege: Im Jahr 1740 vereinbarte Joseph Nicolls, den der Schreiber als \"Mallator\", also als mulatto (ein Begriff der Zeit für einen Menschen gemischter, schwarzer und weißer Herkunft), festhielt, mit der Gemeinde, einen armen Nachbarn für zwei Shilling die Woche in Kost zu nehmen, und 1787 kaufte die Gemeinde Getreide für eine Frau, die der Schreiber \"Indian hannah\" nannte. Das frühe Islip war nie eine Gemeinde eines einzigen Volkes.",
+        "Ein klares Beispiel ist die jüdische Gemeinde von Islip Town. Eine lokale Geschichte hält fest, dass Juden mindestens seit dem Ende des Amerikanischen Bürgerkriegs in Islip gelebt haben, und verfolgt die Gemeinde über die 1897 anerkannte Bay Shore United Hebrew Benevolent Cemetery Association, die erste Synagoge im Jahr 1918 und das spätere Wachstum von Gemeinden in Bay Shore, Brentwood, Central Islip, Oakdale, East Islip und Sayville. Sie hält auch Überlebende des Holocaust fest, die nach dem Zweiten Weltkrieg in Islip Zuflucht fanden, unter ihnen Samuel Sitko.",
+        "Diese Art von Gemeinschaftsgeschichte ist die Brücke zwischen der Revolution und der Gegenwart. Die Revolution schuf eine Sprache der Rechte und der Zugehörigkeit; spätere Generationen mussten dieses Versprechen im lokalen Leben wahr machen. Mit der Zeit sollte diese Tafel auch andere Gemeinschaften umfassen, darunter italienische, hispanische und lateinamerikanische, polnische, mittelamerikanische, niederländische, irische, afroamerikanische und indigene Familien, sobald die Quellen bereit sind."
+      ]
+    },
+    "the-promise-continues": {
+      "inBrief": "Geschichte ist nicht nur die Vergangenheit. Heute entscheiden Menschen, was sie bewahren, hinterfragen und teilen. Dieses Projekt ist Teil dieser Arbeit: Es hält die Geschichte von Islip für alle offen.",
+      "title": "Das Versprechen geht weiter",
+      "summary": "Warum diese Geschichte noch immer geschrieben wird.",
+      "sources": [
+        "New York State 250th Commemoration Field Guide.",
+        "Town of Islip Historian's Office, Vignettes, 2024 special issue.",
+        "Town of Islip Historian's Office, Vignettes, 2025 special issue.",
+        "Carl A. Starace, ed., Book One of the Minutes of Town Meetings and Register of Animal Ear Marks of the Town of Islip, 1720-1861 (Town of Islip, 1982); digitized by the Office of the Town Historian.",
+        "Nathaniel Conklin, \"Description of the Town of Islip in Suffolk County,\" January 11, 1798; transcribed and annotated by Christopher Albergo and George J. Munkenbeck, Office of the Town Historian."
+      ],
+      "body": [
+        "Geschichte ist nicht nur, was vor langer Zeit geschah. Sie ist auch das, was eine Gemeinschaft zu bewahren, zu hinterfragen und zu teilen wählt. Der New York State Field Guide beschreibt den Jahrestag als Gelegenheit für das Fach Geschichte, Gemeinschaften dabei zu helfen, sich mit der Revolution in all ihrer Komplexität und fortdauernden Bedeutung auseinanderzusetzen.",
+        "Diese Arbeit geschieht in Islip bereits. Das Büro des Town Historian betreibt ein Praktikums- und Ausbildungsprogramm, das Forschung, Schreiben, Bewahrung und öffentliche Vermittlung lehrt, und diese digitale Ausstellung teilt dieses Anliegen. Gemeinsam mit den Sons of the American Revolution hat das Büro die Grabstätten der bekannten Patrioten von Islip erforscht und gekennzeichnet, und ein historischer Gedenkstein zur \"Islip Militia\" ist in der Nähe der Town Hall geplant, einer der ersten Schritte in der Gedenkfeier der Town of Islip zum 250. Jahrestag.",
+        "Die Digitalisierung der Gemeindeaufzeichnungen ist Teil des Einlösens dieses Versprechens. Das auf der Gemeindeversammlung im April 1776 gekaufte Gewehr, die Kriegsbeschlüsse zur Versorgung von Johanna Hutton und ihrem Kind, die Überschrift von 1784, die die Jahre erstmals nach der amerikanischen Unabhängigkeit zählte, die fünfundzwanzig Haushalte, die Nathaniel Conklin 1798 zählte: Jedes überlebte als ein paar handschriftliche Zeilen in den alten Aufzeichnungen der Gemeinde. Das Scannen, Transkribieren und Veröffentlichen dieser Seiten ist es, was einer Schülerin oder einem Nachbarn erlaubt, sie heute zu finden, und was es möglich macht, weiter zu fragen, wen die Geschichte von Islip eingeschlossen hat.",
+        "Das Versprechen der Unabhängigkeit geht weiter, wenn mehr Menschen in die Geschichte eintreten können. Deshalb ist diese Ausstellung digital, zweisprachig und klar geschrieben. Eine Schülerin, ein Elternteil, ein neuer Bewohner, ein lebenslanger Nachbar oder eine Forscherin sollten alle einen Platz in der Vergangenheit von Islip finden können. Die Geschichte ist nicht abgeschlossen. Jedes bewahrte Dokument, jede geteilte Familiengeschichte und jede angebotene Korrektur wird Teil des öffentlichen Gedächtnisses der Gemeinde."
+      ]
+    }
+  }
+}

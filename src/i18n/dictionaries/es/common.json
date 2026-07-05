@@ -43,5 +43,6 @@
   "searchResultOne": "resultado",
   "searchResultMany": "resultados",
   "searchViewAll": "Ver todos los resultados",
-  "searchLoading": "Cargando la búsqueda…"
+  "searchLoading": "Cargando la búsqueda…",
+  "languageLabel": "Idioma"
 }

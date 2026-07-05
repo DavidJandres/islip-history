@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: LocaleParams) {
 export default async function TeachPage({ params }: LocaleParams) {
   const { locale, dict } = await loadLocale(params);
   const t = dict.teach;
-  const other = locale === "en" ? "es" : "en";
+  const other = locale === "en" ? "es" : locale === "es" ? "de" : "en";
 
   const cards = [
     { c: t.cards.lessonPlans, href: localizedPath(locale, "/teach/lesson-plans") },

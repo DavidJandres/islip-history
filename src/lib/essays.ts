@@ -6,6 +6,7 @@
 
 import type { Locale } from "@/i18n/config";
 import { essaysEs } from "./essays-es";
+import { essaysDe } from "./essays-de";
 
 export interface Essay {
   id: string;
@@ -474,8 +475,9 @@ export const essays: Essay[] = [
 
 export function localizedEssays(locale: Locale): Essay[] {
   if (locale === "en") return essays;
+  const overlay = locale === "de" ? essaysDe : essaysEs;
   return essays.map((e) => {
-    const t = essaysEs[e.id];
+    const t = overlay[e.id];
     if (!t) return e;
     return {
       ...e,

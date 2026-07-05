@@ -138,10 +138,10 @@ export default async function PanelPage({ params }: PanelParams) {
           return img ? (
             <ImageSlot
               src={img.src}
-              alt={locale === "es" && img.altEs ? img.altEs : img.alt}
+              alt={locale === "de" && img.altDe ? img.altDe : locale === "es" && img.altEs ? img.altEs : img.alt}
               credit={img.credit}
               caption={
-                (locale === "es" && img.captionEs ? img.captionEs : img.caption) ??
+                (locale === "de" && img.captionDe ? img.captionDe : locale === "es" && img.captionEs ? img.captionEs : img.caption) ??
                 copy.summary
               }
               label={dict.common.imageComingSoon}

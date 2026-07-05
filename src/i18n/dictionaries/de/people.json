@@ -1,0 +1,24 @@
+{
+  "breadcrumb": "Menschen",
+  "eyebrow": "Wer Islip geprägt hat",
+  "title": "Menschen aus Islip",
+  "intro": [
+    "Geschichte wird von Menschen gemacht: Sachems und Patentinhaber, versklavte Arbeiterinnen und Arbeiter sowie Bedienstete, Town Supervisors, Kirchenleiter, Familien unter der Besatzung, Einwanderer, Veteranen, Geflüchtete, Forschende und Nachbarn, die heute die Erinnerung bewahren.",
+    "Diese Seite versammelt einige der Menschen, deren Leben helfen, die Town of Islip zu verstehen. Manche sind gut dokumentiert. Andere tauchen nur kurz in den Aufzeichnungen auf. Zusammen zeigen sie, wie die Vergangenheit der Town ihre Gegenwart bis heute prägt."
+  ],
+  "workingIndexNote": "Dieser Abschnitt ist ein laufend erweitertes Verzeichnis. Weitere Namen kommen hinzu, sobald zusätzliche Quellen digitalisiert und geprüft sind.",
+  "translationNote": "Diese Profile werden auf Englisch angezeigt, während die deutsche Übersetzung vorbereitet wird.",
+  "sections": {
+    "origins": "Indigenes Land und koloniale Anfänge",
+    "revolution": "Revolution und Besatzung",
+    "government": "Frühe Verwaltung und bürgerliche Identität",
+    "unfinished": "Ausgrenzung und das uneingelöste Versprechen",
+    "community": "Gemeinschaften und Zugehörigkeit"
+  },
+  "whyMattersLabel": "Warum sie wichtig sind",
+  "connectionTodayLabel": "Bezug zur Gegenwart",
+  "sourcesLabel": "Quellen",
+  "noLikeness": "Kein bekanntes Bildnis",
+  "backToPeople": "Alle Menschen",
+  "browseByCategory": "Menschen nach Kategorie durchsuchen"
+}

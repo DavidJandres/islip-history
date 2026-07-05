@@ -5,6 +5,7 @@
 
 import type { Locale } from "@/i18n/config";
 import { timelineEs } from "./timeline-es";
+import { timelineDe } from "./timeline-de";
 
 export const timelineEras = [
   "before",
@@ -691,8 +692,9 @@ export const timeline: TimelineEntry[] = [
 
 export function localizedTimeline(locale: Locale): TimelineEntry[] {
   if (locale === "en") return timeline;
+  const overlay = locale === "de" ? timelineDe : timelineEs;
   return timeline.map((e) => {
-    const t = timelineEs[e.id];
+    const t = overlay[e.id];
     return t ? { ...e, ...t } : e;
   });
 }

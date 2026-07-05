@@ -53,7 +53,10 @@ export function buildMetadata({
       // leads the title above.
       siteName,
       type: "website",
-      locale: locale === "es" ? "es_419" : "en_US",
+      locale: locale === "es" ? "es_419" : locale === "de" ? "de_DE" : "en_US",
+      alternateLocale: locales
+        .filter((l) => l !== locale)
+        .map((l) => (l === "es" ? "es_419" : l === "de" ? "de_DE" : "en_US")),
       // 1200x630 brand card (public/og.png): town seal, brand, bilingual
       // tagline on the paper background. metadataBase makes the URL absolute.
       images: [

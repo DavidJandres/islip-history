@@ -1,0 +1,67 @@
+{
+  "sourcesHeading": "Primärquellen",
+  "essaysHeading": "Essays und Artikel",
+  "occupation": {
+    "breadcrumb": "Leben unter der Besatzung",
+    "eyebrow": "Forschung",
+    "title": "Leben unter der Besatzung",
+    "intro": "Sechs Jahre lang lebte das Precinct of Islip nach 1776 unter britischer Besatzung. Das war nicht nur ein militärischer Zustand. Soldaten wurden in Wohnhäusern einquartiert; Futter, Vieh, Zäune und Brennholz wurden beschlagnahmt; und die Familien lebten unter der Autorität der Krone, während sie zugleich Überfällen von der anderen Seite des Sunds ausgesetzt waren. Die folgenden Quellen und Essays zeigen die Besatzung so, wie einfache Menschen sie erlebten, mit geteilten Loyalitäten, Angst und dem Kampf ums Überleben."
+  },
+  "flags": {
+    "breadcrumb": "Flaggen und Symbole",
+    "eyebrow": "Forschung",
+    "title": "Flaggen und Symbole",
+    "intro": "Flaggen zeigten die wechselnden Loyalitäten des Precinct of Islip, vom britischen Red Ensign bis zur Liberty Flag, die im benachbarten Huntington gehisst wurde, und unter der Besatzung wieder zurück. Diese Seite hält Raum für diese Flaggen bereit. Der Town Historian geht dabei vorsichtig vor: Weil die Miliz von Islip eng mit Huntington verbunden war, marschierten die Islip-Milizionäre wahrscheinlich unter der Huntington Liberty Flag, doch das Projekt behauptet nicht, dass Islip eine eigene Flagge hatte.",
+    "galleryHeading": "Die Flaggen",
+    "gallery": [
+      { "name": "Der Red Ensign (der \"Red Duster\")", "note": "Die zivile Flagge, die in den Kolonien verwendet wurde und in der Kolonialzeit sowie während der britischen Besatzung über Islip wehte." },
+      { "name": "Die Union Flag", "note": "Die Kronenflagge Großbritanniens, im Obereck (Kanton) des Red Ensign." },
+      { "name": "Die Huntington Liberty Flag", "note": "Eine rote Flagge mit dem Wort \"Liberty\", wahrscheinlich von den Islip-Milizionären getragen wegen ihrer engen Verbindung zu Huntington." }
+    ]
+  },
+  "militia": {
+    "breadcrumb": "Miliz von Islip",
+    "eyebrow": "Forschung",
+    "title": "Die Miliz von Islip",
+    "intro": "Vor der britischen Besatzung stellten die Menschen des Precinct of Islip ihre eigene Milizkompanie auf, statt weiter zwischen den Kompanien von Smithtown und Huntington aufgeteilt zu bleiben. Richter Isaac Thompson und Hauptmann Benajah Strong leiteten dieses Vorhaben. Der Zensus von 1775 erfasste die diensttauglichen Männer, und im Februar 1776 bat Islip den Provincial Congress darum, eigene Offiziere zu ernennen.",
+    "factsHeading": "In Zahlen",
+    "facts": [
+      { "label": "Bevölkerung 1775", "value": "375 Einwohner des Precinct of Islip" },
+      { "label": "Diensttauglich", "value": "64 Männer im Alter von 16 bis 50 Jahren (Zensus vom 26. Juni 1775)" },
+      { "label": "Die Kompanie", "value": "Etwa 36 bis 38 Männer, First Suffolk County Militia Regiment" },
+      { "label": "Aufgestellt von", "value": "Richter Isaac Thompson und Hauptmann Benajah Strong" }
+    ]
+  },
+  "questions": {
+    "breadcrumb": "Forschungsfragen",
+    "eyebrow": "Forschung",
+    "title": "Forschungsfragen und Belege in Prüfung",
+    "intro": "Gute Public History ist ehrlich darüber, was sie noch nicht weiß. Dies sind offene Fragen, an denen das Projekt aktiv forscht. Manche stützen sich auf Hinweise, die noch nicht bewiesen werden können; wo das der Fall ist, sagt diese Seite es klar, statt eine Möglichkeit in Gewissheit zu verwandeln.",
+    "items": [
+      {
+        "q": "Stand Isaac Thompson mit den Nachrichtennetzwerken der Revolution in Verbindung?",
+        "note": "Isaac Thompson war ein Cousin ersten Grades von Abraham Woodhull und war mit weiteren Personen verwandt, die mit dem Culper Spy Ring in Verbindung gebracht werden. Der Town Historian weist auf diese Familienbande hin und fragt, ob Thompson von dem Ring wusste oder ihm half, stellt aber zugleich klar, dass sich das nicht beweisen lässt. Das Projekt behauptet nicht, dass Isaac Thompson Teil des Culper Spy Ring war."
+      },
+      {
+        "q": "Hatte Washingtons Halt in Sagtikos im Jahr 1790 eine tiefere Bedeutung?",
+        "note": "Einige moderne Darstellungen legen nahe, dass Washingtons Rundreise über Long Island zum Teil dazu diente, jenen zu danken, die ihn mit Informationen unterstützt hatten. Die Belege sind nicht eindeutig, daher stellt das Projekt den Besuch nicht als erwiesenen Akt des Dankes dar."
+      },
+      {
+        "q": "Welche Flagge trugen die Islip-Milizionäre tatsächlich?",
+        "note": "Weil die Miliz von Islip mit Huntington verbunden war, marschierten sie wahrscheinlich unter der Huntington Liberty Flag. Keine Quelle bestätigt eine eigene Flagge von Islip."
+      },
+      {
+        "q": "Wo befindet sich die vollständige Liste der Unterzeichner der Articles of Association?",
+        "note": "Vermutlich haben etwa 35 Einwohner von Islip unterzeichnet, einige davon in Huntington oder Brookhaven. Verschiedene Forscherinnen und Forscher nennen etwas unterschiedliche Namen, und die vollständige, abgeglichene Unterzeichnerliste wird noch zusammengetragen."
+      },
+      {
+        "q": "Welche Aufzeichnungen müssen noch digitalisiert werden?",
+        "note": "Koloniale Aufzeichnungen aus Smithtown, Brookhaven und der Kolonialverwaltung enthalten möglicherweise mehr über Islip. Der Tagebucheintrag Washingtons von 1790 und ausführlichere Huntington Town Records sind ermittelt, aber hier noch nicht vollständig transkribiert."
+      },
+      {
+        "q": "Wie sollten wir das Schweigen in den Gemeindeprotokollen von Islip während der Besatzung deuten?",
+        "note": "Die Protokolle von Islip sagen wenig über die Besatzung, während die von Huntington mehr festhalten. Das Schweigen selbst könnte die Kontrolle und die Gefahr widerspiegeln, unter der Besatzung zu leben."
+      }
+    ]
+  }
+}

@@ -20,6 +20,10 @@ import { timelineEs } from "../src/lib/timeline-es";
 import { peopleEs } from "../src/lib/people-es";
 import { primarySourcesEs } from "../src/lib/primary-sources-es";
 import { essaysEs } from "../src/lib/essays-es";
+import { timelineDe } from "../src/lib/timeline-de";
+import { peopleDe } from "../src/lib/people-de";
+import { primarySourcesDe } from "../src/lib/primary-sources-de";
+import { essaysDe } from "../src/lib/essays-de";
 
 let failures = 0;
 const fail = (msg: string) => {
@@ -81,7 +85,7 @@ function anchorExists(page: string, anchor: string): boolean {
 }
 
 function checkHref(href: string, from: string) {
-  const noLocale = href.replace(/^\/(en|es)(?=\/|#|$)/, "") || "/";
+  const noLocale = href.replace(/^\/(en|es|de)(?=\/|#|$)/, "") || "/";
   const [page, anchor] = noLocale.split("#");
   const p = page === "" ? "/" : page;
   if (!routeExists(p)) fail(`${from}: route not found for ${href}`);
@@ -101,7 +105,7 @@ for (const [name, ids] of [
 }
 
 // ---------- 4. Theme/category labels exist in both locales ----------
-for (const locale of ["en", "es"] as const) {
+for (const locale of ["en", "es", "de"] as const) {
   const d = getDictionary(locale);
   for (const s of primarySources)
     if (!(s.theme in d.primarySources.themes)) fail(`${locale}: no theme label for "${s.theme}"`);
@@ -115,7 +119,7 @@ for (const locale of ["en", "es"] as const) {
 ok("all themes/categories labeled in en + es");
 
 // ---------- 5. Corpus hrefs (both locales) ----------
-for (const locale of ["en", "es"] as const) {
+for (const locale of ["en", "es", "de"] as const) {
   const corpus = buildCorpus(locale);
   const ids = corpus.map((d) => d.id);
   const dupes = ids.filter((id, i) => ids.indexOf(id) !== i);
@@ -146,7 +150,7 @@ ok(`teaching: ${teachingLinks.length} related/source links resolve`);
       count++;
       checkHref(link.href, `collections(${group.key})`);
     }
-    for (const locale of ["en", "es"] as const) {
+    for (const locale of ["en", "es", "de"] as const) {
       const groups = getDictionary(locale).collections.groups as Record<
         string,
         { title: string; blurb: string }
@@ -236,6 +240,41 @@ ok(`teaching: ${teachingLinks.length} related/source links resolve`);
   );
 }
 
+// ---------- 9b. German coverage: every entry has a complete overlay ----------
+{
+  for (const e of timeline) {
+    const t = timelineDe[e.id];
+    if (!t) fail(`de coverage: timeline "${e.id}" has no German overlay`);
+    else if (t.body.length !== e.body.length)
+      fail(`de coverage: timeline "${e.id}" body has ${t.body.length} paragraphs, English has ${e.body.length}`);
+  }
+  for (const p of people) {
+    const t = peopleDe[p.slug];
+    if (!t) fail(`de coverage: person "${p.slug}" has no German overlay`);
+    else if (t.bio.length !== p.bio.length)
+      fail(`de coverage: person "${p.slug}" bio has ${t.bio.length} paragraphs, English has ${p.bio.length}`);
+  }
+  for (const s of primarySources) {
+    const t = primarySourcesDe[s.id];
+    if (!t) fail(`de coverage: source "${s.id}" has no German overlay`);
+    else {
+      if (t.excerptLabels.length !== s.excerpts.length)
+        fail(`de coverage: source "${s.id}" excerptLabels length ${t.excerptLabels.length} != excerpts ${s.excerpts.length}`);
+      s.excerpts.forEach((ex, i) => {
+        if (!!ex.label !== !!t.excerptLabels[i])
+          fail(`de coverage: source "${s.id}" excerpt ${i} label presence mismatch`);
+      });
+      if (!!s.date !== !!t.date) fail(`de coverage: source "${s.id}" date presence mismatch`);
+    }
+  }
+  for (const e of essays) {
+    if (!essaysDe[e.id]) fail(`de coverage: essay "${e.id}" has no German overlay`);
+  }
+  ok(
+    `de coverage: ${Object.keys(timelineDe).length} timeline + ${Object.keys(peopleDe).length} people + ${Object.keys(primarySourcesDe).length} sources + ${Object.keys(essaysDe).length} essays overlays complete`,
+  );
+}
+
 // ---------- 10. New content is findable in search ----------
 const index = createIndex(buildCorpus("en"));
 const expectTop: Array<[string, string]> = [
@@ -280,6 +319,26 @@ for (const [q, want] of teachExpect) {
   if (pos < 0)
     fail(`teach search "${q}": no ${want} in top 6 (got: ${hits.map((h) => h.doc.id).join(", ")})`);
   else ok(`teach search "${q}" -> ${hits[pos].doc.id} (rank ${pos + 1})`);
+}
+
+// ---------- 10b. German content is findable in the German index ----------
+const indexDe = createIndex(buildCorpus("de"));
+const expectDe: Array<[string, string]> = [
+  ["Isaac Thompson", "person-isaac-thompson"],
+  ["George Washington", "person-george-washington"],
+];
+for (const [q, want] of expectDe) {
+  const hits = search(indexDe, q).slice(0, 6);
+  const pos = hits.findIndex((h) => h.doc.id === want);
+  if (pos < 0)
+    fail(`de search "${q}": ${want} not in top 6 (got: ${hits.map((h) => h.doc.id).join(", ")})`);
+  else ok(`de search "${q}" -> ${want} (rank ${pos + 1})`);
+}
+const deTopical = ["Amerikanische Revolution", "Besatzung", "Miliz", "Zugeh\u00f6rigkeit", "Sagtikos", "Washington", "Protokolle"];
+for (const q of deTopical) {
+  const hits = search(indexDe, q).slice(0, 6);
+  if (hits.length === 0) fail(`de search "${q}": no results in the German index`);
+  else ok(`de search "${q}" -> ${hits.length} results (top: ${hits[0].doc.id})`);
 }
 
 console.log(failures === 0 ? "\nAll integrity checks passed." : `\n${failures} FAILURE(S).`);

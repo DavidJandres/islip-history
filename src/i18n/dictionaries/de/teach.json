@@ -1,0 +1,190 @@
+{
+  "breadcrumb": "Unterrichtsmaterialien",
+  "eyebrow": "Für Lehrkräfte",
+  "title": "Unterrichtsmaterialien",
+  "intro": [
+    "Dieser Bereich hilft Lehrkräften, die lokale Geschichte von Islip in den Unterricht zu bringen. Die Materialien nutzen die Primärquellen, die Zeitleiste, die Ausstellungstafeln und die Personenseiten des Projekts, um die Amerikanische Revolution, die Kommunalverwaltung, das bürgerschaftliche Leben, Zugehörigkeit und historisches Denken zu vermitteln."
+  ],
+  "audienceNote": "Sie müssen keine lokale Historikerin oder kein lokaler Historiker sein, um diese Materialien zu nutzen. Jede Unterrichtsstunde und jede Aktivität nennt die Quellen, auf die sie sich stützt, verlinkt direkt darauf und enthält eine kurze Notiz für die Lehrkraft dazu, was die Belege zeigen und was nicht.",
+  "cardsHeading": "Hier beginnen",
+  "cards": {
+    "lessonPlans": {
+      "title": "Unterrichtsentwürfe",
+      "blurb": "Fünf unterrichtsfertige Stunden, von Besiedlung und Kommunalverwaltung bis zu Besatzung, Zugehörigkeit und dem uneingelösten Versprechen der Unabhängigkeit."
+    },
+    "primarySourceActivities": {
+      "title": "Aktivitäten mit Primärquellen",
+      "blurb": "Sieben kurze Aktivitäten auf Grundlage der eigenen Protokolle der Town, jeweils mit einem echten Auszug, verständlichem Kontext, Vokabular und gestuften Fragen."
+    },
+    "exhibitGuide": {
+      "title": "Ausstellungsführer",
+      "blurb": "Ein Leitfaden für Schülerinnen und Schüler zu den sieben Ausstellungstafeln, mit einer Frage pro Tafel und Raum, um darüber nachzudenken, wer einbezogen und wer ausgelassen wurde."
+    },
+    "timelineActivities": {
+      "title": "Aktivitäten mit der Zeitleiste",
+      "blurb": "Fünf Aktivitäten, die die vollständige und die kindgerechte Zeitleiste zusammen nutzen, um historisches Denken zu üben."
+    },
+    "printables": {
+      "title": "Druckbare Materialien",
+      "blurb": "Druckfreundliche Versionen jeder Ressource, bereit für den Unterricht. Herunterladbare PDF-Pakete sind in Vorbereitung."
+    },
+    "bilingual": {
+      "title": "Zweisprachige Unterrichtsmaterialien",
+      "blurb": "Jede Seite hier gibt es auf Englisch und Spanisch, damit dieselbe Unterrichtsstunde mehr Familien in Islip erreicht. Der vollständige spanische Unterrichtsinhalt ist in Vorbereitung."
+    }
+  },
+  "themesHeading": "Themen in diesen Materialien",
+  "themes": [
+    "Die Amerikanische Revolution",
+    "Kommunalverwaltung",
+    "Bürgerschaftliche Teilhabe",
+    "Besatzung",
+    "Analyse von Primärquellen",
+    "Herkunft, Status und Zugehörigkeit",
+    "Lokale Identität",
+    "Das uneingelöste Versprechen der Unabhängigkeit"
+  ],
+  "labels": {
+    "onThisPage": "Auf dieser Seite",
+    "backToTeach": "Zurück zu den Unterrichtsmaterialien",
+    "relatedPages": "Verwandte Seiten auf dieser Website",
+    "teacherNote": "Hinweis für die Lehrkraft zu Vorsicht und Unsicherheit",
+    "gradeBand": "Klassenstufe",
+    "time": "Geschätzte Dauer",
+    "essentialQuestion": "Leitfrage",
+    "learningGoals": "Lernziele",
+    "materials": "Benötigte Materialien",
+    "warmUp": "Einstieg",
+    "sourceActivity": "Arbeit mit der Quelle",
+    "discussion": "Fragen zur Diskussion",
+    "writingPrompt": "Schreibauftrag",
+    "extension": "Vertiefungsaktivität",
+    "themes": "Themen",
+    "viewSource": "Vollständige Quelle öffnen",
+    "excerpt": "Aus der Quelle",
+    "context": "Kontext",
+    "vocabulary": "Vokabular",
+    "sourcing": "Fragen zur Herkunft der Quelle",
+    "closeReading": "Fragen zum genauen Lesen",
+    "historicalThinking": "Fragen zum historischen Denken",
+    "today": "Warum ist das heute wichtig?",
+    "skill": "Geschichtskompetenz",
+    "steps": "Schritte",
+    "example": "Beispiel",
+    "printThisPage": "Tipp: Nutzen Sie den Druckbefehl Ihres Browsers, um diese Seite zu drucken oder als PDF zu speichern."
+  },
+  "contentPendingTitle": "Spanische Unterrichtsmaterialien in Vorbereitung",
+  "contentPending": "Die ausführlichen Inhalte der Unterrichtsstunden und Aktivitäten in diesem Bereich werden derzeit auf Spanisch vorbereitet. Vorerst werden sie auf Englisch angezeigt. Das vollständige spanische Archiv, einschließlich der Zeitleiste und der Primärquellen, ist bereits verfügbar.",
+  "lessonPlans": {
+    "breadcrumb": "Unterrichtsentwürfe",
+    "title": "Unterrichtsentwürfe",
+    "intro": [
+      "Vollständige Unterrichtsentwürfe nach der Social-Studies-Vorlage der Stony Brook University, jeder an einen bestimmten Standard und eine bestimmte Klassenstufe des New York State Framework gebunden und auf eine Unterrichtsstunde von 42 Minuten ausgelegt. Die Einheit für die 7. Klasse führt Islip von der Zeit vor der Revolution über die Besatzung bis zur Frage, wer dazugehörte; die Stunden für die 11. und 12. Klasse überführen dieselbe lokale Geschichte in dokumentenbasierte Untersuchungen und Politikbildung der Oberstufe."
+    ],
+    "stonyBrookCredit": "Diese Unterrichtsentwürfe nutzen ein Format, das an die Social Studies Lesson Plan Template der Stony Brook University angelehnt ist.",
+    "stonyBrookTemplateLabel": "Unterrichtsentwurfsvorlage von Stony Brook",
+    "standards": {
+      "heading": "Standards und Zuordnung",
+      "blurb": "Jede Unterrichtsstunde nennt eine Key Idea des New York State Social Studies Framework, die Social Studies Practices, die sie fördert, und die Kompetenzstandards der New York P-12 Common Core für Lese- und Schreibkompetenz, die sie erfüllt. Die vollständigen staatlichen Frameworks, öffentliche Dokumente des New York State Education Department, sind hier zur Orientierung verlinkt.",
+      "cclsNote": "Die Lese- und Schreibstandards stammen aus den New York State P-12 Common Core Learning Standards for Literacy in History and Social Studies.",
+      "frameworkK8": "NYS K-8 Social Studies Framework",
+      "framework912": "NYS 9-12 Social Studies Framework (mit Aktualisierungen von 2017)",
+      "pdfLabel": "PDF",
+      "viewPdf": "PDF öffnen"
+    },
+    "roadmap": {
+      "heading": "Weitere Unterrichtsstunden folgen",
+      "intro": "Dieser erste Satz konzentriert sich auf die 7. Klasse sowie die 11. und 12. Klasse. Je mehr von Islips Überlieferung digitalisiert wird, desto mehr des Frameworks werden künftige Unterrichtsstunden abdecken:",
+      "items": [
+        "4. Klasse, New York State and Local History and Government (Key Idea 4.4): wie die Kommunalverwaltung von Islip funktioniert, damals und heute.",
+        "8. Klasse, United States and New York State History II (Key Idea 8.2): Einwanderung und das Wachstum der Gemeinschaften von Islip.",
+        "11. Klasse vertieft (Key Ideas 11.1 bis 11.3): weitere dokumentenbasierte Untersuchungen zur Revolution, zur Verfassung und zur Sklaverei.",
+        "12. Klasse, Participation in Government (Key Ideas 12.G3 bis 12.G4): Rechte, Pflichten und bürgerschaftliche Teilhabe heute."
+      ]
+    }
+  },
+  "lessonLabels": {
+    "grade": "Klassenstufe",
+    "course": "Kurs",
+    "time": "Dauer",
+    "aim": "Ziel der Unterrichtsstunde",
+    "mainIdeas": "Kernaussagen und Lernziele der Schülerinnen und Schüler",
+    "ssSkills": "Kompetenzen im Fach Social Studies",
+    "ssPractices": "New York Social Studies Practices",
+    "rationale": "Begründung",
+    "comesAfter": "Kommt nach",
+    "focus": "Diese Unterrichtsstunde konzentriert sich auf",
+    "prepares": "Bereitet die Schülerinnen und Schüler vor auf",
+    "priorKnowledge": "Benötigtes Vorwissen",
+    "likelyKnow": "Die Schülerinnen und Schüler sollten bereits wissen",
+    "misconceptions": "Wahrscheinliche Fehlvorstellungen",
+    "prerequisiteSkills": "Vorausgesetzte Kompetenzen",
+    "masteryChecks": "Wie diese Voraussetzungen überprüft werden",
+    "nysed": "NYSED-Framework-Standard",
+    "ccStandards": "Common-Core-Standards für Lese- und Schreibkompetenz",
+    "iep": "Anpassungen für eine Schülerin oder einen Schüler mit einem IEP",
+    "iepStudent": "Fiktive Schülerin oder fiktiver Schüler",
+    "modifications": "Anpassungen",
+    "keyTerms": "Zentrale Begriffe, Konzepte und Personen",
+    "lessonFlow": "Ablauf der Unterrichtsstunde",
+    "teacherWillDo": "Was die Lehrkraft tut",
+    "studentsWillDo": "Was die Schülerinnen und Schüler tun",
+    "alignment": "Wie dies zum Ziel beiträgt",
+    "scaffolding": "Unterstützende Fragen",
+    "higherOrder": "Fragen höherer Denkordnung",
+    "segmentAssessment": "Überprüfung",
+    "homework": "Hausaufgabe",
+    "assignment": "Aufgabe",
+    "requirements": "Anforderungen",
+    "answerKey": "Lösungsschlüssel (für Lehrkräfte)",
+    "min": "Min.",
+    "openLesson": "Vollständige Unterrichtsstunde öffnen",
+    "backToLessons": "Zurück zu den Unterrichtsentwürfen",
+    "standardBadge": "NYSED"
+  },
+  "primarySourceActivities": {
+    "breadcrumb": "Aktivitäten mit Primärquellen",
+    "title": "Aktivitäten mit Primärquellen",
+    "intro": [
+      "Sieben kurze Aktivitäten, jede auf Grundlage eines einzelnen echten Dokuments aus der Geschichte von Islip. Jede gibt den Schülerinnen und Schülern einen kurzen Auszug, verständlichen Kontext, Vokabular und Fragen, die von der Herkunft der Quelle über das genaue Lesen bis zum historischen Denken führen."
+    ]
+  },
+  "exhibitGuide": {
+    "breadcrumb": "Ausstellungsführer",
+    "title": "Ausstellungsführer",
+    "intro": [
+      "Ein Leitfaden für Schülerinnen und Schüler zu den sieben Tafeln der digitalen Ausstellung. Nutzen Sie ihn als Arbeitsblatt im Computerraum, bei einem Klassenbesuch oder als Leseanleitung für die Hausaufgabe. Jede Frage schickt die Schülerinnen und Schüler in eine Tafel, um die Antwort zu finden."
+    ],
+    "beforeReadingHeading": "Bevor Sie beginnen",
+    "panelQuestionsHeading": "Eine Frage pro Tafel",
+    "reflectHeading": "Nachdem Sie gelesen haben",
+    "surprisedLabel": "Was hat Sie überrascht?",
+    "includedLabel": "Wer wurde einbezogen?",
+    "leftOutLabel": "Wer wurde ausgelassen?",
+    "finalReflectionLabel": "Abschließende Reflexion: das lebendige Versprechen",
+    "openPanel": "Diese Tafel öffnen"
+  },
+  "timelineActivities": {
+    "breadcrumb": "Aktivitäten mit der Zeitleiste",
+    "title": "Aktivitäten mit der Zeitleiste",
+    "intro": [
+      "Fünf Aktivitäten, die die vollständige Zeitleiste und die kindgerechte Zeitleiste zusammen nutzen, um historisches Denken zu üben, vom chronologischen Schlussfolgern bis zur Frage, wie aus Belegen Geschichte wird."
+    ],
+    "useTimelinesHeading": "Sie werden diese beiden Seiten nutzen",
+    "fullTimeline": "Die vollständige Zeitleiste",
+    "kidsTimeline": "Die kindgerechte Zeitleiste",
+    "skillLabel": "Geschichtskompetenz",
+    "stepsLabel": "Schritte",
+    "exampleLabel": "Beispiel"
+  },
+  "printables": {
+    "breadcrumb": "Druckbare Materialien",
+    "title": "Druckbare Materialien",
+    "intro": [
+      "Jede Unterrichtsressource auf dieser Website ist so gestaltet, dass sie sauber aus Ihrem Browser druckt. Herunterladbare PDF-Pakete sind in Vorbereitung. Öffnen Sie in der Zwischenzeit eine beliebige Ressource unten und nutzen Sie den Druckbefehl Ihres Browsers, um sie zu drucken oder als PDF zu speichern."
+    ],
+    "preparingTitle": "Herunterladbare PDFs sind in Vorbereitung",
+    "preparing": "Formatierte PDF-Handzettel werden vorbereitet. Bis sie fertig sind, tragen die druckfreundlichen Web-Versionen unten denselben Inhalt und drucken sauber.",
+    "listHeading": "Druckfreundliche Ressourcen"
+  }
+}

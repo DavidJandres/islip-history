@@ -39,6 +39,25 @@ import esPeople from "./dictionaries/es/people.json";
 import esTimeline from "./dictionaries/es/timeline.json";
 import esCollections from "./dictionaries/es/collections.json";
 import esTeach from "./dictionaries/es/teach.json";
+import deCommon from "./dictionaries/de/common.json";
+import deNav from "./dictionaries/de/nav.json";
+import deNavSummaries from "./dictionaries/de/nav-summaries.json";
+import deFooter from "./dictionaries/de/footer.json";
+import deHome from "./dictionaries/de/home.json";
+import deAbout from "./dictionaries/de/about.json";
+import deResearch from "./dictionaries/de/research.json";
+import deFellowship from "./dictionaries/de/fellowship.json";
+import deContact from "./dictionaries/de/contact.json";
+import deFaq from "./dictionaries/de/faq.json";
+import deSources from "./dictionaries/de/sources.json";
+import dePrimarySources from "./dictionaries/de/primary-sources.json";
+import deEssays from "./dictionaries/de/essays.json";
+import deThematic from "./dictionaries/de/thematic.json";
+import deExhibit from "./dictionaries/de/exhibit.json";
+import dePeople from "./dictionaries/de/people.json";
+import deTimeline from "./dictionaries/de/timeline.json";
+import deCollections from "./dictionaries/de/collections.json";
+import deTeach from "./dictionaries/de/teach.json";
 
 // Copy lives in one JSON file per section (dictionaries/<locale>/<section>.json)
 // so pages don't share one giant file that's painful to edit and quick to
@@ -91,7 +110,29 @@ const es: Dictionary = {
   teach: esTeach,
 };
 
-const dictionaries: Record<Locale, Dictionary> = { en, es };
+const de: Dictionary = {
+  common: deCommon,
+  nav: deNav,
+  navSummaries: deNavSummaries,
+  footer: deFooter,
+  home: deHome,
+  aboutProject: deAbout,
+  aboutResearch: deResearch,
+  aboutFellowship: deFellowship,
+  contact: deContact,
+  faq: deFaq,
+  sources: deSources,
+  primarySources: dePrimarySources,
+  essays: deEssays,
+  thematic: deThematic,
+  exhibit: deExhibit,
+  people: dePeople,
+  timeline: deTimeline,
+  collections: deCollections,
+  teach: deTeach,
+};
+
+const dictionaries: Record<Locale, Dictionary> = { en, es, de };
 
 export function getDictionary(locale: Locale): Dictionary {
   return dictionaries[locale];

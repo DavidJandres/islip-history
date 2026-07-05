@@ -1,0 +1,55 @@
+{
+  "breadcrumb": "FAQ",
+  "eyebrow": "Fragen & Antworten",
+  "title": "Häufig gestellte Fragen",
+  "intro": "Häufige Fragen zum Projekt, zu seinen Quellen und dazu, wie man das Archiv nutzt und zu ihm beiträgt. Wenn Ihre Frage hier nicht dabei ist, können Sie sie am Ende der Seite stellen.",
+  "items": [
+    {
+      "q": "Was ist das Geschichtsprojekt der Town of Islip?",
+      "a": "Es ist ein Public-History-Archiv, das die Geschichte der Town of Islip im Suffolk County, New York, dokumentiert. Es sammelt Primärquellen und präsentiert sie über eine zweisprachige digitale Ausstellung, ein Personenverzeichnis, eine Zeitleiste und Forschungsnotizen. Es ist so angelegt, dass es dauerhaft genau und zitierfähig bleibt."
+    },
+    {
+      "q": "Wer hat es erstellt?",
+      "a": "Das Projekt entsteht im Rahmen einer Fellowship der Robert David Lion Gardiner Foundation an der Stony Brook University, als Teil einer landesweiten Initiative zum 250. Jahrestag der amerikanischen Unabhängigkeit. Die Seiten Über uns und Fellowship nennen die beteiligten Personen und Partner."
+    },
+    {
+      "q": "Warum stehen die Revolution und das Versprechen der Unabhängigkeit im Mittelpunkt?",
+      "a": "Islip erlebte die Amerikanische Revolution unmittelbar. Die Town stand nach 1776 unter britischer Besatzung, und Sagtikos Manor in West Bay Shore ist mit dieser Geschichte verbunden. Das Projekt fragt, was das Versprechen der Revolution von Freiheit, Bürgerschaft und Zugehörigkeit in Islip seither bedeutet hat, auch für die vielen Gemeinschaften, die später hier ihr Zuhause fanden."
+    },
+    {
+      "q": "In welchen Sprachen ist die Website verfügbar?",
+      "a": "Auf Deutsch, Englisch und Spanisch; Polnisch ist geplant. Sie können die Sprache jederzeit über die Sprachschaltfläche in der Kopfzeile wechseln. Einige längere Passagen werden noch übersetzt; diese werden mit einem Hinweis auf Englisch angezeigt, bis die Übersetzung fertig ist."
+    },
+    {
+      "q": "Darf ich zitieren oder weiterverwenden, was ich hier finde?",
+      "a": "Ja. Die Materialien werden für Forschung, Lehre und öffentliche Bildung bereitgestellt und dürfen zu diesen Zwecken zitiert und geteilt werden. Die Rechte an einzelnen Objekten liegen bei den Einrichtungen, die sie verwahren; sie sind bei jedem Eintrag vermerkt."
+    },
+    {
+      "q": "Auf manchen Seiten steht, der Text sei ein Entwurf oder werde noch geprüft. Warum?",
+      "a": "Das Projekt kennzeichnet seine Arbeit ehrlich. Wo ein Datum, eine Zahl oder eine Zuschreibung noch anhand der Originalquellen bestätigt wird, ist dies entsprechend gekennzeichnet, statt es als endgültig darzustellen. Das ist ein bewusster wissenschaftlicher Standard, kein Versäumnis."
+    },
+    {
+      "q": "Ich habe eine Fotografie, ein Dokument oder eine Familiengeschichte mit Bezug zu Islip. Kann ich etwas beitragen?",
+      "a": "Ja, und Beiträge sind willkommen. Nutzen Sie das Formular unten oder die Kontaktseite, um mit uns in Verbindung zu treten. Beschreiben Sie das Material bitte zuerst; Sie müssen nicht sofort Dateien senden."
+    },
+    {
+      "q": "Wie erreiche ich das Projekt?",
+      "a": "Nutzen Sie das Fragenformular unten, dann gelangt Ihre Nachricht direkt zum Projekt, oder sehen Sie auf der Kontaktseite nach, welche weiteren Wege es gibt, um in Verbindung zu treten."
+    }
+  ],
+  "askEyebrow": "Eine Frage stellen",
+  "askTitle": "Haben Sie eine andere Frage?",
+  "askBody": "Stellen Sie sie hier, dann gelangt sie direkt zum Projekt. Hinterlassen Sie Ihre E-Mail-Adresse, wenn Sie eine Antwort wünschen.",
+  "nameLabel": "Ihr Name (optional)",
+  "emailLabel": "E-Mail",
+  "questionLabel": "Ihre Frage",
+  "requiredHint": "(erforderlich)",
+  "submit": "Frage senden",
+  "sending": "Wird gesendet…",
+  "successTitle": "Vielen Dank.",
+  "successBody": "Ihre Frage wurde gesendet. Wenn Sie Ihre E-Mail-Adresse hinterlassen haben, antworten wir Ihnen, sobald wir können.",
+  "errorInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse und eine Frage von mindestens ein paar Wörtern ein.",
+  "errorGeneric": "Beim Senden Ihrer Frage ist etwas schiefgegangen. Bitte versuchen Sie es gleich noch einmal oder nutzen Sie die Kontaktseite.",
+  "errorNotConfigured": "Das Fragenformular ist noch nicht vollständig eingerichtet. Bitte nutzen Sie vorerst die Kontaktseite.",
+  "privacyNote": "Ihre E-Mail-Adresse wird nur verwendet, um Ihnen zu antworten. Sie wird nicht weitergegeben und keiner Liste hinzugefügt."
+}

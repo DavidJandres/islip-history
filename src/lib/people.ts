@@ -11,6 +11,7 @@
 
 import type { Locale } from "@/i18n/config";
 import { peopleEs } from "./people-es";
+import { peopleDe } from "./people-de";
 
 export const peopleSections = [
   "origins",
@@ -393,8 +394,9 @@ export const peopleSlugs = people.map((p) => p.slug);
 
 export function localizedPeople(locale: Locale): Person[] {
   if (locale === "en") return people;
+  const overlay = locale === "de" ? peopleDe : peopleEs;
   return people.map((p) => {
-    const t = peopleEs[p.slug];
+    const t = overlay[p.slug];
     return t ? { ...p, ...t } : p;
   });
 }

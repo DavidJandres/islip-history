@@ -11,6 +11,7 @@ export interface CensusFigure {
   place: string;
   metricEn: string;
   metricEs: string;
+  metricDe: string;
   percent: number;
   source: string;
 }
@@ -23,6 +24,7 @@ export const censusFigures: CensusFigure[] = [
     place: "Town of Islip",
     metricEn: "Hispanic or Latino",
     metricEs: "hispano o latino",
+    metricDe: "hispanisch oder lateinamerikanisch",
     percent: 37.8,
     source: `${QF}/isliptownsuffolkcountynewyork`,
   },
@@ -31,6 +33,7 @@ export const censusFigures: CensusFigure[] = [
     place: "Town of Islip",
     metricEn: "Foreign-born residents",
     metricEs: "residentes nacidos en el extranjero",
+    metricDe: "im Ausland geborene Einwohner",
     percent: 23.2,
     source: `${QF}/isliptownsuffolkcountynewyork`,
   },
@@ -39,6 +42,7 @@ export const censusFigures: CensusFigure[] = [
     place: "Town of Islip",
     metricEn: "Speak a language other than English at home (age 5+)",
     metricEs: "hablan un idioma distinto del inglés en casa (5 años o más)",
+    metricDe: "sprechen zu Hause eine andere Sprache als Englisch (ab 5 Jahren)",
     percent: 36.6,
     source: `${QF}/isliptownsuffolkcountynewyork`,
   },
@@ -47,6 +51,7 @@ export const censusFigures: CensusFigure[] = [
     place: "Central Islip",
     metricEn: "Hispanic or Latino",
     metricEs: "hispano o latino",
+    metricDe: "hispanisch oder lateinamerikanisch",
     percent: 63.1,
     source: `${QF}/centralislipcdpnewyork`,
   },
@@ -55,6 +60,7 @@ export const censusFigures: CensusFigure[] = [
     place: "Bay Shore",
     metricEn: "Hispanic or Latino",
     metricEs: "hispano o latino",
+    metricDe: "hispanisch oder lateinamerikanisch",
     percent: 39.2,
     source: `${QF}/bayshorecdpnewyork`,
   },

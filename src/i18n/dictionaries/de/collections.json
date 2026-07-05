@@ -1,0 +1,49 @@
+{
+  "breadcrumb": "Sammlungen",
+  "eyebrow": "Das Archiv erkunden",
+  "title": "Sammlungen",
+  "intro": [
+    "Diese Seite bündelt das Material des Projekts nach Themen an einem Ort: Gemeindeprotokolle, Revolution und Besatzung, Sagtikos Manor, Karten, Menschen, Alltagsleben, Schulen und Gemeinden, Herkunft und Zugehörigkeit sowie Flaggen.",
+    "Jeder Eintrag verweist dorthin, wo das Material bereits liegt: auf eine Quelle, einen Essay, einen Moment auf der Zeitleiste oder die Seite einer Person. So können Sie von einem Thema ausgehen statt von einem Seitennamen."
+  ],
+  "provisionalTitle": "Eine Seite in Arbeit",
+  "provisionalNote": "Dies ist ein frühes Sammelbecken, kein fertiger Katalog. Die Gruppierungen werden noch verfeinert, und neue Sammlungen kommen hinzu, sobald mehr aus dem Archiv digitalisiert und geprüft ist.",
+  "groups": {
+    "townRecords": {
+      "title": "Gemeindeprotokolle",
+      "blurb": "Das erste Protokollbuch der Town: Jahresversammlungen, Armenfürsorge, Regeln für die Bucht, Seiten aus der Kriegszeit und der Wechsel von 1784 zum Staat New York."
+    },
+    "revolution": {
+      "title": "Revolution und Besatzung",
+      "blurb": "Wie die Revolution Islip erreichte: das Gelöbnis von 1775, die Miliz, sechs Jahre Besatzung, Überfälle und das Überleben."
+    },
+    "sagtikos": {
+      "title": "Sagtikos Manor und die Familie Thompson",
+      "blurb": "Ein Haus im Zentrum der Geschichte: Familie, Ämter, Besatzung, Arbeit und ein Besuch eines Präsidenten."
+    },
+    "mapsPlaces": {
+      "title": "Karten und Orte",
+      "blurb": "Die Gestalt der Town auf dem Papier und im Gelände: Karten der Provinz, Landzungen und Bäche, die South Country Road und die Bucht."
+    },
+    "people": {
+      "title": "Menschen",
+      "blurb": "Die Leben, die das Archiv bislang benennen kann, von Winnaquaheagh bis Samuel Sitko."
+    },
+    "dailyLife": {
+      "title": "Alltagsleben",
+      "blurb": "Schweine und Zäune, Regeln für den Fischfang, Lieder, Krankheit und nachbarschaftliche Fürsorge: die alltägliche Welt hinter den großen Ereignissen."
+    },
+    "schoolsChurches": {
+      "title": "Schulen, Kirchen und Gemeinschaft",
+      "blurb": "Schulhäuser und Kommissare, Gemeinden und die Einrichtungen, die Gemeinschaften schufen, um dazuzugehören."
+    },
+    "raceStatus": {
+      "title": "Herkunft, Status und Haushalte",
+      "blurb": "Wer im frühen Islip wirklich lebte: die Zählung der Haushalte von 1798, benannte Leben in den Aufzeichnungen und die Fragen, die offen bleiben."
+    },
+    "flagsSymbols": {
+      "title": "Flaggen und Symbole",
+      "blurb": "Was über Islip wehte, unter welcher Flagge seine Miliz vermutlich marschierte und das Siegel, das die Town bis heute verwendet."
+    }
+  }
+}
