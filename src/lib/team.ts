@@ -7,6 +7,7 @@ export const teamPhotos: Record<string, string> = {
   munkenbeck: "/team/george-munkenbeck.jpg",
   chambers: "/team/mark-chambers.jpg",
   oberg: "/team/michael-oberg.jpg",
+  wolff: "/team/evelyn-wolff.jpg",
   sebor: "/team/mollie-sebor.jpg",
   "brewster-walker": "/team/sandi-brewster-walker.jpg",
 };

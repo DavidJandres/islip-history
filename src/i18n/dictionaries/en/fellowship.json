@@ -46,6 +46,12 @@
   "contributorsIntro": "Historians, researchers, and apprentices whose work this project draws on and builds with.",
   "contributors": [
     {
+      "id": "wolff",
+      "name": "Evelyn Chiara Wolff",
+      "role": "Researcher · German-language adaptation",
+      "bio": "Evelyn Chiara Wolff is a law student at Johannes Gutenberg University Mainz, studying Rechtswissenschaften on the Staatsexamen track toward qualifying as an attorney. Originally from Rhineland-Palatinate, she is helping adapt the project's resources into German so its public history can reach more communities. A fuller biography will follow."
+    },
+    {
       "id": "sebor",
       "name": "Mollie Sebor",
       "role": "History Research Assistant, Town of Islip",

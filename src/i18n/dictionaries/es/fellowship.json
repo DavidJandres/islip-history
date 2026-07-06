@@ -46,6 +46,12 @@
   "contributorsIntro": "Historiadores, investigadores y aprendices en cuyo trabajo se apoya este proyecto y con quienes se construye.",
   "contributors": [
     {
+      "id": "wolff",
+      "name": "Evelyn Chiara Wolff",
+      "role": "Investigadora · adaptación al alemán",
+      "bio": "Evelyn Chiara Wolff es estudiante de Derecho en la Universidad Johannes Gutenberg de Maguncia, donde cursa Rechtswissenschaften (Derecho) por la vía del Staatsexamen para ejercer como abogada. Originaria de Renania-Palatinado, ayuda a adaptar al alemán los recursos del proyecto para que su historia pública llegue a más comunidades. Más adelante se publicará una biografía más completa."
+    },
+    {
       "id": "sebor",
       "name": "Mollie Sebor",
       "role": "Asistente de Investigación Histórica, Pueblo de Islip",

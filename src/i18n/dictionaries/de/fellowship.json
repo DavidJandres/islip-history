@@ -46,6 +46,12 @@
   "contributorsIntro": "Historikerinnen und Historiker, Forschende und Auszubildende, auf deren Arbeit dieses Projekt aufbaut und mit denen es gemeinsam entsteht.",
   "contributors": [
     {
+      "id": "wolff",
+      "name": "Evelyn Chiara Wolff",
+      "role": "Deutschsprachige Adaption · Recherche",
+      "bio": "Evelyn Chiara Wolff studiert Rechtswissenschaften an der Johannes Gutenberg-Universität Mainz und strebt über das Staatsexamen die Zulassung als Anwältin an. Sie stammt aus Rheinland-Pfalz und hilft dabei, die Materialien des Projekts ins Deutsche zu übertragen, damit seine öffentliche Geschichtsarbeit mehr Gemeinschaften erreicht. Eine ausführlichere Biografie folgt."
+    },
+    {
       "id": "sebor",
       "name": "Mollie Sebor",
       "role": "Forschungsassistentin für Geschichte, Town of Islip",
