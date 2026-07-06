@@ -5,6 +5,7 @@ import { Merriweather, Source_Sans_3 } from "next/font/google";
 import { locales, isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { siteConfig } from "@/lib/site";
+import { navSubmenus } from "@/lib/nav-submenus";
 import { siteJsonLd } from "@/lib/structured-data";
 import { SkipLink } from "@/components/layout/skip-link";
 import { TopBar } from "@/components/layout/top-bar";
@@ -91,6 +92,8 @@ export default async function LocaleLayout({
             labels={dict.nav}
             summaries={dict.navSummaries}
             sectionLabels={dict.people.sections}
+            submenus={navSubmenus(dict)}
+            submenuWord={dict.common.navSubmenu}
             menuLabel={dict.common.menu}
             closeLabel={dict.common.close}
           />
